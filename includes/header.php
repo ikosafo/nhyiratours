@@ -75,7 +75,7 @@
                 </button>
                 <a class="navbar-brand" href="/">
                     <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;"
-                    srcset="./assets/img/logos/logo@2x.png 2x" alt="">
+                    srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
                 </a>
                 <div class="offcanvas offcanvas-navbar offcanvas-start border-end-0" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header border-bottom p-4 p-xl-0">

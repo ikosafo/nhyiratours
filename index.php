@@ -12,7 +12,7 @@
                     <!-- Carousel item -->
                     <div class="hero-item carousel-item active">
                         <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/02.jpg" srcset="./assets/img/hero/h2@2x.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/02.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/02.jpg 2x" alt="">
                         </div>
                         <div class="hero-caption text-sm-start">
                             <div class="container">
@@ -40,7 +40,7 @@
                     <!-- Carousel item -->
                     <div class="hero-item carousel-item">
                         <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/01.jpg" srcset="./assets/img/hero/h3@2x.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/01.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/01.jpg 2x" alt="">
                         </div>
                         <div class="hero-caption text-sm-start">
                             <div class="container">
@@ -68,7 +68,7 @@
                     <!-- Carousel item -->
                     <div class="hero-item carousel-item">
                         <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/12.jpg" srcset="./assets/img/hero/h1@2x.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/12.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/12.jpg 2x" alt="">
                         </div>
                         <div class="hero-caption text-sm-start">
                             <div class="container">
@@ -220,12 +220,12 @@
                                     </small>
                                 </div>
                                 <div class="image-center">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="./assets/img/about/a2@2x.jpg 2x" style="height: 450px;" class="rounded w-100" alt="">
+                                    <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/06.jpg 2x" style="height: 450px;" class="rounded w-100" alt="">
                                 </div>
                                 <div class="info-top-right">
                                     <div class="vertical-award rounded shadow-sm">
                                         <div class="award-content">
-                                            <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" srcset="./assets/img/logos/trip-best@2x.png 2x" class="w-100" alt="">
+                                            <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" class="w-100" alt="">
                                         </div>
                                         <div class="award-footer">
                                             <small>Nhyiraba Tours</small>
@@ -333,7 +333,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d6.jpg" srcset="./assets/img/destinations/d6@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d6.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d6.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -351,7 +351,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d2.jpg" srcset="./assets/img/destinations/d2@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d2.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d2.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -369,7 +369,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d4.jpg" srcset="./assets/img/destinations/d4@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d4.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d4.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -387,7 +387,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d3.jpg" srcset="./assets/img/destinations/d3@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d3.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d3.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -405,7 +405,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d1.jpg" srcset="./assets/img/destinations/d1@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d1.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d1.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -423,7 +423,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d5.jpg" srcset="./assets/img/destinations/d5@2x.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d5.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d5.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -461,7 +461,7 @@
                         <div class="pe-xl-5">
                             <div class="image-info image-info-left image-info-right">
                                 <div class="image-center">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/13.jpg" srcset="./assets/img/about/a1@2x.jpg 2x" class="rounded w-100" alt="">
+                                    <img src="<?php echo URLROOT ?>assets/img/dwl/13.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/13.jpg 2x" class="rounded w-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -576,7 +576,7 @@
         <!-- Videos-->
         <section class="hero" data-aos="fade">
             <div class="hero-bg">
-                <img src="<?php echo URLROOT ?>assets/img/dwl/03.jpg" srcset="./assets/img/background/b1@2x.jpg 2x" alt="">
+                <img src="<?php echo URLROOT ?>assets/img/dwl/03.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/03.jpg 2x" alt="">
             </div>
             <div class="bg-content container">
                 <div class="p-top-150 p-bottom-150">
