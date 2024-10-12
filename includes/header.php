@@ -89,6 +89,8 @@
                             <li class="nav-item">
                                 <a class="nav-link <?php echo ($currentUrl == URLROOT || $currentUrl == URLROOT . '/') ? 'active' : ''; ?>" href="/" data-bs-display="static">
                                     <span>Home</span>
+                                    <?php echo "Current URL is: ".$currentUrl ?>
+                                    <?php echo "URLROOT is: ".URLROOT ?>
                                 </a>
                             </li>
 
