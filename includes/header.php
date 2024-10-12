@@ -37,12 +37,12 @@
             <div class="row g-0">
                 <div class="col-6 col-xl-7 col-md-8">
                     <div class="d-flex align-items-center">
-                        <a href="tel:+2330303955227">
+                        <a href="tel:+233303955227">
                             <i class="hicon hicon-telephone me-1"></i>
                             <span>030-3955227</span>
                         </a>
                         <span class="vr bg-white d-none d-md-inline ms-3 me-3"></span>
-                        <a href="mailto:" class="d-none d-md-inline">
+                        <a href="mailto:info@nhyiratours.com" class="d-none d-md-inline">
                             <i class="hicon hicon-email-envelope me-1"></i>
                             <span>info@nhyiratours.com</span>
                         </a>
