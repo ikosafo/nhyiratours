@@ -25,7 +25,6 @@
         </section>
         <!-- /Title -->
 
-
          <!-- Why -->
          <?php include ('includes/whyChoose.php'); ?>
         <!-- /Why -->
