@@ -37,7 +37,7 @@
             <div class="row g-0">
                 <div class="col-6 col-xl-7 col-md-8">
                     <div class="d-flex align-items-center">
-                        <a href="tel:+84966704132">
+                        <a href="tel:+2330303955227">
                             <i class="hicon hicon-telephone me-1"></i>
                             <span>030-3955227</span>
                         </a>
