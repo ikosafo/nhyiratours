@@ -93,7 +93,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover  <?php echo (strpos($currentUrl, 'about') !== false) || (strpos($currentUrl, 'whyChoose') !== false) || (strpos($currentUrl, 'mission_values') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
+                                <a class="nav-link dropdown-toggle-hover  <?php echo (strpos($currentUrl, 'about') !== false) || (strpos($currentUrl, 'whyChoose') !== false) || (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
                                     <span>About Us</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
                                 </a>
@@ -105,7 +105,7 @@
                                         <a class="dropdown-item <?php echo (strpos($currentUrl, 'whyChoose') !== false) ? 'active' : ''; ?>" href="whyChoose">Why Choose Us</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'mission_values') !== false) ? 'active' : ''; ?>" href="mission_values">Mission & Values</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="missionValues">Mission & Values</a>
                                     </li>
                                 </ul>
                             </li>
