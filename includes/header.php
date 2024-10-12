@@ -87,10 +87,8 @@
                     <div class="offcanvas-body p-4 p-xl-0">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link <?php echo ($currentUrl == URLROOT || $currentUrl == URLROOT . '/') ? 'active' : ''; ?>" href="/" data-bs-display="static">
+                                <a class="nav-link <?php echo (str_replace(['http://', 'https://'], '', $currentUrl) == str_replace(['http://', 'https://'], '', URLROOT) || str_replace(['http://', 'https://'], '', $currentUrl) == str_replace(['http://', 'https://'], '', URLROOT . '/')) ? 'active' : ''; ?>" href="/" data-bs-display="static">
                                     <span>Home</span>
-                                    <?php echo "Current URL is: ".$currentUrl ?>
-                                    <?php echo "URLROOT is: ".URLROOT ?>
                                 </a>
                             </li>
 
