@@ -87,18 +87,19 @@
                     <div class="offcanvas-body p-4 p-xl-0">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="/" data-bs-display="static">
+                                <a class="nav-link <?php echo ($currentUrl == URLROOT || $currentUrl == URLROOT . '/') ? 'active' : ''; ?>" href="/" data-bs-display="static">
                                     <span>Home</span>
                                 </a>
                             </li>
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover" href="#" data-bs-display="static">
+                                <a class="nav-link dropdown-toggle-hover  <?php echo (strpos($currentUrl, 'about') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
                                     <span>About Us</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
                                 </a>
                                 <ul class="dropdown-menu slideIn" data-bs-popper="static">
                                     <li>
-                                        <a class="dropdown-item" href="#">Our Story</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'about') !== false) ? 'active' : ''; ?>" href="about">Our Story</a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="#">Why Choose Us</a>

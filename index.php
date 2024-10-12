@@ -25,7 +25,7 @@
                                             Discover unique destinations and tours.
                                         </h2>
                                         <div class="hero-action">
-                                            <a href="#" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
+                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
@@ -53,7 +53,7 @@
                                             Create your custom vacation today!
                                         </h2>
                                         <div class="hero-action">
-                                            <a href="#" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
+                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
@@ -81,7 +81,7 @@
                                             Limited-time discounts on select tours.
                                         </h2>
                                         <div class="hero-action">
-                                            <a href="#" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
+                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
@@ -214,11 +214,6 @@
                         <!-- Image -->
                         <div class="pe-xl-5">
                             <div class="image-info image-info-right image-info-vertical">
-                                <div class="vertical-title">
-                                    <small class="ls-2">
-                                        <strong class="text-primary fw-semibold">Sine 1993</strong> - <strong class="text-body fw-semibold">31 years</strong> of experience
-                                    </small>
-                                </div>
                                 <div class="image-center">
                                     <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/06.jpg 2x" style="height: 450px;" class="rounded w-100" alt="">
                                 </div>
@@ -288,7 +283,7 @@
                                 </li>
                             </ul>
                             <div class="pt-3">
-                                <a href="#" class="btn btn-primary btn-uppercase mnw-180">
+                                <a href="about" class="btn btn-primary btn-uppercase mnw-180">
                                     <span>Read more</span>
                                     <i class="hicon hicon-flights-one-ways"></i>
                                 </a>
