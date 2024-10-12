@@ -181,7 +181,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact" data-bs-display="static">
+                                <a class="nav-link <?php echo (strpos($currentUrl, 'contact') !== false) ? 'active' : ''; ?>" href="contact" data-bs-display="static">
                                     <span>Contact Us</span>
                                 </a>
                             </li>
