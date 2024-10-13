@@ -8,9 +8,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhyiraba Travel & Tour Services</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Nhyiraba Travel & Tour Services - Explore, Learn, and Work Abroad</title>
+    
+    <meta name="description" content="Nhyiraba Travel & Tour Services offers expert assistance with travel, work, and education abroad. Explore global destinations, and enjoy seamless visa processing, study, and job opportunities.">
+    
+    <meta name="keywords" content="travel, tours, visa services, study abroad, work abroad, travel consultancy, Ghana, travel to Netherlands, travel to Canada, travel to USA,  travel to China,  travel to Australia,  travel to UK, international education, work permits">
+    
+    <link rel="canonical" href="<?php echo $currentUrl; ?>">
+    
+    <meta property="og:title" content="Nhyiraba Travel & Tour Services - Your Gateway to Global Opportunities">
+    <meta property="og:description" content="Experience seamless travel and work opportunities abroad with Nhyiraba Travel & Tour Services. Let us help you achieve your international goals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo $currentUrl; ?>">
+    <meta property="og:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
+    <meta property="og:site_name" content="Nhyiraba Travel & Tour Services">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nhyiraba Travel & Tour Services - Your Gateway to Global Opportunities">
+    <meta name="twitter:description" content="Travel, work, and study abroad with expert guidance from Nhyiraba Travel & Tour Services.">
+    <meta name="twitter:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
+    
     <link href="<?php echo URLROOT ?>assets/img/logos/ntts.png" rel="shortcut icon" type="image/png">
     <link href="<?php echo URLROOT ?>assets/css/theme-1.min.css" rel="stylesheet">
     <link href="<?php echo URLROOT ?>assets/css/theme-2.min.css" rel="stylesheet">
@@ -18,6 +35,8 @@
     <link href="<?php echo URLROOT ?>assets/css/preloader.css" rel="stylesheet">
 </head>
 <!-- /Head -->
+
+
 
 <body>
 
