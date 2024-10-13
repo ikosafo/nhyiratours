@@ -35,7 +35,7 @@
                         <div class="pe-xl-5">
                             <div class="image-info image-info-right image-info-vertical">
                                 <div class="image-center">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/06.jpg 2x" style="height: 450px;" class="rounded w-100" alt="">
+                                    <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/06.jpg 2x" class="rounded w-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -53,6 +53,25 @@
                                 convenient, and tailored to your travel needs. Whether you're traveling for leisure, business, 
                                 or education, we offer seamless booking solutions to get you where you need to go.
                             </p>
+                            <div class="mnw-200">
+                                <h3 class="h5">Exclusive Flight Deals</h3>
+                                <p>As part of our ongoing commitment to making travel affordable, we regularly offer exclusive flight deals to top destinations worldwide. Whether you're booking early or at the last minute, 
+                                    you can take advantage of discounts and special offers for a variety of routes.
+                                </p>
+                                <h3 class="h5">Popular Flight Destinations</h3>
+                            </div>
+                            <ul class="highlight-list checked">
+                                <li>
+                                    <span><strong>Accra to London:</strong> <br>Find direct and connecting flights from Accra to London with the best travel times and pricing options.</span>
+                                </li>
+                                <li>
+                                    <span><strong>Accra to Dubai:</strong> <br>Explore flights to Dubai, a bustling city for tourism and business, with flexible options tailored to your schedule.</span>
+                                </li>
+                                <li>
+                                    <span><strong>Accra to New York:</strong> <br>Whether you're heading to New York for a holiday or work, we've got the right flight options for you.</span>
+                                </li>
+                            </ul>
+                        </div>
 
                             <div class="pt-3">
                                 <a href="contact" class="btn btn-primary mnw-180">

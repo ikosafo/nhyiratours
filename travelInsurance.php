@@ -12,13 +12,13 @@
                 <div class="hero-page-title">
                     <span class="hero-sub-title">Tours & Packages</span>
                     <h1 class="display-3 hero-title">
-                        Hotel Reservations
+                        Travel Insurance
                     </h1>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Hotel Reservations</li>
+                        <li class="breadcrumb-item active" aria-current="page">Travel Insurance</li>
                     </ol>
                 </nav>
             </div>
@@ -35,8 +35,8 @@
                         <div class="pe-xl-5">
                             <div class="image-info image-info-right image-info-vertical">
                                 <div class="image-center">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/hotel.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/hotel.jpg 2x" class="rounded w-100" alt="">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/hotel2.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/hotel2.jpg 2x" class="rounded w-100 mt-3" alt="">
+                                    <img src="<?php echo URLROOT ?>assets/img/dwl/insurance2.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/insurance2.jpg 2x" class="rounded w-100" alt="">
+                                    <img src="<?php echo URLROOT ?>assets/img/dwl/insurance.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/insurance.jpg 2x" class="rounded w-100 mt-3" alt="">
                                 </div>
                             </div>
                         </div>
@@ -47,36 +47,33 @@
                         <div class="pt-xl-4 mb-xl-0 mb-5">
                             <div class="block-title">
                                 <small class="sub-title">Tours & Packages</small>
-                                <h2 class="h1 title">Hotel Reservations</h2>
-                                <h4>Find the Perfect Stay for Your Journey</h4>
+                                <h2 class="h1 title">Travel Insurance</h2>
+                                <h4>Why Travel Insurance is Essential</h4>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, we understand that a comfortable stay is essential for a memorable travel experience. Whether you're visiting for business,
-                                leisure, or adventure, we offer a wide selection of hotels to meet your needs. From luxury resorts to budget-friendly accommodations, we ensure you have a place
-                                to call home, no matter where your journey takes you.
+                                Traveling offers amazing experiences, but unexpected events can occur. Travel insurance provides peace of 
+                                mind by protecting you against unforeseen issues such as trip cancellations, medical emergencies, lost 
+                                luggage, and more. Whether you're embarking on a short getaway or a long journey abroad, having insurance
+                                 ensures that you're covered in case of emergencies.
                             </p>
                             <div class="mnw-200">
-                               <h3 class="h5">Why Book With Us?</h3>
+                               <h3 class="h5">Types of Coverage</h3>
                             </div>
                             <ul class="highlight-list checked">
                                 <li>
-                                    <span><strong>Wide Selection of Hotels:</strong> <br>Choose from a range of hotels, including 5-star luxury hotels, boutique stays, family-friendly accommodations, 
-                                    and budget options. We partner with leading hotel chains and unique local properties to provide you with the best options.</span>
+                                    <span><strong>Trip Cancellation or Interruption:</strong> <br>If you need to cancel your trip due to illness, injury, or other covered reasons, travel insurance reimburses you for non-refundable expenses like flights, accommodations, and tours.</span>
                                 </li>
                                 <li>
-                                    <span><strong>Best Price Guarantee:</strong> <br>We strive to offer the most competitive rates available, ensuring you get the best value for your stay.</span>
+                                    <span><strong>Medical and Emergency Assistance:</strong> <br>Health emergencies can happen anywhere. Travel insurance covers medical expenses if you fall ill or have an accident abroad, including hospital stays, surgeries, and emergency medical evacuations.</span>
                                 </li>
                                 <li>
-                                    <span><strong>Personalized Recommendations:</strong> <br>Let us know your preferences—whether it's a beachfront property, a city-center hotel, or a serene 
-                                    mountain retreat—and we'll match you with the perfect place.</span>
+                                    <span><strong>Lost, Stolen, or Delayed Baggage:</strong> <br>If your baggage is lost, stolen, or delayed, travel insurance compensates you for personal items, clothing, and other necessities, ensuring you're not left stranded without essentials.</span>
                                 </li>
                                 <li>
-                                    <span><strong>Flexible Booking Options:</strong> <br>Enjoy flexible booking policies, including free cancellations and date modifications at select properties, 
-                                    so you can plan your trip with confidence.</span>
+                                    <span><strong>Flight Delays or Cancellations:</strong> <br>Travel insurance covers additional costs incurred due to flight delays or cancellations, including accommodation, meals, and alternative transportation arrangements.</span>
                                 </li>
                                 <li>
-                                    <span><strong>24/7 Customer Support:</strong> <br>We're here for you around the clock. Whether you have questions about your booking or need assistance during your 
-                                    stay, our dedicated team is ready to help.</span>
+                                    <span><strong>Emergency Evacuation and Repatriation:</strong> <br>In the event of a natural disaster, civil unrest, or severe medical condition, travel insurance covers evacuation to the nearest safe location or back home.</span>
                                 </li>
                             </ul>
                         </div>
