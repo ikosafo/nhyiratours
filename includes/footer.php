@@ -86,18 +86,6 @@
             <div class="col-12 col-md-6">
                 <p class="mb-lg-0">&copy; <?= date('Y') ?> Nhyiraba Travel and Tours Services</p>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="text-start text-md-end">
-                    <ul class="list-inline mb-lg-0">
-                        <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>
