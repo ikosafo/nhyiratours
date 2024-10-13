@@ -438,7 +438,7 @@
                     <!-- /Destinations -->
                 </div>
                 <p class="fw-normal text-secondary text-md-end mb-0 pt-4 mt-5 mt-md-0" data-aos="fade">
-                    <a href="#" class="fw-medium">
+                    <a href="destinations" class="fw-medium">
                         <span>View all destinations</span>
                         <i class="hicon hicon-flights-one-ways"></i>
                     </a>

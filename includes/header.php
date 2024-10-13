@@ -110,7 +110,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-display="static">
+                                <a class="nav-link <?php echo (strpos($currentUrl, 'destinations') !== false) ? 'active' : ''; ?>" href="destinations" data-bs-display="static">
                                     <span>Destinations</span>
                                 </a>
                             </li>
