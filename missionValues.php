@@ -4,7 +4,7 @@
     <main>
 
         <!-- Title -->
-        <section class="hero" data-aos="fade">
+        <section class="hero">
             <div class="hero-bg">
                 <img src="<?php echo URLROOT ?>assets/img/dwl/09.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/09.jpg 2x" alt="">
             </div>
@@ -29,7 +29,7 @@
         <section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <!-- About -->
-                <div class="card border-0 shadow-sm p-xl-2 mb-4 aos-init aos-animate" data-aos="fade">
+                <div class="card border-0 shadow-sm p-xl-2 mb-4 aos-init aos-animate">
                     <div class="card-body">
                         <div class="border-bottom mb-4 pb-4">
                             <h2 class="text-body-emphasis mb-0">Mission & Values</h2>

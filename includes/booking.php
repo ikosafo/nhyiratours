@@ -1,4 +1,4 @@
-<section class="p-top-110 p-bottom-110 bg-dark-blue" data-aos="fade">
+<section class="p-top-110 p-bottom-110 bg-dark-blue">
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-xl-8">

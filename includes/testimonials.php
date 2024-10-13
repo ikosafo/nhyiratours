@@ -1,4 +1,4 @@
-<section class="p-top-90 p-bottom-90 bg-gray-gradient" data-aos="fade">
+<section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <div class="testimonials-slider-1 splide mb-5">
                     <!-- Title -->

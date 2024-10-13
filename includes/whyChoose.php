@@ -1,4 +1,4 @@
-<section class="p-top-90 p-bottom-90 bg-gray-gradient" data-aos="fade">
+<section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-12 col-xl-6 order-1 order-xl-0">

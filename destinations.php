@@ -4,7 +4,7 @@
     <main>
 
         <!-- Title -->
-        <section class="hero" data-aos="fade">
+        <section class="hero">
             <div class="hero-bg">
                 <img src="<?php echo URLROOT ?>assets/img/dwl/05.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/05.jpg 2x" alt="">
             </div>
@@ -42,8 +42,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                                <img src="assets/img/dwl/netherlands.jpg"
-                                style="height: 283px;" srcset="assets/img/dwl/netherlands.jpg 2x" alt="">
+                                <img src="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg"
+                                style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -63,8 +63,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                                <img src="assets/img/dwl/france.jpg"
-                                style="height: 283px;" srcset="assets/img/dwl/france.jpg 2x" alt="">
+                                <img src="<?php echo URLROOT ?>assets/img/dwl/france.jpg"
+                                style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/france.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -84,8 +84,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/croatia.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/croatia.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/croatia.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/croatia.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -105,8 +105,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/poland.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/poland.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/poland.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/poland.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -126,8 +126,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/denmark.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/denmark.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/denmark.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/denmark.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -147,8 +147,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/switzerland.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/switzerland.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/switzerland.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/switzerland.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -168,8 +168,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/canada.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/canada.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/canada.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/canada.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -189,8 +189,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/usa.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/usa.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/usa.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/usa.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -210,8 +210,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/china.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/china.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/china.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/china.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -231,8 +231,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/uk.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/uk.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/uk.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/uk.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">
@@ -252,8 +252,8 @@
                         <!-- Destination -->
                         <a href="#" class="destination bottom-overlay hover-effect rounded mb-4">
                             <figure class="image-hover image-hover-overlay">
-                            <img src="assets/img/dwl/australia.jpg"
-                            style="height: 283px;" srcset="assets/img/dwl/australia.jpg 2x" alt="">
+                            <img src="<?php echo URLROOT ?>assets/img/dwl/australia.jpg"
+                            style="height: 283px;" srcset="<?php echo URLROOT ?>assets/img/dwl/australia.jpg 2x" alt="">
                                 <i class="hicon hicon-plus-thin image-hover-icon"></i>
                             </figure>
                             <div class="bottom-overlay-content">

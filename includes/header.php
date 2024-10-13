@@ -15,21 +15,26 @@
     <link href="<?php echo URLROOT ?>assets/css/theme-1.min.css" rel="stylesheet">
     <link href="<?php echo URLROOT ?>assets/css/theme-2.min.css" rel="stylesheet">
     <link href="<?php echo URLROOT ?>assets/css/theme-3.min.css" rel="stylesheet">
+    <link href="<?php echo URLROOT ?>assets/css/preloader.css" rel="stylesheet">
 </head>
 <!-- /Head -->
 
 <body>
 
+    <div class="preloader" id="preloader">
+        <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" alt="NTTS">
+    </div>
+
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="spinner-border text-primary" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- /Preloader -->
 
     <!-- Header -->
-    <header id="header" data-aos="fade">
+    <header id="header">
 
     <!-- Header Topbar -->
     <div class="header-topbar">

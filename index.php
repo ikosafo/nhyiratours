@@ -4,7 +4,7 @@
     <main>
 
         <!-- Hero -->
-        <section class="hero" data-aos="fade">
+        <section class="hero">
             <h1 class="d-none">Nhyiraba Travel and Tours Services</h1>
             <!-- Carousel -->
             <div id="heroCarousel" class="hero-carousel carousel slide carousel-fade" data-bs-ride="carousel">
@@ -166,7 +166,7 @@
         <!-- /Hero -->
 
         <!-- Featured -->
-        <section class="pt-5 pb-4" data-aos="fade">
+        <section class="pt-5 pb-4">
             <div class="container">
                 <ul class="stats-list row g-0">
                     <li class="col-6 col-xl-3">
@@ -207,7 +207,7 @@
         <!-- /Featured -->
 
         <!-- About -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient" data-aos="fade">
+        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <div class="row g-0">
                     <div class="col-12 col-xl-6 order-1 order-xl-0">
@@ -297,7 +297,7 @@
         <!-- /About -->
 
         <!-- Destintions -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient" data-aos="fade">
+        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <div class="destination-slider splide__pagination__start splide">
                     <!-- Title -->
@@ -328,7 +328,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d6.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d6.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -346,7 +346,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d2.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d2.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/canada.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/canada.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -364,7 +364,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d4.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d4.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/usa.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/usa.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -382,7 +382,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d3.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d3.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/china.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/china.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -400,7 +400,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d1.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d1.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/uk.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/uk.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -418,7 +418,7 @@
                             <li class="splide__slide">
                                 <a href="#" class="destination bottom-overlay hover-effect rounded">
                                     <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/destinations/d5.jpg" srcset="<?php echo URLROOT ?>assets/img/destinations/d5.jpg 2x" alt="">
+                                        <img src="<?php echo URLROOT ?>assets/img/dwl/australia.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/australia.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
                                     </figure>
                                     <div class="bottom-overlay-content">
@@ -437,7 +437,7 @@
                     </div>
                     <!-- /Destinations -->
                 </div>
-                <p class="fw-normal text-secondary text-md-end mb-0 pt-4 mt-5 mt-md-0" data-aos="fade">
+                <p class="fw-normal text-secondary text-md-end mb-0 pt-4 mt-5 mt-md-0">
                     <a href="destinations" class="fw-medium">
                         <span>View all destinations</span>
                         <i class="hicon hicon-flights-one-ways"></i>
@@ -457,7 +457,7 @@
         <!-- /Videos -->
 
         <!-- Categories -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient" data-aos="fade">
+        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
             <div class="container">
                 <!-- Title -->
                 <div class="d-xl-flex align-items-xl-center pb-4">

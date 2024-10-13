@@ -4,7 +4,7 @@
     <main>
 
         <!-- Title -->
-        <section class="hero" data-aos="fade">
+        <section class="hero">
             <div class="hero-bg">
                 <img src="<?php echo URLROOT ?>assets/img/dwl/12.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/12.jpg 2x" alt="">
             </div>
@@ -25,7 +25,7 @@
         </section>
         <!-- /Title -->
 
-        <section class="bg-gray-gradient p-bottom-90 aos-init aos-animate" data-aos="fade">
+        <section class="bg-gray-gradient p-bottom-90 aos-init aos-animate">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-xl-6">

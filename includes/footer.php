@@ -1,5 +1,5 @@
   <!-- Footer -->
-  <footer class="footer p-top-90 p-bottom-90" data-aos="fade">
+  <footer class="footer p-top-90 p-bottom-90">
 
 <!-- Footer top -->
 <div class="footer-top">
@@ -115,6 +115,20 @@
 <script defer src="<?php echo URLROOT ?>assets/js/theme-1.min.js"></script>
 <script defer src="<?php echo URLROOT ?>assets/js/theme-2.min.js"></script>
 <script defer src="<?php echo URLROOT ?>assets/js/theme-3.min.js"></script>
+
+<script>
+        // Wait for the window to load
+        window.onload = function() {
+            const preloader = document.getElementById('preloader');
+            const content = document.querySelector('.content');
+            // Hide the preloader
+            preloader.classList.add('hidden');
+            // Show the main content
+            content.style.display = 'block';
+            // Allow scrolling again
+            document.body.style.overflow = 'auto';
+        };
+    </script>
 
 </body>
 
