@@ -59,13 +59,13 @@
                         <div class="col-6">
                             <ul class="footer-link">
                                 <li class="link-item">
-                                    <a href="#">Local Customs</a>
+                                    <a href="localCustoms">Local Customs</a>
                                 </li>
                                 <li class="link-item">
-                                    <a href="#">Currency Info</a>
+                                    <a href="currencyInfo">Currency Info</a>
                                 </li>
                                 <li class="link-item">
-                                    <a href="#">Refund Policy</a>
+                                    <a href="refundPolicy">Refund Policy</a>
                                 </li>
                             </ul>
                         </div>
