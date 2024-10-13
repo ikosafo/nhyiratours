@@ -115,7 +115,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'flightBookings') !== false) || (strpos($currentUrl, 'hotelReservations') !== false) || (strpos($currentUrl, 'travelInsurance') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
+                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'flightBookings') !== false) || (strpos($currentUrl, 'hotelReservations') !== false) || (strpos($currentUrl, 'travelInsurance') !== false) || (strpos($currentUrl, 'visaAssistance') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
                                     <span>Tours & Packages</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
                                 </a>
