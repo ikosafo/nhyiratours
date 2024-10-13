@@ -474,7 +474,7 @@
                 <!-- Category list -->
                 <div class="row g-3">
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <span class="card-icon">
                                 <i class="hicon hicon-regular-valley"></i>
                             </span>
@@ -484,7 +484,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-regular-meal"></i>
@@ -496,7 +496,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-culture"></i>
@@ -508,7 +508,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-mountain-view"></i>
@@ -520,7 +520,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-china-only"></i>
@@ -532,7 +532,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-regular-mountain-view"></i>
@@ -544,7 +544,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a href="#" class="mini-card card-hover hover-effect shadow-sm rounded">
+                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
                             <div class="d-flex align-items-center">
                                 <span class="card-icon">
                                     <i class="hicon hicon-regular-hiking"></i>
