@@ -42,23 +42,38 @@
                 <!-- Quick Links -->
                 <div class="footer-widget">
                     <h2 class="h4 pb-3">Nhyiraba Travel and Tour</h2>
-                    <ul class="footer-link">
-                        <li class="link-item">
-                            <a href="#">Visa Information</a>
-                        </li>
-                        <li class="link-item">
-                            <a href="#">Travel Essentials</a>
-                        </li>
-                        <li class="link-item">
-                            <a href="#">Local Customs</a>
-                        </li>
-                        <li class="link-item">
-                            <a href="#">Currency Info</a>
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="footer-link">
+                                <li class="link-item">
+                                    <a href="visaInformation">Visa Information</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="travelEssentials">Travel Essentials</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="paymentOptions">Payment Options</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-link">
+                                <li class="link-item">
+                                    <a href="#">Local Customs</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Currency Info</a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="#">Refund Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!-- /Quick Links -->
             </div>
+
         </div>
     </div>
 </div>

@@ -134,7 +134,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle-hover" href="#" data-bs-display="static">
                                     <span>Resources</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
@@ -179,7 +179,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (strpos($currentUrl, 'contact') !== false) ? 'active' : ''; ?>" href="contact" data-bs-display="static">
                                     <span>Contact Us</span>
