@@ -32,7 +32,7 @@
                             <span>030-3963290</span> 
                         </p>
                         <p>
-                            <a href="mailto:info@nhyiratours.com">info@nhyiratours.com</a>
+                            <a href="mailto:info@nhyirabatours.com">info@nhyirabatours.com</a>
                         </p>
                     </div>
                 </div>

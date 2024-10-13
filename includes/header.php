@@ -66,9 +66,9 @@
                             <span>030-3955227</span>
                         </a>
                         <span class="vr bg-white d-none d-md-inline ms-3 me-3"></span>
-                        <a href="mailto:info@nhyiratours.com" class="d-none d-md-inline">
+                        <a href="mailto:info@nhyirabatours.com" class="d-none d-md-inline">
                             <i class="hicon hicon-email-envelope me-1"></i>
-                            <span>info@nhyiratours.com</span>
+                            <span>info@nhyirabatours.com</span>
                         </a>
                     </div>
                 </div>
@@ -79,10 +79,10 @@
                             <span class="me-1">English</span>
                             <i class="hicon hicon-thin-arrow-down hicon-bold hicon-60"></i>
                         </a>
-                        <a class="d-inline-flex align-items-center" data-bs-toggle="modal" href="#mdlCurrency">
+                       <!--  <a class="d-inline-flex align-items-center" data-bs-toggle="modal" href="#mdlCurrency">
                             <span class="me-1">USD</span>
                             <i class="hicon hicon-thin-arrow-down hicon-bold hicon-60"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
