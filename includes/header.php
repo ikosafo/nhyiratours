@@ -112,7 +112,7 @@
                 <div class="offcanvas offcanvas-navbar offcanvas-start border-end-0" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header border-bottom p-4 p-xl-0">
                         <a href="/" class="d-inline-block">
-                            <img  src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;" srcset="./assets/img/logos/menu-logo@2x.png 2x" alt="">
+                            <img  src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
                         </a>
                         <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
