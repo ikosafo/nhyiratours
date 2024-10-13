@@ -93,7 +93,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover  <?php echo (strpos($currentUrl, 'about') !== false) || (strpos($currentUrl, 'whyChoose') !== false) || (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
+                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'about') !== false) || (strpos($currentUrl, 'whyChoose') !== false) || (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
                                     <span>About Us</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
                                 </a>
@@ -115,22 +115,22 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover" href="#" data-bs-display="static">
+                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'flightBookings') !== false) || (strpos($currentUrl, 'hotelReservations') !== false) || (strpos($currentUrl, 'travelInsurance') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
                                     <span>Tours & Packages</span>
                                     <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
                                 </a>
                                 <ul class="dropdown-menu slideIn" data-bs-popper="static">
                                     <li>
-                                        <a class="dropdown-item" href="#">Flight Bookings</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'flightBookings') !== false) ? 'active' : ''; ?>" href="flightBookings">Flight Bookings</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Hotel Reservations</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'hotelReservations') !== false) ? 'active' : ''; ?>" href="hotelReservations">Hotel Reservations</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Travel Insurance</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'travelInsurance') !== false) ? 'active' : ''; ?>" href="travelInsurance">Travel Insurance</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Visa Assistance</a>
+                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'visaAssistance') !== false) ? 'active' : ''; ?>" href="visaAssistance">Visa Assistance</a>
                                     </li>
                                 </ul>
                             </li>
