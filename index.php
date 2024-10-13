@@ -326,7 +326,7 @@
                     <div class="splide__track pt-2">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg" class="destination bottom-overlay hover-effect rounded glightbox"  data-glightbox="title:SCHENGEN" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -344,7 +344,7 @@
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/canada.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:CANADA" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/canada.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/canada.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -362,7 +362,7 @@
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/usa.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:USA" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/usa.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/usa.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -380,7 +380,7 @@
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/china.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:CHINA" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/china.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/china.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -398,7 +398,7 @@
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/uk.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:UK" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/uk.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/uk.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -416,7 +416,7 @@
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="#" class="destination bottom-overlay hover-effect rounded">
+                                <a href="<?php echo URLROOT ?>assets/img/dwl/australia.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:AUSTRALIA" data-gallery="tour-photos">
                                     <figure class="image-hover image-hover-overlay">
                                         <img src="<?php echo URLROOT ?>assets/img/dwl/australia.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/australia.jpg 2x" alt="">
                                         <i class="hicon hicon-plus-thin image-hover-icon"></i>
@@ -433,6 +433,7 @@
                                     </div>
                                 </a>
                             </li>
+
                         </ul>
                     </div>
                     <!-- /Destinations -->
