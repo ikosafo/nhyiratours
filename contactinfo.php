@@ -73,7 +73,7 @@ $_SESSION['last_activity'] = time();
                                                     echo '<table class="table">';
                                                     echo '<thead class="text-center">';
                                                     echo '<tr class="table-light">';
-                                                    echo '<th scope="col"><strong>ID</strong></th>';
+                                                    echo '<th scope="col"><strong>#</strong></th>'; // Changed to a count
                                                     echo '<th scope="col"><strong>Full Name</strong></th>';
                                                     echo '<th scope="col"><strong>Email Address</strong></th>';
                                                     echo '<th scope="col"><strong>Subject</strong></th>';
@@ -83,11 +83,13 @@ $_SESSION['last_activity'] = time();
                                                     echo '</tr>';
                                                     echo '</thead>';
                                                     echo '<tbody>';
-
+                                            
+                                                    $count = 1; // Initialize a counter
+                                            
                                                     // Fetch each row
                                                     while ($row = $result->fetch_assoc()) {
                                                         echo '<tr>';
-                                                        echo '<td class="text-center"><span>' . htmlspecialchars($row['id']) . '</span></td>';
+                                                        echo '<td class="text-center"><span>' . htmlspecialchars($count) . '</span></td>'; // Use the counter
                                                         echo '<td class="text-nowrap"><span>' . htmlspecialchars($row['fullName']) . '</span></td>';
                                                         echo '<td class="text-nowrap"><span>' . htmlspecialchars($row['emailAddress']) . '</span></td>';
                                                         echo '<td class="text-nowrap"><span>' . htmlspecialchars($row['subject']) . '</span></td>';
@@ -95,18 +97,20 @@ $_SESSION['last_activity'] = time();
                                                         echo '<td class="text-center"><small class="text-nowrap">' . date('Y-m-d H:i:s', strtotime($row['createdAt'])) . '</small></td>';
                                                         echo '<td class="text-center"><span>' . htmlspecialchars($row['ipAddress']) . '</span></td>';
                                                         echo '</tr>';
+                                                        $count++; // Increment the counter
                                                     }
-
+                                            
                                                     echo '</tbody>';
                                                     echo '</table>';
                                                     echo '</div>';
                                                 } else {
                                                     echo '<p class="text-center">No contact submissions found.</p>';
                                                 }
-
+                                            
                                                 // Free result set
                                                 $result->free();
-                                            } else {
+                                            }
+                                             else {
                                                 echo "Error executing query: " . $mysqli->error;
                                             }
 
