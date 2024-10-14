@@ -4,7 +4,7 @@
     <main>
 
         <!-- Title -->
-        <section class="hero" data-aos="fade">
+        <section class="hero">
             <div class="hero-bg">
                 <img src="<?php echo URLROOT ?>assets/img/dwl/09.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/09.jpg 2x" alt="">
             </div>

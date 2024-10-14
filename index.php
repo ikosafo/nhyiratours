@@ -29,7 +29,7 @@
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid.mp4"><span></span></a>
+                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid.mp4"><span></span></a>
+                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                                                 <span>Explore</span>
                                                 <i class="hicon hicon-flights-one-ways"></i>
                                             </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid.mp4"><span></span></a>
+                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@
             </div>
             <!-- Carousel -->
             <!-- Check tour -->
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-xl-6">
                         <div class="search-tours search-hero search-hero-half">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- /Check tour -->
         </section>
         <!-- /Hero -->

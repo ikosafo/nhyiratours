@@ -9,7 +9,7 @@
                 <h2 class="h1 title text-white">Tailored trips, expert guidance, and great deals await!</h2>
             </div>
             <div class="text-center">
-                <a class="btn-video-play media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid.mp4"><span></span></a>
+                <a class="btn-video-play media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
             </div>
         </div>
     </div>
