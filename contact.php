@@ -1,4 +1,23 @@
 <?php include ('./includes/header.php'); ?>
+<style>
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 5px;
+        display: block;
+    }
+    .alert-error {
+        background-color: #f8d7da;
+        color: #721c24;
+        padding: 15px;
+        border-radius: 5px;
+        display: block;
+    }
+    .d-none {
+        display: none;
+    }
+</style>
 
     <!-- Main -->
     <main>
@@ -77,17 +96,17 @@
                     <div class="col-12 col-xl-6">
                         <!-- Contact Form -->
                         <div class="form-contact rounded shadow-sm">
-                            <form class="needs-validation" method="" novalidate="">
+                            <form id="contactForm" class="needs-validation" novalidate="">
                                 <div class="border-bottom pb-4 mb-4">
                                     <h2 class="text-white mb-0">Looking for any help?</h2>
                                 </div>
                                 <div class="alert d-none" role="alert" id="msg_alert"></div>
                                 <div class="form-floating mb-4">
-                                    <input id="txtYourName" type="text" name="yourname" class="form-control shadow-sm" placeholder="Your Name" required="">
+                                    <input id="txtYourName" type="text" name="fullName" class="form-control shadow-sm" placeholder="Your Name" required="">
                                     <label for="txtYourName">Your Name *</label>
                                 </div>
                                 <div class="form-floating mb-4">
-                                    <input id="txtEmail" type="email" name="email" class="form-control shadow-sm" placeholder="Email" required="">
+                                    <input id="txtEmail" type="email" name="emailAddress" class="form-control shadow-sm" placeholder="Email" required="">
                                     <label for="txtEmail">Your Email *</label>
                                 </div>
                                 <div class="form-floating mb-4">
@@ -104,12 +123,14 @@
                                 </button>
                                 <div class="row">
                                     <div class="col-12">
+                                        <div class="alert d-none" id="form-message" role="alert"></div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <!-- /Contact Form -->
                     </div>
+
                 </div>
             </div>
         </section>
@@ -122,3 +143,25 @@
     <!-- /Main -->
 
 <?php include ('./includes/footer.php'); ?>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); 
+            const formData = $(this).serialize(); 
+            $.ajax({
+                type: 'POST',
+                url: 'process_contact.php', 
+                data: formData,
+                success: function(response) {
+                    $('#form-message').removeClass('d-none').addClass('alert-success').html('Thank you! Your message has been sent successfully.');
+                    $('#contactForm')[0].reset(); 
+                },
+                error: function(xhr, status, error) {
+                    $('#form-message').removeClass('d-none').addClass('alert-error').html('There was an error sending your message. Please try again.');
+                }
+            });
+        });
+    });
+</script>

@@ -225,14 +225,14 @@
                         <i class="hicon hicon-mmb-account"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end animate slideIn" data-bs-popper="static">
-                        <li>
+                        <!-- <li>
                             <a class="dropdown-item" href="#">
                                 <i class="hicon hicon-edit me-1"></i>
                                 <span>Register</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="login">
                                 <i class="hicon hicon-aps-lock me-1"></i>
                                 <span>Login</span>
                             </a>
