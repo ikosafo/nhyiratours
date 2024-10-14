@@ -150,16 +150,23 @@
         $('#contactForm').on('submit', function(event) {
             event.preventDefault(); 
             const formData = $(this).serialize(); 
+
+            // Validate if all fields are filled before submission
+            if ($('#txtYourName').val() === '' || $('#txtEmail').val() === '' || $('#txtSubject').val() === '' || $('#txtMessage').val() === '') {
+                $('#form-message').removeClass('d-none alert-success').addClass('alert-error').html('Please fill in all required fields.');
+                return; // Stop submission if any field is empty
+            }
+
             $.ajax({
                 type: 'POST',
                 url: 'process_contact.php', 
                 data: formData,
                 success: function(response) {
-                    $('#form-message').removeClass('d-none').addClass('alert-success').html('Thank you! Your message has been sent successfully.');
+                    $('#form-message').removeClass('d-none alert-error').addClass('alert-success').html('Thank you! Your message has been sent successfully.');
                     $('#contactForm')[0].reset(); 
                 },
                 error: function(xhr, status, error) {
-                    $('#form-message').removeClass('d-none').addClass('alert-error').html('There was an error sending your message. Please try again.');
+                    $('#form-message').removeClass('d-none alert-success').addClass('alert-error').html('There was an error sending your message. Please try again.');
                 }
             });
         });
