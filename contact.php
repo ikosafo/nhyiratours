@@ -102,19 +102,19 @@
                                 </div>
                                 <div class="alert d-none" role="alert" id="msg_alert"></div>
                                 <div class="form-floating mb-4">
-                                    <input id="txtYourName" type="text" name="fullName" class="form-control shadow-sm" placeholder="Your Name" required="">
+                                    <input id="txtYourName" type="text" name="fullName" class="form-control shadow-sm" placeholder="Your Name" required>
                                     <label for="txtYourName">Your Name *</label>
                                 </div>
                                 <div class="form-floating mb-4">
-                                    <input id="txtEmail" type="email" name="emailAddress" class="form-control shadow-sm" placeholder="Email" required="">
+                                    <input id="txtEmail" type="email" name="emailAddress" class="form-control shadow-sm" placeholder="Email" required>
                                     <label for="txtEmail">Your Email *</label>
                                 </div>
                                 <div class="form-floating mb-4">
-                                    <input id="txtSubject" type="text" name="subject" class="form-control shadow-sm" placeholder="Subject" required="">
+                                    <input id="txtSubject" type="text" name="subject" class="form-control shadow-sm" placeholder="Subject" required>
                                     <label for="txtSubject">Subject *</label>
                                 </div>
                                 <div class="form-floating mb-4">
-                                    <textarea id="txtMessage" name="message" class="form-control shadow-sm" placeholder="Message" style="height: 150px" required=""></textarea>
+                                    <textarea id="txtMessage" name="message" class="form-control shadow-sm" placeholder="Message" style="height: 150px" required></textarea>
                                     <label for="txtMessage">Message *</label>
                                 </div>
                                 <button type="submit" class="btn btn-light mnw-180">
