@@ -12,11 +12,11 @@
                         <img class="me-4" src="<?php echo URLROOT ?>assets/img/logos/ntts.png" alt="" style="width: 95px;">
                     </a>
                     <p>
-                        <span>Otsokrikri Street <br>
-                            Adjacent Presbyterian Church <br>
-                            Ascension Congregation, Adabraka
-                            
-                        </span>
+                    <span>
+                        GW-0928-6697 <br>
+                        Off Ofankor-Sowutuom Road <br>
+                        Opposite the Usman Bin Affaan Mosque
+                    </span>
                     </p>
                 </div>
                 <!-- /Brand -->

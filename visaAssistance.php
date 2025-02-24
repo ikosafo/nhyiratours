@@ -80,9 +80,9 @@
                         </div>
 
                             <div class="pt-3">
-                                <a href="contact" class="btn btn-primary mnw-180">
+                                <a href="https://www.booking.com/" target="_blank" class="btn btn-primary mnw-180">
                                     <i class="hicon hicon-email-envelope"></i>
-                                    <span>Let's talk now</span>
+                                    <span> Book Now</span>
                                 </a>
                                 <a href="tel:+233303955227" class="btn btn-link link-dark link-hover fw-medium mnw-180">
                                     <i class="hicon hicon-telephone"></i>

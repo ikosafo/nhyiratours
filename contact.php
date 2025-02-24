@@ -59,9 +59,9 @@
                                     <div class="fw-medium mb-3 d-flex align-items-start">
                                         <i class="hicon hicon-flights-pin text-primary me-2"></i>
                                         <span>
-                                            Otsokrikri Street <br>
-                                            Adjacent Presbyterian Church <br>
-                                            Ascension Congregation, Adabraka
+                                            GW-0928-6697 <br>
+                                            Off Ofankor-Sowutuom Road <br>
+                                            Opposite the Usman Bin Affaan Mosque
                                         </span>
                                     </div>
                                 </div>

@@ -220,6 +220,11 @@
                         </ul>
                     </div>
                 </div>
+                <a href="https://www.booking.com/" target="_blank">
+                    <button class="btn btn-primary mr-5" style="margin-right: 8px;">
+                        Booking
+                    </button>
+                </a>
                 <div class="dropdown user-menu ms-xl-auto">
                     <button class="circle-icon circle-icon-link circle-icon-link-hover" data-bs-toggle="dropdown" data-bs-display="static">
                         <i class="hicon hicon-mmb-account"></i>
