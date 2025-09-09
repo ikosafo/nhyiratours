@@ -1,409 +1,421 @@
-<?php
-    $currentUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    include ('./config.php');
-?>
 <!DOCTYPE html>
+<html lang="zxx" dir="ltr">
 
-<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhyiraba Travel & Tour Services - Explore, Learn, and Work Abroad</title>
-    
-    <meta name="description" content="Nhyiraba Travel & Tour Services offers expert assistance with travel, work, and education abroad. Explore global destinations, and enjoy seamless visa processing, study, and job opportunities.">
-    
-    <meta name="keywords" content="travel, tours, visa services, study abroad, work abroad, travel consultancy, Ghana, travel to Netherlands, travel to Canada, travel to USA,  travel to China,  travel to Australia,  travel to UK, international education, work permits">
-    
-    <link rel="canonical" href="<?php echo $currentUrl; ?>">
-    
-    <meta property="og:title" content="Nhyiraba Travel & Tour Services - Your Gateway to Global Opportunities">
-    <meta property="og:description" content="Experience seamless travel and work opportunities abroad with Nhyiraba Travel & Tour Services. Let us help you achieve your international goals.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo $currentUrl; ?>">
-    <meta property="og:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
-    <meta property="og:site_name" content="Nhyiraba Travel & Tour Services">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nhyiraba Travel & Tour Services - Your Gateway to Global Opportunities">
-    <meta name="twitter:description" content="Travel, work, and study abroad with expert guidance from Nhyiraba Travel & Tour Services.">
-    <meta name="twitter:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
-    
-    <link href="<?php echo URLROOT ?>assets/img/logos/ntts.png" rel="shortcut icon" type="image/png">
-    <link href="<?php echo URLROOT ?>assets/css/theme-1.min.css" rel="stylesheet">
-    <link href="<?php echo URLROOT ?>assets/css/theme-2.min.css" rel="stylesheet">
-    <link href="<?php echo URLROOT ?>assets/css/theme-3.min.css" rel="stylesheet">
-    <link href="<?php echo URLROOT ?>assets/css/preloader.css" rel="stylesheet">
-
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "oi4h8ijn0o");
+    <script>
+        const setTheme = (theme) => {
+            theme ??= localStorage.theme || "light";
+            document.documentElement.dataset.theme = theme;
+            localStorage.theme = theme;
+        };
+        setTheme();
     </script>
+    <meta logo="assets/images/logo/ntts.png">
+    <meta white-logo="assets/images/logo/logo-white.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Travello - Multipurpose travel and tour booking.These template is suitable for  travel agency , tour, travel website , tour operator , tourism , booking  trip or adventure website. ">
+    <meta name="keywords" content="travel, trip booking,tour, hotel, tour guide, tourism, blog, flight, travel agency, tourism agency, accommodation, tour website">
+    <meta name="author" content="inittheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Multipurpose travel and tour booking">
+    <meta property="og:site_name" content="Travello">
+    <meta property="og:url" content="https://inittheme.com">
+    <meta property="og:image" content="https://inittheme.com/images/selfie.jpg">
+    <meta property="og:description" content="Multipurpose travel and tour booking, multipurpose template">
+    <meta name="twitter:title" content="Multipurpose travel and tour booking">
+    <meta name="twitter:description" content="Multipurpose travel and tour booking, multipurpose template">
+    <meta name="twitter:image" content="https://twitter.com/inittheme/photo">
+    <meta name="twitter:card" content="summary">
+    <!-- Google site verification -->
+    <meta name="google-site-verification" content="...">
+    <meta name="facebook-domain-verification" content="...">
+    <meta name="csrf-token" content="...">
+    <meta name="currency" content="$">
+    <!-- Title -->
+    <title>Multipurpose travel and tour booking</title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/icon/favicon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0.min.css">
+    <!-- Fonts & icon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts-icon.css">
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+    <!-- RTL CSS::When Need RTL Uncomments File -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
+
+
+    <style>
+       /* Override styles for the header-top to make it thinner, full-width, blue background with white text, and remove bottom line */
+        .header-top {
+            background-color: #0a3e59; /* Blue background */
+            color: #ffffff; /* White text */
+            padding: 5px 0; /* Further reduced padding for thinner appearance */
+            width: 100%; /* Full width */
+            margin: 0; /* Remove margins */
+            border-bottom: none; /* Remove any bottom border */
+            box-shadow: none; /* Remove any shadow */
+        }
+
+        /* Ensure the container inside header-top is full-width */
+        .header-top .container-fluid {
+            width: 100%;
+            max-width: none;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Adjust text styles for contact items */
+        .top-menu-wrapper .contact-item .info p.pera,
+        .top-menu-wrapper .contact-item .info h4.title,
+        .top-menu-wrapper .contact-item .info h4.title a {
+            color: #ffffff; /* White text for contact info */
+            font-size: 13px; /* Smaller font size for thinner appearance */
+            margin: 0; /* Remove extra margins */
+        }
+
+        /* Adjust spacing between icon and text */
+        .top-menu-wrapper .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* Increased space between icon and text */
+        }
+
+        /* Adjust social icons color */
+        .top-menu-wrapper .social-icons .social-icon i {
+            color: #ffffff; /* White icons */
+        }
+
+        /* Adjust button styles */
+        .top-menu-wrapper .sign-btn a.btn-secondary-sm {
+            background-color: #ffffff; /* White background for buttons */
+            color: #007bff; /* Blue text for buttons */
+            font-size: 13px; /* Smaller font size */
+            padding: 4px 12px; /* Reduced padding for smaller buttons */
+        }
+
+        /* Adjust icon circles */
+        .top-menu-wrapper .contact-item .circle-primary-sm {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white for contrast */
+        }
+
+        .top-menu-wrapper .contact-item .circle-primary-sm i {
+            color: #ffffff; /* White icons */
+        }
+
+        /* Ensure flex layout is compact */
+        .top-menu-wrapper {
+            gap: 8px; /* Further reduced gap for compact layout */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .top-menu-wrapper {
+                flex-direction: column; /* Stack items vertically on mobile */
+                align-items: flex-start;
+            }
+            .top-header-left, .top-header-right {
+                width: 100%; /* Full width for mobile */
+            }
+        }
+
+        .header-area-three .top-menu-wrapper {
+            padding-top: 5px !important;
+            padding-bottom: 4px !important;
+            border-bottom: 0 !important;
+            position: relative;
+        }
+    </style>
 </head>
-<!-- /Head -->
-
-
 
 <body>
-
-    <div class="preloader" id="preloader">
-        <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" alt="NTTS">
-    </div>
-
-    <!-- Preloader -->
-    <!-- <div id="preloader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div> -->
-    <!-- /Preloader -->
-
-    <!-- Header -->
-    <header id="header">
-
-    <!-- Header Topbar -->
-    <div class="header-topbar">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-6 col-xl-7 col-md-8">
-                    <div class="d-flex align-items-center">
-                        <a href="tel:+233303955227">
-                            <i class="hicon hicon-telephone me-1"></i>
-                            <span>030-3955227</span>
-                        </a>
-                        <span class="vr bg-white d-none d-md-inline ms-3 me-3"></span>
-                        <a href="mailto:info@nhyirabatours.com" class="d-none d-md-inline">
-                            <i class="hicon hicon-email-envelope me-1"></i>
-                            <span>info@nhyirabatours.com</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6 col-xl-5 col-md-4">
-                    <div class="text-end">
-                        <a class="d-inline-flex align-items-center me-3" data-bs-toggle="modal" href="#mdlLanguage">
-                            <img src="<?php echo URLROOT ?>assets/img/flags/en.svg" height="14" class="me-1" alt="">
-                            <span class="me-1">English</span>
-                            <i class="hicon hicon-thin-arrow-down hicon-bold hicon-60"></i>
-                        </a>
-                       <!--  <a class="d-inline-flex align-items-center" data-bs-toggle="modal" href="#mdlCurrency">
-                            <span class="me-1">USD</span>
-                            <i class="hicon hicon-thin-arrow-down hicon-bold hicon-60"></i>
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Header Topbar -->
-
-    <!-- Header Navbar -->
-    <div class="header-navbar">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container">
-                <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <i class="hicon hicon-bold hicon-hamburger-menu"></i>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;"
-                    srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
-                </a>
-                <div class="offcanvas offcanvas-navbar offcanvas-start border-end-0" tabindex="-1" id="offcanvasNavbar">
-                    <div class="offcanvas-header border-bottom p-4 p-xl-0">
-                        <a href="/" class="d-inline-block">
-                            <img  src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
-                        </a>
-                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body p-4 p-xl-0">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link <?php echo (str_replace(['http://', 'https://'], '', $currentUrl) == str_replace(['http://', 'https://'], '', URLROOT) || str_replace(['http://', 'https://'], '', $currentUrl) == str_replace(['http://', 'https://'], '', URLROOT . '/')) ? 'active' : ''; ?>" href="/" data-bs-display="static">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'about') !== false) || (strpos($currentUrl, 'whyChoose') !== false) || (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
-                                    <span>About Us</span>
-                                    <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu slideIn" data-bs-popper="static">
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'about') !== false) ? 'active' : ''; ?>" href="about">Our Story</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'whyChoose') !== false) ? 'active' : ''; ?>" href="whyChoose">Why Choose Us</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'missionValues') !== false) ? 'active' : ''; ?>" href="missionValues">Mission & Values</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link <?php echo (strpos($currentUrl, 'destinations') !== false) ? 'active' : ''; ?>" href="destinations" data-bs-display="static">
-                                    <span>Destinations</span>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover <?php echo (strpos($currentUrl, 'flightBookings') !== false) || (strpos($currentUrl, 'hotelReservations') !== false) || (strpos($currentUrl, 'travelInsurance') !== false) || (strpos($currentUrl, 'visaAssistance') !== false) ? 'active' : ''; ?>" href="#" data-bs-display="static">
-                                    <span>Tours & Packages</span>
-                                    <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
-                                </a>
-                                <ul class="dropdown-menu slideIn" data-bs-popper="static">
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'flightBookings') !== false) ? 'active' : ''; ?>" href="flightBookings">Flight Bookings</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'hotelReservations') !== false) ? 'active' : ''; ?>" href="hotelReservations">Hotel Reservations</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'travelInsurance') !== false) ? 'active' : ''; ?>" href="travelInsurance">Travel Insurance</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item <?php echo (strpos($currentUrl, 'visaAssistance') !== false) ? 'active' : ''; ?>" href="visaAssistance">Visa Assistance</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-hover" href="#" data-bs-display="static">
-                                    <span>Resources</span>
-                                    <i class="hicon hicon-thin-arrow-down hicon-bold dropdown-toggle-icon"></i>
-                                </a>
-                                <div class="dropdown-menu slideIn" data-bs-popper="static">
-                                    <div class="mega-menu">
-                                        <div class="mega-menu-item">
-                                            <div class="mega-menu-title">
-                                                <span>FAQs</span>
+    <header class="header-area-three">
+        <div class="main-header">
+            <!-- Top Bar -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="top-menu-wrapper d-flex align-items-center justify-content-between">
+                                <div class="top-header-left">
+                                    <div class="contact-section d-flex align-items-center gap-20">
+                                        <div class="contact-item d-flex align-items-center">
+                                            <div class="circle-primary-sm">
+                                                <i class="ri-phone-line"></i>
                                             </div>
-                                            <ul class="nav flex-column ms-6 ms-xl-0">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Booking FAQs</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Cancellation & Refund Policy</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Travel Requirements</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Payment Options</a>
-                                                </li>
-                                            </ul>
+                                            <div class="info">
+                                                <p class="pera">Call Anytime</p>
+                                                <h4 class="title">
+                                                    <a href="tel:+1234567890">030-3955227</a>
+                                                </h4>
+                                            </div>
                                         </div>
-                                        <div class="mega-menu-item">
-                                            <div class="mega-menu-title">
-                                                <span>Gallery</span>
+                                        <div class="contact-item d-flex align-items-center">
+                                            <div class="circle-primary-sm">
+                                                <i class="ri-mail-line"></i>
                                             </div>
-                                            <ul class="nav flex-column ms-6 ms-xl-0">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Photo Gallery</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Video Highlights</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Virtual Tours</a>
-                                                </li>
-                                            </ul>
-                                            
+                                            <div class="info">
+                                                <p class="pera">Email Us</p>
+                                                <h4 class="title">
+                                                    <a href="mailto:info@nhyirabatours.com">info@nhyirabatours.com</a>
+                                                </h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link <?php echo (strpos($currentUrl, 'contact') !== false) ? 'active' : ''; ?>" href="contact" data-bs-display="static">
-                                    <span>Contact Us</span>
-                                </a>
-                            </li>
-                        </ul>
+                                <div class="top-header-right d-flex align-items-center gap-20">
+                                    <div class="social-icons">
+                                        <a href="https://facebook.com" target="_blank" class="social-icon">
+                                            <i class="ri-facebook-fill"></i>
+                                        </a>
+                                        <a href="https://twitter.com" target="_blank" class="social-icon">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                                            <i class="ri-instagram-line"></i>
+                                        </a>
+                                    </div>
+                                    <div class="sign-btn">
+                                        <a href="login.html" class="btn-secondary-sm radius-30">Login</a>
+                                    </div>
+                                    <div class="sign-btn">
+                                        <a href="register.html" class="btn-secondary-sm radius-30">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.booking.com/" target="_blank">
-                    <button class="btn btn-primary mr-5" style="margin-right: 8px;">
-                        Booking
-                    </button>
-                </a>
-                <div class="dropdown user-menu ms-xl-auto">
-                    <button class="circle-icon circle-icon-link circle-icon-link-hover" data-bs-toggle="dropdown" data-bs-display="static">
-                        <i class="hicon hicon-mmb-account"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end animate slideIn" data-bs-popper="static">
-                        <!-- <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="hicon hicon-edit me-1"></i>
-                                <span>Register</span>
-                            </a>
-                        </li> -->
-                        <li>
-                            <a class="dropdown-item" href="login">
-                                <i class="hicon hicon-aps-lock me-1"></i>
-                                <span>Login</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </div>
-    <!-- /Header Navbar -->
-
-    <!-- Language -->
-    <div class="modal fade" id="mdlLanguage" tabindex="-1" aria-labelledby="h3Language" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content border-0 shadow-lg">
-                <div class="modal-header">
-                    <span class="fs-3 modal-title text-body-emphasis fw-medium" id="h3Language">Select language</span>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled row mb-0">
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/en.svg" height="16" alt="">
-                                    <span class="ms-2">English</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/fr.svg" height="16" alt="">
-                                    <span class="ms-2">Français</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/es.svg" height="16" alt="">
-                                    <span class="ms-2">Español</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/de.svg" height="16" alt="">
-                                    <span class="ms-2">Deutsch</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/it.svg" height="16" alt="">
-                                    <span class="ms-2">Italiano</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/nl.svg" height="16" alt="">
-                                    <span class="ms-2">Nederlands</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/pt.svg" height="16" alt="">
-                                    <span class="ms-2">Português</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/ru.svg" height="16" alt="">
-                                    <span class="ms-2">Русский</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="col-6 col-lg-4">
-                            <a href="/?lang=en" class="link-dark link-hover">
-                                <span class="d-flex align-items-center pt-2 pb-2">
-                                    <img src="<?php echo URLROOT ?>assets/img/flags/cn.svg" height="16" alt="">
-                                    <span class="ms-2">日本語</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+            <!-- Header Bottom -->
+            <div class="header-bottom header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                                <!-- Logo -->
+                                <div class="logo">
+                                    <a href="/"><img src="assets/images/logo/ntts.png" alt="logo" style="width:70px;height:70px" class="changeLogo"></a>
+                                </div>
+                                <!-- Main-menu for desktop -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <div class="d-flex align-items-center">
+                                            <ul class="listing" id="navigation">
+                                                <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single link-active">Home</a>
+                                                </li>
+                                                <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single">
+                                                        African <br> Destinations <i class="ri-arrow-down-s-line"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">West Africa<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/benin/" class="single">Benin</a></li>
+                                                                <li class="single-list"><a href="/destinations/burkina-faso/" class="single">Burkina Faso</a></li>
+                                                                <li class="single-list"><a href="/destinations/cape-verde/" class="single">Cape Verde</a></li>
+                                                                <li class="single-list"><a href="/destinations/cote-divoire/" class="single">Côte d'Ivoire</a></li>
+                                                                <li class="single-list"><a href="/destinations/ghana/" class="single">Ghana</a></li>
+                                                                <li class="single-list"><a href="/destinations/guinea/" class="single">Guinea</a></li>
+                                                                <li class="single-list"><a href="/destinations/guinea-bissau/" class="single">Guinea-Bissau</a></li>
+                                                                <li class="single-list"><a href="/destinations/liberia/" class="single">Liberia</a></li>
+                                                                <li class="single-list"><a href="/destinations/mali/" class="single">Mali</a></li>
+                                                                <li class="single-list"><a href="/destinations/mauritania/" class="single">Mauritania</a></li>
+                                                                <li class="single-list"><a href="/destinations/niger/" class="single">Niger</a></li>
+                                                                <li class="single-list"><a href="/destinations/nigeria/" class="single">Nigeria</a></li>
+                                                                <li class="single-list"><a href="/destinations/senegal/" class="single">Senegal</a></li>
+                                                                <li class="single-list"><a href="/destinations/sierra-leone/" class="single">Sierra Leone</a></li>
+                                                                <li class="single-list"><a href="/destinations/gambia/" class="single">The Gambia</a></li>
+                                                                <li class="single-list"><a href="/destinations/togo/" class="single">Togo</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Central Africa<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/angola/" class="single">Angola</a></li>
+                                                                <li class="single-list"><a href="/destinations/cameroon/" class="single">Cameroon</a></li>
+                                                                <li class="single-list"><a href="/destinations/central-african-republic/" class="single">Central African Republic</a></li>
+                                                                <li class="single-list"><a href="/destinations/chad/" class="single">Chad</a></li>
+                                                                <li class="single-list"><a href="/destinations/congo-democratic-republic/" class="single">Democratic Republic of the Congo</a></li>
+                                                                <li class="single-list"><a href="/destinations/congo-republic/" class="single">Republic of the Congo</a></li>
+                                                                <li class="single-list"><a href="/destinations/equatorial-guinea/" class="single">Equatorial Guinea</a></li>
+                                                                <li class="single-list"><a href="/destinations/gabon/" class="single">Gabon</a></li>
+                                                                <li class="single-list"><a href="/destinations/sao-tome-principe/" class="single">São Tomé and Príncipe</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">East Africa<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/burundi/" class="single">Burundi</a></li>
+                                                                <li class="single-list"><a href="/destinations/comoros/" class="single">Comoros</a></li>
+                                                                <li class="single-list"><a href="/destinations/djibouti/" class="single">Djibouti</a></li>
+                                                                <li class="single-list"><a href="/destinations/eritrea/" class="single">Eritrea</a></li>
+                                                                <li class="single-list"><a href="/destinations/ethiopia/" class="single">Ethiopia</a></li>
+                                                                <li class="single-list"><a href="/destinations/kenya/" class="single">Kenya</a></li>
+                                                                <li class="single-list"><a href="/destinations/madagascar/" class="single">Madagascar</a></li>
+                                                                <li class="single-list"><a href="/destinations/malawi/" class="single">Malawi</a></li>
+                                                                <li class="single-list"><a href="/destinations/mauritius/" class="single">Mauritius</a></li>
+                                                                <li class="single-list"><a href="/destinations/mozambique/" class="single">Mozambique</a></li>
+                                                                <li class="single-list"><a href="/destinations/rwanda/" class="single">Rwanda</a></li>
+                                                                <li class="single-list"><a href="/destinations/seychelles/" class="single">Seychelles</a></li>
+                                                                <li class="single-list"><a href="/destinations/somalia/" class="single">Somalia</a></li>
+                                                                <li class="single-list"><a href="/destinations/south-sudan/" class="single">South Sudan</a></li>
+                                                                <li class="single-list"><a href="/destinations/tanzania/" class="single">Tanzania</a></li>
+                                                                <li class="single-list"><a href="/destinations/uganda/" class="single">Uganda</a></li>
+                                                                <li class="single-list"><a href="/destinations/zambia/" class="single">Zambia</a></li>
+                                                                <li class="single-list"><a href="/destinations/zimbabwe/" class="single">Zimbabwe</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Indian Ocean Islands<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/comoros/" class="single">Comoros</a></li>
+                                                                <li class="single-list"><a href="/destinations/madagascar/" class="single">Madagascar</a></li>
+                                                                <li class="single-list"><a href="/destinations/mauritius/" class="single">Mauritius</a></li>
+                                                                <li class="single-list"><a href="/destinations/reunion/" class="single">Réunion</a></li>
+                                                                <li class="single-list"><a href="/destinations/seychelles/" class="single">Seychelles</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Southern Africa<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/botswana/" class="single">Botswana</a></li>
+                                                                <li class="single-list"><a href="/destinations/eswatini/" class="single">Eswatini</a></li>
+                                                                <li class="single-list"><a href="/destinations/lesotho/" class="single">Lesotho</a></li>
+                                                                <li class="single-list"><a href="/destinations/namibia/" class="single">Namibia</a></li>
+                                                                <li class="single-list"><a href="/destinations/south-africa/" class="single">South Africa</a></li>
+                                                                <li class="single-list"><a href="/destinations/zambia/" class="single">Zambia</a></li>
+                                                                <li class="single-list"><a href="/destinations/zimbabwe/" class="single">Zimbabwe</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">North Africa<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/algeria/" class="single">Algeria</a></li>
+                                                                <li class="single-list"><a href="/destinations/egypt/" class="single">Egypt</a></li>
+                                                                <li class="single-list"><a href="/destinations/libya/" class="single">Libya</a></li>
+                                                                <li class="single-list"><a href="/destinations/mauritania/" class="single">Mauritania</a></li>
+                                                                <li class="single-list"><a href="/destinations/morocco/" class="single">Morocco</a></li>
+                                                                <li class="single-list"><a href="/destinations/sudan/" class="single">Sudan</a></li>
+                                                                <li class="single-list"><a href="/destinations/tunisia/" class="single">Tunisia</a></li>
+                                                                <li class="single-list"><a href="/destinations/western-sahara/" class="single">Western Sahara</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single">
+                                                        Tours <i class="ri-arrow-down-s-line"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Other Destinations<i class="ri-arrow-right-s-line"></i></a>
+                                                            <ul class="submenu">
+                                                                <li class="single-list"><a href="/destinations/uae/" class="single">United Arab Emirates (UAE)</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Academic Tours</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Leisure Tours</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Religious Tours</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Volunteer Mission Tours</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Corporate (MICE)</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Travel Advisor Familiarization Trip</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single">
+                                                        Travel <br> Checklist <i class="ri-arrow-down-s-line"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Plan Your Trip</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Travel Insurance</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single">
+                                                        About Us <i class="ri-arrow-down-s-line"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Testimonials</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Careers</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">FAQ</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Local Experts</a>
+                                                        </li>
+                                                        <li class="single-list">
+                                                            <a href="#" class="single">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <!-- <li class="single-list">
+                                                    <a href="javascript:void(0)" class="single">
+                                                        Contact 
+                                                    </a>
+                                                </li> -->
+                                            </ul>
+                                            <!-- Search Box -->
+                                            <div class="search-box search-bar d-none d-lg-block">
+                                                <div class="header-search">
+                                                    <span class="pera">Search...</span>
+                                                    <div class="search-icon">
+                                                        <i class="ri-search-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </nav>
+                                </div>
+                                <!-- Mobile Menu -->
+                                <div class="mobile_menu d-block d-lg-none">
+                                    <div class="d-flex align-items-center gap-15">
+                                        <div class="search-bar">
+                                            <a href="javascript:void(0)" class="rounded-btn">
+                                                <i class="ri-search-line"></i>
+                                            </a>
+                                        </div>
+                                        <button class="ToggleThemeButton change-theme-mode m-0 p-0 border-0">
+                                            <i class="ri-sun-line"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /Language -->
+       
+    </header>
+</body>
 
-    <!-- Currency -->
-    <div class="modal fade" id="mdlCurrency" tabindex="-1" aria-labelledby="h3Currency" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content border-0 shadow-lg">
-                <div class="modal-header">
-                    <span class="fs-3 modal-title text-body-emphasis fw-medium" id="h3Currency">Select currency</span>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled row mb-0">
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=usd" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>USD</strong> (United States Dollar)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=eur" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>EUR</strong> (Euro)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=gbp" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>GBP</strong> (Pound Sterling)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=aud" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>AUD</strong> (Australian Dollar)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=nzd" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>NZD</strong> (New Zealand Dollar)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=cad" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>CAD</strong> (Canadian Dollar)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=jpy" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>JPY</strong> (Japanese Yen)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=cny" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>CNY</strong> (Chinese Yuan)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=vnd" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>VND</strong> (Vietnam Dong)</span>
-                            </a>
-                        </li>
-                        <li class="col-12 col-lg-6">
-                            <a href="/?currency=sgd" class="link-dark link-hover">
-                                <span class="d-block pt-2 pb-2"><strong>SGD</strong> (Singapore Dollar)</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Currency -->
-
-</header>
-<!-- /Header -->
+</html>

@@ -1,575 +1,3367 @@
 <?php include ('./includes/header.php'); ?>
-
-    <!-- Main -->
     <main>
-
-        <!-- Hero -->
-        <section class="hero">
-            <h1 class="d-none">Nhyiraba Travel and Tours Services</h1>
-            <!-- Carousel -->
-            <div id="heroCarousel" class="hero-carousel carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Carousel item -->
-                    <div class="hero-item carousel-item active">
-                        <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/02.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/02.jpg 2x" alt="">
-                        </div>
-                        <div class="hero-caption text-sm-start">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-xxl-6 col-xl-7 col-md-10">
-                                        <div class="hero-sub-title">
-                                            <span>Explore the World with Unforgettable Journeys</span>
-                                        </div>
-                                        <h2 class="display-3 hero-title">
-                                            Discover unique destinations and tours.
-                                        </h2>
-                                        <div class="hero-action">
-                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
-                                                <span>Explore</span>
-                                                <i class="hicon hicon-flights-one-ways"></i>
-                                            </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Carousel item -->
-                    <!-- Carousel item -->
-                    <div class="hero-item carousel-item">
-                        <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/01.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/01.jpg 2x" alt="">
-                        </div>
-                        <div class="hero-caption text-sm-start">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-xxl-6 col-xl-7 col-md-10">
-                                        <div class="hero-sub-title">
-                                            <span>Tailor-Made Adventures for Every Traveler</span>
-                                        </div>
-                                        <h2 class="display-3 hero-title">
-                                            Create your custom vacation today!
-                                        </h2>
-                                        <div class="hero-action">
-                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
-                                                <span>Explore</span>
-                                                <i class="hicon hicon-flights-one-ways"></i>
-                                            </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Carousel item -->
-                    <!-- Carousel item -->
-                    <div class="hero-item carousel-item">
-                        <div class="hero-bg">
-                            <img src="<?php echo URLROOT ?>assets/img/dwl/12.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/12.jpg 2x" alt="">
-                        </div>
-                        <div class="hero-caption text-sm-start">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-xxl-6 col-xl-7 col-md-10">
-                                        <div class="hero-sub-title">
-                                            <span>Unbeatable Travel Offers</span>
-                                        </div>
-                                        <h2 class="display-3 hero-title">
-                                            Limited-time discounts on select tours.
-                                        </h2>
-                                        <div class="hero-action">
-                                            <a href="destinations" class="btn btn-outline-light btn-uppercase mnw-180 me-4">
-                                                <span>Explore</span>
-                                                <i class="hicon hicon-flights-one-ways"></i>
-                                            </a>
-                                            <a class="btn-video-play btn-video-play-sm media-glightbox" href="<?php echo URLROOT ?>assets/img/dwl/vid2.mp4"><span></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Carousel item -->
-                </div>
-                <div class="carousel-control">
-                    <button class="carousel-control-next prev-custom" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-prev next-custom" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="carousel-indicators hero-indicators-right">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+        <!-- Hero area S t a r t-->
+        <section class="hero-padding-for-three video-overlay position-relative">
+            <!-- Video -->
+            <div class="hero-bg-video">
+                <video class="hero-slider-video video-cover" 
+                    poster="assets/images/hero/hero-three-banner.png" loop autoplay muted>
+                    <source src="assets/images/videos/travel1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <!-- Carousel -->
-            <!-- Check tour -->
-            <!-- <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-12 col-xl-6">
-                        <div class="search-tours search-hero search-hero-half">
-                            <form class="search-tour-form" method="post">
-                                <div class="search-tour-input">
-                                    <div class="row g-3 g-xl-2">
-                                        <div class="col-12 col-md-6">
-                                            <div class="input-icon-group">
-                                                <label for="txtKeyword" class="input-icon hicon hicon-flights-pin"></label>
-                                                <input id="txtKeyword" type="text" class="form-control shadow-sm" placeholder="Where are you going?">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="input-icon-group tour-date">
-                                                <label class="input-icon hicon hicon-menu-calendar hicon-bold" for="txtCheckDate2"></label>
-                                                <input id="txtCheckDate2" type="text" class="form-select shadow-sm" placeholder="Tour date" data-input readonly>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="input-icon-group">
-                                                <label class="input-icon hicon hicon-menu-calendar hicon-bold" for="txtCheckDate2"></label>
-                                                <select class="form-select dropdown-select shadow-sm" id="selAdults">
-                                                    <option selected="">All categories</option>
-                                                    <option value="1">Ecotourism &amp; Resort</option>
-                                                    <option value="2">Cultural &amp; Foods</option>
-                                                    <option value="3">Explorer &amp; Adventure</option>
-                                                    <option value="4">Festival &amp; Events</option>
-                                                    <option value="5">Museums &amp; Exhibitions</option>
-                                                    <option value="6">Hiking &amp; Trekking</option>
-                                                    <option value="7">Motor &amp; Bicycles</option>
-                                                    <option value="8">Ships &amp; boats</option>
-                                                    <option value="9">Family Activities</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <button type="button" class="btn btn-primary btn-uppercase w-100">
-                                                <i class="hicon hicon-bold hicon-search-box"></i>
-                                                <span>Search</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- /Check tour -->
-        </section>
-        <!-- /Hero -->
-
-        <!-- Featured -->
-        <section class="pt-5 pb-4">
             <div class="container">
-                <ul class="stats-list row g-0">
-                    <li class="col-6 col-xl-3">
-                        <div class="stats-item">
-                            <h3 class="h1 stats-number">+300</h3>
-                            <p class="stats-desc">
-                                Happy Travelers
+                <div class="row align-items-center justify-content-between g-4">
+                    <div class="col-xl-12">
+                        <div class="hero-caption-three position-relative z-3">
+                            <h4 class="title wow fadeInUp" data-wow-delay="0.0s">
+                                Plan tours to dream locations in just a click!
+                            </h4>
+                            <p class="pera wow fadeInUp" data-wow-delay="0.1s">
+                                Travel is a transformative and enriching experience that
+                                allows individuals to explore new destinations, cultures, and
+                                landscapes
                             </p>
                         </div>
-                    </li>
-                    <li class="col-6 col-xl-3">
-                        <div class="stats-item">
-                            <h3 class="h1 stats-number">+97%</h3>
-                            <p class="stats-desc">
-                                Client Satisfaction<br> Rate
-                            </p>
-                        </div>
-                    </li>
-                    <li class="col-6 col-xl-3">
-                        <div class="stats-item">
-                            <h3 class="h1 stats-number">+80%</h3>
-                            <p class="stats-desc">
-                                Repeat Customers
-                            </p>
-                        </div>
-                    </li>
-                    <li class="col-6 col-xl-3">
-                        <div class="stats-item">
-                            <h3 class="h1 stats-number">+10</h3>
-                            <p class="stats-desc">
-                                Years of Experience in Tour Operations
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- /Featured -->
-
-        <!-- About -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-xl-6 order-1 order-xl-0">
-                        <!-- Image -->
-                        <div class="pe-xl-5">
-                            <div class="image-info image-info-right image-info-vertical">
-                                <div class="image-center">
-                                    <img src="<?php echo URLROOT ?>assets/img/dwl/06.jpg" srcset="<?php echo URLROOT ?>assets/img/dwl/06.jpg 2x" style="height: 450px;" class="rounded w-100" alt="">
+                        <div class="hero-footer position-relative z-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="all-user">
+                                <div class="happy-user">
+                                    <img src="assets/images/hero/user-1.jpeg" alt="travello">
                                 </div>
-                                <div class="info-top-right">
-                                    <div class="vertical-award rounded shadow-sm">
-                                        <div class="award-content">
-                                            <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" class="w-100" alt="">
-                                        </div>
-                                        <div class="award-footer">
-                                            <small>Nhyiraba Tours</small>
-                                        </div>
-                                    </div>
+                                <div class="happy-user">
+                                    <img src="assets/images/hero/user-2.png" alt="travello">
                                 </div>
+                                <div class="happy-user">
+                                    <img src="assets/images/hero/user-3.png" alt="travello">
+                                </div>
+                                <div class="happy-user">
+                                    <img src="assets/images/hero/user-4.jpeg" alt="travello">
+                                </div>
+                                <div class="happy-user-count">
+                                    <p class="user-count">5k+</p>
+                                </div>
+                                <p class="pera">Happy Customer</p>
+                                <span class="wave-emoji">
+                                    <img src="assets/images/icon/hand.png" alt="travello">
+                                </span>
                             </div>
                         </div>
-                        <!-- /Image -->
-                    </div>
-                    <div class="col-12 col-xl-6 order-0 order-xl-1">
-                        <!-- Content -->
-                        <div class="mb-5 mb-xl-0">
-                            <div class="block-title">
-                                <small class="sub-title">About us</small>
-                                <h2 class="h1 title">Nhyiraba Travel & Tour Services</h2>
-                            </div>
-                            <p>
-                                At Nhyiraba Travel & Tour Services, we don't just plan trips—we create unforgettable journeys 
-                                that ignite curiosity, foster inspiration, and create lasting connections. With over a decade 
-                                of expertise, we've curated more than 350 exceptional tours, thoughtfully designed for adventurers, 
-                                explorers, culture seekers, and those pursuing educational and employment opportunities abroad. 
-                                <!-- Our passionate team of experienced guides ensures each journey is more than a destination—it's a 
-                                meaningful experience. Whether you're in search of adventure, cultural discovery, or new horizons, 
-                                Nhyiraba Travel & Tour Services invites you to explore the world with us and make every trip a 
-                                lasting memory. -->
-                            </p>
-                            <ul class="strength-list row g-0 pt-2">
-                                <li class="col-12 col-md-6">
-                                    <div class="strength-item">
-                                        <span class="strength-icon">
-                                            <i class="hicon hicon-150 hicon-confirmation-instant"></i>
-                                        </span>
-                                        <strong class="strength-title">Unmatched Travel Experiences</strong>
-                                    </div>
-                                </li>
-                                <li class="col-12 col-md-6">
-                                    <div class="strength-item">
-                                        <span class="strength-icon">
-                                            <i class="hicon hicon-150 hicon-menu-price-display"></i>
-                                        </span>
-                                        <strong class="strength-title">Affordable & Competitive Pricing</strong>
-                                    </div>
-                                </li>
-                                <li class="col-12 col-md-6">
-                                    <div class="strength-item">
-                                        <span class="strength-icon">
-                                            <i class="hicon hicon-150 hicon-pay-on-checkin"></i>
-                                        </span>
-                                        <strong class="strength-title">Tailor-Made Itineraries</strong>
-                                    </div>
-                                </li>
-                                <li class="col-12 col-md-6">
-                                    <div class="strength-item">
-                                        <span class="strength-icon">
-                                            <i class="hicon hicon-150 hicon-agoda-price-guarante"></i>
-                                        </span>
-                                        <strong class="strength-title">Expert Local Guides</strong>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="pt-3">
-                                <a href="about" class="btn btn-primary btn-uppercase mnw-180">
-                                    <span>Read more</span>
-                                    <i class="hicon hicon-flights-one-ways"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /Content -->
                     </div>
                 </div>
             </div>
         </section>
-        <!-- /About -->
+        <!--/ End-of Hero-->
 
-        <!-- Destintions -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
+        <!-- Plan area S t a r t -->
+        <section class="plan-area-three">
             <div class="container">
-                <div class="destination-slider splide__pagination__start splide">
-                    <!-- Title -->
-                    <div class="d-xl-flex align-items-xl-center mb-3">
-                        <div class="block-title me-auto">
-                            <small class="sub-title">Many tourists visit</small>
-                            <h2 class="h1 title">Top destinations</h2>
-                        </div>
-                        <div class="d-lg-flex align-items-lg mt-3">
-                            <div class="extra-info me-5">
-                                <strong>+25</strong>
-                                <span>Attractive destinations</span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="plan-section-three plan-shadow">
+                            <div class="choose-plan-nav">
+
+                                <!-- Buttons Type Select -->
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="plan-link active" id="tour-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour" type="button" role="tab" aria-controls="tour"
+                                            aria-selected="true">
+                                            <i class="ri-flight-takeoff-fill"></i> Tour
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="plan-link" id="book-hotel" data-bs-toggle="tab" data-bs-target="#hotel-tap"
+                                            type="button" role="tab" aria-controls="hotel-tap" aria-selected="false">
+                                            <i class="ri-hotel-bed-line"></i>Hotel
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="plan-link" id="book-transport" data-bs-toggle="tab" data-bs-target="#transport-tap"
+                                            type="button" role="tab" aria-controls="transport-tap" aria-selected="false">
+                                            <i class="ri-car-line"></i>Transport
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="plan-link" id="book-restaurant" data-bs-toggle="tab" data-bs-target="#restaurant-tap"
+                                            type="button" role="tab" aria-controls="restaurant-tap" aria-selected="false">
+                                            <i class="ri-restaurant-line"></i>Restaurant
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="plan-link" id="book-visa" data-bs-toggle="tab" data-bs-target="#visa-tap"
+                                            type="button" role="tab" aria-controls="visa-tap" aria-selected="false">
+                                            <i class="ri-cellphone-line"></i>visa
+                                        </button>
+                                    </li>
+                                </ul>
+                                <!-- / End-of Buttons -->
+
+                                <!-- Tab Search Contents -->
+                                <div class="tab-content" id="tourTab">
+                                    <div class="tab-pane fade show active" id="tour" role="tabpanel" aria-labelledby="tour-tab">
+                                        <div class="d-flex gap-16 flex-wrap mb-26">
+                                            <label class="one-way-label">
+                                                <input class="one-way-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">One Way</span>
+                                            </label>
+                                            <label class="round-trip-label">
+                                                <input class="round-trip-input" type="radio" name="radio" checked>
+                                                <span class="circle"></span>
+                                                <span class="radio-text">Round Trip</span>
+                                            </label>
+                                        </div>
+                                        <div class="row g-4 justify-content-end">
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-two"></div>
+                                                        </div>
+                                                        <div class="destination-result line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-three"></div>
+                                                        </div>
+                                                        <div class="destination-result-three line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-arrow-left-right-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title month-result">February</h4>
+                                                                <div class="year-title year-result">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title text-right month-result-two">
+                                                                    March
+                                                                </h4>
+                                                                <div class="year-title text-right year-result-two">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-calendar-2-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <div class="sign-btn text-right">
+                                                    <a href="tour-list.html" class="btn-secondary-lg w-100 text-center">
+                                                        <i   class="ri-search-line mr-10 font-20"></i> Search Plan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="hotel-tap" role="tabpanel" aria-labelledby="book-hotel">
+                                        <div class="d-flex gap-16 flex-wrap mb-26">
+                                            <label class="one-way-label">
+                                                <input class="one-way-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">One Way</span>
+                                            </label>
+                                            <label class="round-trip-label">
+                                                <input class="round-trip-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">Round Trip</span>
+                                            </label>
+                                        </div>
+                                        <div class="row g-4 justify-content-end">
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-two"></div>
+                                                        </div>
+                                                        <div class="destination-result line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-three"></div>
+                                                        </div>
+                                                        <div class="destination-result-three line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-arrow-left-right-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title month-result">February</h4>
+                                                                <div class="year-title year-result">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title text-right month-result-two">
+                                                                    March
+                                                                </h4>
+                                                                <div class="year-title text-right year-result-two">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-calendar-2-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <div class="sign-btn">
+                                                    <a href="tour-list.html" class="btn-secondary-lg w-100 text-center">
+                                                        <i class="ri-search-line mr-10 font-20"></i> Search Plan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="transport-tap" role="tabpanel" aria-labelledby="book-transport">
+                                        <div class="d-flex gap-16 flex-wrap mb-26">
+                                            <label class="one-way-label">
+                                                <input class="one-way-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">One Way</span>
+                                            </label>
+                                            <label class="round-trip-label">
+                                                <input class="round-trip-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">Round Trip</span>
+                                            </label>
+                                        </div>
+                                        <div class="row g-4 justify-content-end">
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-two"></div>
+                                                        </div>
+                                                        <div class="destination-result line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-three"></div>
+                                                        </div>
+                                                        <div class="destination-result-three line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-arrow-left-right-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title month-result">February</h4>
+                                                                <div class="year-title year-result">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title text-right month-result-two">
+                                                                    March
+                                                                </h4>
+                                                                <div class="year-title text-right year-result-two">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-calendar-2-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <div class="sign-btn">
+                                                    <a href="tour-list.html" class="btn-secondary-lg w-100 text-center">
+                                                        <i class="ri-search-line mr-10 font-20"></i> Search Plan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="restaurant-tap" role="tabpanel" aria-labelledby="restaurant-transport">
+                                        <div class="d-flex gap-16 flex-wrap mb-26">
+                                            <label class="one-way-label">
+                                                <input class="one-way-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">One Way</span>
+                                            </label>
+                                            <label class="round-trip-label">
+                                                <input class="round-trip-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">Round Trip</span>
+                                            </label>
+                                        </div>
+                                        <div class="row g-4 justify-content-end">
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-two"></div>
+                                                        </div>
+                                                        <div class="destination-result line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-three"></div>
+                                                        </div>
+                                                        <div class="destination-result-three line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-arrow-left-right-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title month-result">February</h4>
+                                                                <div class="year-title year-result">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title text-right month-result-two">
+                                                                    March
+                                                                </h4>
+                                                                <div class="year-title text-right year-result-two">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-calendar-2-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <div class="sign-btn">
+                                                    <a href="tour-list.html" class="btn-secondary-lg w-100 text-center">
+                                                        <i class="ri-search-line mr-10 font-20"></i> Search Plan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="visa-tap" role="tabpanel" aria-labelledby="visa-transport">
+                                        <div class="d-flex gap-16 flex-wrap mb-26">
+                                            <label class="one-way-label">
+                                                <input class="one-way-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">One Way</span>
+                                            </label>
+                                            <label class="round-trip-label">
+                                                <input class="round-trip-input" type="radio" name="radio">
+                                                <span class="circle"></span>
+                                                <span class="radio-text">Round Trip</span>
+                                            </label>
+                                        </div>
+                                        <div class="row g-4 justify-content-end">
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-two"></div>
+                                                        </div>
+                                                        <div class="destination-result line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="select-dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="destination-dropdown-three"></div>
+                                                        </div>
+                                                        <div class="destination-result-three line-clamp-1">
+                                                            Istanbul Airport...
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-arrow-left-right-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-5 col-lg-12">
+                                                <div class="destination-flex">
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title month-result">February</h4>
+                                                                <div class="year-title year-result">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-section">
+                                                        <div class="d-flex gap-10 align-items-center">
+                                                            <div class="custom-date-three">
+                                                                <h4 class="month-title text-right month-result-two">
+                                                                    March
+                                                                </h4>
+                                                                <div class="year-title text-right year-result-two">
+                                                                    Tuesday, 6, 2025
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-icon">
+                                                        <i class="ri-calendar-2-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <div class="sign-btn">
+                                                    <a href="tour-list.html" class="btn-secondary-lg w-100 text-center">
+                                                        <i class="ri-search-line mr-10 font-20"></i> Search Plan
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / End-of Search Contents -->
                             </div>
-                            <div class="splide__arrows splide__arrows__right">
-                                <button class="splide__arrow splide__arrow--prev me-2">
-                                    <i class="hicon hicon-edge-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End-of Plan-->
+
+        <!-- Packages S t a r t -->
+        <section class="package-area section-padding2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title mx-464 mx-auto text-center">
+                            <span class="highlights">Popular Packages</span>
+                            <h4 class="title">
+                                Most Favorite Tour Place in The World
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Tab Buttons -->
+                        <ul class="nav nav-pills package-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item package-item" role="presentation">
+                                <button class="nav-link package-nav active" id="pills-london-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-london" role="tab" aria-controls="pills-london" aria-selected="true">
+                                    London
                                 </button>
-                                <button class="splide__arrow splide__arrow--next">
-                                    <i class="hicon hicon-edge-arrow-right"></i>
+                            </li>
+                            <li class="nav-item package-item" role="presentation">
+                                <button class="nav-link package-nav" id="pills-bangkok-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-bangkok" role="tab" aria-controls="pills-bangkok"
+                                    aria-selected="false">
+                                    Bangkok
                                 </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link package-nav" id="pills-hongkong-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-hongkong" role="tab" aria-controls="pills-hongkong"
+                                    aria-selected="false">
+                                    Hong Kong
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link package-nav" id="pills-manchester-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-manchester" role="tab" aria-controls="pills-manchester"
+                                    aria-selected="false">
+                                    Manchester
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link package-nav" id="pills-dubai-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dubai" role="tab" aria-controls="pills-dubai" aria-selected="false">
+                                    Dubai
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- Tab contents -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-london" role="tabpanel"
+                                aria-labelledby="pills-london-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-4.png" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-3.png" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-2.png" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-10.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-bangkok" role="tabpanel" aria-labelledby="pills-bangkok-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-5.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-6.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-7.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-8.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-hongkong" role="tabpanel" aria-labelledby="pills-hongkong-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-9.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-10.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-11.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-12.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-manchester" role="tabpanel"
+                                aria-labelledby="pills-manchester-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-13.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-14.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-15.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-16.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-dubai" role="tabpanel" aria-labelledby="pills-dubai-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-17.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-18.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-19.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                        <div class="package-card h-calc">
+                                            <div class="package-img imgEffect4">
+                                                <a href="details-with-slider.html">
+                                                    <img src="assets/images/package/package-20.jpg" alt="travello">
+                                                </a>
+                                                <div class="image-badge">
+                                                    <p class="pera">Featured</p>
+                                                </div>
+                                            </div>
+                                            <div class="package-content">
+                                                <h4 class="area-name">
+                                                    <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                                </h4>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <div class="name">Bangkok, Thailand</div>
+                                                </div>
+                                                <div class="packages-person">
+                                                    <div class="count">
+                                                        <i class="ri-time-line"></i>
+                                                        <p class="pera">3 Days 2 Night</p>
+                                                    </div>
+                                                    <div class="count">
+                                                        <i class="ri-user-line"></i>
+                                                        <p class="pera">2 Person</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-review">
+                                                    <div class="d-flex gap-10">
+                                                        <p class="light-pera">From</p>
+                                                        <p class="pera">$95</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="ri-star-s-fill"></i>
+                                                        <p class="pera">4.7 (20 Reviews)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- T/itle -->
-                    <!-- Destinations -->
-                    <div class="splide__track pt-2">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg" class="destination bottom-overlay hover-effect rounded glightbox"  data-glightbox="title:SCHENGEN" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/netherlands.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">SCHENGEN</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/canada.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:CANADA" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/canada.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/canada.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">CANADA</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/usa.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:USA" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/usa.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/usa.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">USA</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/china.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:CHINA" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/china.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/china.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">CHINA</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/uk.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:UK" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/uk.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/uk.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">UK</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide">
-                                <a href="<?php echo URLROOT ?>assets/img/dwl/australia.jpg" class="destination bottom-overlay hover-effect rounded glightbox" data-glightbox="title:AUSTRALIA" data-gallery="tour-photos">
-                                    <figure class="image-hover image-hover-overlay">
-                                        <img src="<?php echo URLROOT ?>assets/img/dwl/australia.jpg" style="height:395px" srcset="<?php echo URLROOT ?>assets/img/dwl/australia.jpg 2x" alt="">
-                                        <i class="hicon hicon-plus-thin image-hover-icon"></i>
-                                    </figure>
-                                    <div class="bottom-overlay-content">
-                                        <div class="destination-content">
-                                            <div class="destination-info">
-                                                <h3 class="destination-title">AUSTRALIA</h3>
-                                            </div>
-                                            <span class="circle-icon circle-icon-link">
-                                                <i class="hicon hicon-flights-pin"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-button d-inline-block">
+                            <a href="tour-list.html">
+                                <div class="btn-primary-icon-sm">
+                                    <p class="pera">View All Tour</p>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End of Packages -->
 
+        <!-- Special area S t a r t -->
+        <section class="special-area bottom-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title mx-430 mx-auto text-center">
+                            <span class="highlights fancy-font font-400">special offers</span>
+                            <h4 class="title">
+                                Winter Our Big Offers to Inspire You
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6">
+                        <a href="tour-list.html" class="offer-banner imgEffect4 wow fadeInLeft" data-wow-delay="0.0s">
+                            <img src="assets/images/gallery/offercard-1.jpg" alt="travello">
+                            <div class="offer-content">
+                                <p class="highlights-text">Save up to</p>
+                                <h4 class="title">50%</h4>
+                                <p class="pera">Let’s Explore The World</p>
+                                <div class="location">
+                                    <i class="ri-map-pin-line"></i>
+                                    <p class="name">Bangkok, Thailand</p>
+                                </div>
+                                <div class="btn-secondary-sm radius-30"> Booking Now </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="tour-list.html" class="offer-banner imgEffect4 wow fadeInRight" data-wow-delay="0.0s">
+                            <img src="assets/images/gallery/offercard-2.jpg" alt="travello">
+                            <div class="offer-content-two">
+                                <h4 class="title">Nearby Hotel</h4>
+                                <p class="pera">
+                                    Up to <span class="highlights-text">50%</span> Off
+                                </p>
+                                <div class="location">
+                                    <i class="ri-map-pin-line"></i>
+                                    <p class="name">Bangkok, Thailand</p>
+                                </div>
+                                <div class="btn-secondary-sm radius-30"> Booking Now </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End-of special-->
+
+        <!-- Trip area S t a r t -->
+        <section class="special-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title mx-464 mx-auto text-center">
+                            <span class="highlights fancy-font font-400">Enjoy Trip</span>
+                            <h4 class="title">
+                                Top Domestic & International Tour
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Trip Buttons -->
+                        <ul class="nav nav-pills trip-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item trip-item" role="presentation">
+                                <button class="nav-link trip-nav active" id="pills-domestic-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-domestic" type="button" role="tab" aria-controls="pills-domestic"
+                                    aria-selected="true">
+                                    Domestic
+                                </button>
+                            </li>
+                            <li class="nav-item trip-item" role="presentation">
+                                <button class="nav-link trip-nav" id="pills-international-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-international" type="button" role="tab"
+                                    aria-controls="pills-international" aria-selected="false">
+                                    International
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- / End-of Trip Buttons -->
+
+                        <!-- Tab Contents -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-domestic" role="tabpanel"
+                                aria-labelledby="pills-domestic-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Sylhet</h4>
+                                                <p class="from-pera line-clamp-1">Osman Internatin...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">kolkata</h4>
+                                                <p class="from-pera line-clamp-1">kolkata Airport</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">india</h4>
+                                                <p class="from-pera line-clamp-1">Shah Amanat Inter...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">india</h4>
+                                                <p class="from-pera line-clamp-1">Shah Amanat Inter...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">canada</h4>
+                                                <p class="from-pera line-clamp-1">canada Airport</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">kolkata</h4>
+                                                <p class="from-pera line-clamp-1">kolkata Airport</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-international" role="tabpanel"
+                                aria-labelledby="pills-international-tab">
+                                <div class="row g-4">
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Australia</h4>
+                                                <p class="from-pera line-clamp-1">
+                                                    Australia Internatin...
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Usa</h4>
+                                                <p class="from-pera line-clamp-1">Usa Airport</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Japan</h4>
+                                                <p class="from-pera line-clamp-1">Narita Inter...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Hongkok</h4>
+                                                <p class="from-pera line-clamp-1">Hongkok Inter...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Japan</h4>
+                                                <p class="from-pera line-clamp-1">Narita Inter...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <a href="details-with-slider.html" class="trip-card">
+                                            <div class="from-flex">
+                                                <h4 class="from-title">USA</h4>
+                                                <p class="from-pera line-clamp-1">Istanbul Airport...</p>
+                                            </div>
+                                            <div class="trip-icon-flex">
+                                                <div class="trip-icon"><i class="ri-flight-takeoff-fill"></i></div>
+                                            </div>
+                                            <div class="from-flex">
+                                                <h4 class="from-title">Canada</h4>
+                                                <p class="from-pera line-clamp-1">Canada Airport</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / End-of Tab contents -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End-of trip-->
+
+        <!-- About Us area S t a r t -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="section-title mx-430 mb-30 w-md-100">
+                            <span class="highlights fancy-font font-400">About Us</span>
+                            <h4 class="title">
+                                Get The Best Travel Experience With Travello
+                            </h4>
+                            <p class="pera">
+                                Travel is a transformative and enriching experience that
+                                allows individuals to explore new destinations, cultures, and
+                                landscapes. It is a fundamental human activity that has been
+                                practiced for centuries and continues to be a source of joy,
+                                learning, and personal growth.
+                            </p>
+                            <p class="pera">
+                                Travel is a transformative and enriching experience that
+                                allows individuals to explore new destinations, cultures.
+                            </p>
+                            <div class="section-button mt-27 d-inline-block">
+                                <a href="about.html" class="btn-primary-icon-sm radius-20">
+                                    <p class="pera mt-0">Learn More</p>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <div class="about-imp-link mt-40">
+                                <div class="icon">
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="content">
+                                    <p class="pera font-16">
+                                        <span class="font-700">2,500</span> People Booked Tomorrow
+                                        Land Event in the Last 24 hours
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="about-count-section about-count-before-bg">
+                            <div class="banner">
+                                <img src="assets/images/gallery/about-banner-three.png" alt="travello">
+                            </div>
+                            <div class="all-count-list">
+                                <div class="details">
+                                    <h4 class="count">150k</h4>
+                                    <p class="pera">Happy Traveler</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="details">
+                                    <h4 class="count">95.7%</h4>
+                                    <p class="pera">Satisfaction Rate</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="details">
+                                    <h4 class="count">5000+</h4>
+                                    <p class="pera">Tour Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End-of About US-->
+
+        <!-- Feature S t a r t -->
+        <section class="feature-area feature-area-bg section-padding2">
+            <div class="container">
+                <div class="row justify-content-center position-relative z-10">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title mx-464 mx-auto text-center">
+                            <span class="highlights fancy-font font-400">Features Tour</span>
+                            <h4 class="title">
+                                Most Favorite Tour Place in The World
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 position-relative z-10">
+                    <div class="swiper favSwiper-active">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-4.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-3.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-2.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-10.jpg" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-4.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-3.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-2.png" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="package-card">
+                                    <div class="package-img imgEffect4">
+                                        <a href="details-with-slider.html">
+                                            <img src="assets/images/package/package-10.jpg" alt="travello">
+                                        </a>
+                                        <div class="image-badge">
+                                            <p class="pera">Featured</p>
+                                        </div>
+                                        <div class="fav-badge">
+                                            <i class="ri-heart-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="package-content">
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <div class="name">Bangkok, Thailand</div>
+                                        </div>
+                                        <h4 class="area-name">
+                                            <a href="details-with-slider.html">Dusitd2 Samyan Bangkok</a>
+                                        </h4>
+                                        <div class="packages-person mb-16">
+                                            <div class="count">
+                                                <i class="ri-time-line"></i>
+                                                <p class="pera">3 Days 2 Night</p>
+                                            </div>
+                                            <div class="count">
+                                                <i class="ri-user-line"></i>
+                                                <p class="pera">2 Person</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-review mb-0">
+                                            <div class="d-flex gap-10">
+                                                <p class="light-pera">From</p>
+                                                <p class="pera">$95</p>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <p class="pera">4.7 (20 Reviews)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative z-10">
+                    <div class="col-12 text-center">
+                        <div class="section-button d-inline-block">
+                            <a href="tour-list.html">
+                                <div class="btn-primary-icon-sm border-radius-20">
+                                    <p class="pera">View All Tour</p>
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End of Feature -->
+
+        <!-- Destination area S t a r t -->
+        <section class="destination-area destination-bg-before">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title text-center mx-464 mx-auto position-relative">
+                            <span class="highlights">Destination List</span>
+                            <h4 class="title">
+                                Explore The Beautiful Places Around World
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-4 col-lg-7 col-md-7">
+                        <a href="details-with-gallery.html" class="destination-banner">
+                            <img src="assets/images/destination/destination-01.png" alt="travello">
+                            <div class="destination-content">
+                                <div class="ratting-badge">
+                                    <i class="ri-star-s-fill"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="destination-info">
+                                    <div class="destination-name">
+                                        <p class="pera">Spain</p>
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <p class="name">Malaga View</p>
+                                        </div>
+                                    </div>
+                                    <div class="button-section">
+                                        <div class="arrow-btn">
+                                            <i  class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-7 col-md-7">
+                        <a href="details-with-gallery.html" class="destination-banner">
+                            <img src="assets/images/destination/destination-1.png" alt="travello">
+                            <div class="destination-content">
+                                <div class="ratting-badge">
+                                    <i class="ri-star-s-fill"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="destination-info">
+                                    <div class="destination-name">
+                                        <p class="pera">Spain</p>
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <p class="name">Malaga View</p>
+                                        </div>
+                                    </div>
+                                    <div class="button-section">
+                                        <div class="arrow-btn">
+                                            <i  class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-7 col-md-7">
+                        <a href="details-with-gallery.html" class="destination-banner">
+                            <img src="assets/images/destination/destination-001.jpg" alt="travello">
+                            <div class="destination-content">
+                                <div class="ratting-badge">
+                                    <i class="ri-star-s-fill"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="destination-info">
+                                    <div class="destination-name">
+                                        <p class="pera">Spain</p>
+                                        <div class="location">
+                                            <i class="ri-map-pin-line"></i>
+                                            <p class="name">Malaga View</p>
+                                        </div>
+                                    </div>
+                                    <div class="button-section">
+                                        <div class="arrow-btn">
+                                            <i  class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="destination-gallery">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="details-with-gallery.html" class="destination-banner">
+                                    <img src="assets/images/destination/destination-3.png" alt="travello">
+                                    <div class="destination-content">
+                                        <div class="ratting-badge">
+                                            <i class="ri-star-s-fill"></i>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="destination-name">
+                                                <p class="pera">Switzerland</p>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <p class="name">Zürich View</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-section">
+                                                <div class="arrow-btn">
+                                                    <i  class="ri-arrow-right-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="details-with-gallery.html" class="destination-banner">
+                                    <img src="assets/images/destination/destination-4.png" alt="travello">
+                                    <div class="destination-content">
+                                        <div class="ratting-badge">
+                                            <i class="ri-star-s-fill"></i>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="destination-name">
+                                                <p class="pera">Australia</p>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <p class="name">Melbourne View</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-section">
+                                                <div class="arrow-btn">
+                                                    <i  class="ri-arrow-right-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="details-with-gallery.html" class="destination-banner">
+                                        <img src="assets/images/destination/destination-5.png" alt="travello">
+                                    <div class="destination-content">
+                                        <div class="ratting-badge">
+                                            <i class="ri-star-s-fill"></i>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="destination-name">
+                                                <p class="pera">Canada</p>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <p class="name">Toronto View</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-section">
+                                                <div class="arrow-btn">
+                                                    <i  class="ri-arrow-right-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="details-with-gallery.html" class="destination-banner">
+                                        <img src="assets/images/destination/destination-02.png" alt="travello">
+                                    <div class="destination-content">
+                                        <div class="ratting-badge">
+                                            <i class="ri-star-s-fill"></i>
+                                            <span>4.5</span>
+                                        </div>
+                                        <div class="destination-info">
+                                            <div class="destination-name">
+                                                <p class="pera">Canada</p>
+                                                <div class="location">
+                                                    <i class="ri-map-pin-line"></i>
+                                                    <p class="name">Toronto View</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-section">
+                                                <div class="arrow-btn">
+                                                    <i  class="ri-arrow-right-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- shape -->
+            <div class="shape">
+                <img src="assets/images/icon/shape.png" alt="travello">
+            </div>
+        </section>
+        <!--/ End-of Destination -->
+        
+        <!-- Explore S t a r t -->
+        <section class="explore-area section-padding2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title text-center mx-430 mx-auto position-relative mb-60">
+                            <span class="highlights">Explore The Word</span>
+                            <h4 class="title">
+                                Our Best Offer Package For You
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="all-explore" id="v-pills-tab-three" role="tablist" aria-orientation="vertical">
+                            <div class="explore-btn active" id="pills-explore-one-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-one" role="tab" aria-controls="pills-explore-one"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-1.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Fishing & Swimming</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-two-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-two" role="tab" aria-controls="pills-explore-two"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-2.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Music & Relaxing</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-three-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-three" role="tab" aria-controls="pills-explore-three"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-3.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Trailers & Sports</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-four-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-four" role="tab" aria-controls="pills-explore-four"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-4.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Mountain & Hill Hiking</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-five-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-five" role="tab" aria-controls="pills-explore-five"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-5.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Paragliding Tours</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-six-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-six" role="tab" aria-controls="pills-explore-six"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-1.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Music & Relaxing</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-seven-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-seven" role="tab" aria-controls="pills-explore-seven"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-2.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Mountain & Hill Hiking</h4>
+                                </div>
+                            </div>
+                            <div class="explore-btn" id="pills-explore-eight-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-explore-eight" role="tab" aria-controls="pills-explore-eight"
+                                aria-selected="true">
+                                <div class="d-flex gap-16 align-items-center">
+                                    <div class="explore-icon">
+                                        <img src="assets/images/icon/explore-1.svg" alt="travello">
+                                    </div>
+                                    <h4 class="name">Fishing & Swimming</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6">
+                        <div class="tab-content" id="v-pills-tabContent-three">
+                            <div class="tab-pane fade show active" id="pills-explore-one" role="tabpanel"
+                                aria-labelledby="pills-explore-one">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/about.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-two" role="tabpanel"
+                                aria-labelledby="pills-explore-two">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/music.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-three" role="tabpanel"
+                                aria-labelledby="pills-explore-three">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/sports.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-four" role="tabpanel"
+                                aria-labelledby="pills-explore-four">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/hiking.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-five" role="tabpanel"
+                                aria-labelledby="pills-explore-five">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/paragliding.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-six" role="tabpanel"
+                                aria-labelledby="pills-explore-six">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/music.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-seven" role="tabpanel"
+                                aria-labelledby="pills-explore-seven">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/hiking.png" alt="travello">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-explore-eight" role="tabpanel"
+                                aria-labelledby="pills-explore-eight">
+                                <div class="explore-conntent">
+                                    <h4 class="title">Trailers & Sports</h4>
+                                    <p class="pera">
+                                        Lorem ipsum dolor sit amet consectetur. Nullam amet at sed
+                                        dui tellus tempor pretium tincidunt. Id amet sit viverra
+                                        dolor consectetur elementum. Non at volutpat aliquam ac ac
+                                        at amet. Ut semper semper sit aliquam penatibus dolor
+                                        tortor nisl.
+                                    </p>
+                                    <ul class="expect-list">
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci. Non sit
+                                            lorem dolor placerat faucibus.
+                                        </li>
+                                        <li class="list">
+                                            Lorem ipsum dolor sit amet consectetur. Platea urna
+                                            hendrerit dui eget velit sollicitudin orci.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="explore-banner">
+                                    <img src="assets/images/gallery/about.png" alt="travello">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End of Explore -->
+
+        <!-- Testimonial S t a r t -->
+        <section class="testimonial-area-three position-relative section-bg-before-two top-padding">
+            <div class="container">
+                <div class="row justify-content-center position-relative">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title mx-430 mx-auto text-center">
+                            <span class="highlights fancy-font font-400">Testimonial</span>
+                            <h4 class="title">
+                                What People Have Said About Our Service
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="swiper testimonialThree-active">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="user-img">
+                                            <img src="assets/images/testimonial/testimonial-1.jpeg" alt="travello">
+                                        </div>
+                                        <div class="user-info">
+                                            <p class="name">David Malan</p>
+                                            <p class="designation">Traveler</p>
+                                        </div>
+                                    </div>
+                                    <div class="rattings">
+                                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i>
+                                    </div>
+                                    <div class="testimonial-body">
+                                        <p class="pera line-clamp-3">
+                                            Lorem ipsum dolor sit amet consectetur. Et amet nulla in
+                                            adipiscing. Donec tincidunt dui vel adipiscing sit
+                                            turpis neque at cursus. Dignissim scelerisque mattis
+                                            ultricies vitae.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="logo">
+                                            <img src="assets/images/logo/logo.png" alt="travello" class="changeLogo">
+                                        </div>
+                                        <p class="date">Jan 20, 2025</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="user-img">
+                                            <img src="assets/images/testimonial/testimonial-1.jpeg" alt="travello">
+                                        </div>
+                                        <div class="user-info">
+                                            <p class="name">David Malan</p>
+                                            <p class="designation">Traveler</p>
+                                        </div>
+                                    </div>
+                                    <div class="rattings">
+                                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i>
+                                    </div>
+                                    <div class="testimonial-body">
+                                        <p class="pera line-clamp-3">
+                                            Lorem ipsum dolor sit amet consectetur. Et amet nulla in
+                                            adipiscing. Donec tincidunt dui vel adipiscing sit
+                                            turpis neque at cursus. Dignissim scelerisque mattis
+                                            ultricies vitae.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="logo">
+                                            <img src="assets/images/logo/logo.png" alt="travello" class="changeLogo">
+                                        </div>
+                                        <p class="date">Jan 20, 2025</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="user-img">
+                                            <img src="assets/images/testimonial/testimonial-1.jpeg" alt="travello">
+                                        </div>
+                                        <div class="user-info">
+                                            <p class="name">David Malan</p>
+                                            <p class="designation">Traveler</p>
+                                        </div>
+                                    </div>
+                                    <div class="rattings">
+                                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                            class="ri-star-fill"></i>
+                                    </div>
+                                    <div class="testimonial-body">
+                                        <p class="pera line-clamp-3">
+                                            Lorem ipsum dolor sit amet consectetur. Et amet nulla in
+                                            adipiscing. Donec tincidunt dui vel adipiscing sit
+                                            turpis neque at cursus. Dignissim scelerisque mattis
+                                            ultricies vitae.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="logo">
+                                            <img src="assets/images/logo/logo.png" alt="travello" class="changeLogo">
+                                        </div>
+                                        <p class="date">Jan 20, 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="hero-banner imgEffect2 o-hidden radius-20">
+                            <img src="assets/images/hero/testimonial-three-banner.png" alt="travello">
+                            <!-- shape 01 -->
+                            <div class="shape">
+                                <img src="assets/images/icon/feature-shape.png" alt="travello">
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" data-fancybox="video-gallery" class="wow bounceIn" data-wow-delay=".2s">
+                                <div class="video-player">
+                                    <i class="ri-play-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- / End Slider -->
+                </div>
+            </div>
+            <div class="shape-testimonial">
+                <img src="assets/images/icon/graphic.png" alt="travello">
+            </div>
+        </section>
+        <!--/ End of Testimonial -->
+
+        <!-- Brand S t a r t -->
+        <div class="brand-area">
+            <div class="container">
+                <div class="swiper brandSwiper-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-1.jpeg" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-2.jpg" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-3.jpg" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-4.png" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-5.png" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-1.jpeg" alt="travello">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/brand/brand-2.jpg" alt="travello">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End of Brand -->
+
+        <!-- News S t a r t -->
+        <section class="news-area section-padding2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title text-center mx-605 mx-auto position-relative mb-60">
+                            <span class="highlights">News & Article</span>
+                            <h4 class="title">
+                                Latest News & Articles From The Blog Posts
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <article class="news-card-two">
+                            <figure class="news-banner-two imgEffect">
+                                <a href="news-details.html"><img src="assets/images/news/news-4.png"
+                                        alt="travello"></a>
+                            </figure>
+                            <div class="news-content">
+                                <div class="heading">
+                                    <span class="heading-pera">Tour Guide</span>
+                                </div>
+                                <h4 class="title">
+                                    <a href="news-details.html">The World is a Book and Those Who do not Travel Read
+                                        Only
+                                        One Page.</a>
+                                </h4>
+                                <div class="news-info">
+                                    <div class="d-flex gap-10 align-items-center">
+                                        <div class="all-user">
+                                            <div class="happy-user">
+                                                <img src="assets/images/brand/brand-1.jpeg" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-2.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-3.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-4.jpeg" alt="travello">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="time">10 min read</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <article class="news-card-two">
+                            <figure class="news-banner-two imgEffect">
+                                <a href="news-details.html"><img src="assets/images/news/news-5.png"
+                                        alt="travello"></a>
+                            </figure>
+                            <div class="news-content">
+                                <div class="heading">
+                                    <span class="heading-pera">Tour Guide</span>
+                                </div>
+                                <h4 class="title">
+                                    <a href="news-details.html">The World is a Book and Those Who do not Travel Read
+                                        Only
+                                        One Page.</a>
+                                </h4>
+                                <div class="news-info">
+                                    <div class="d-flex gap-10 align-items-center">
+                                        <div class="all-user">
+                                            <div class="happy-user">
+                                                <img src="assets/images/brand/brand-1.jpeg" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-2.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-3.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-4.jpeg" alt="travello">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="time">10 min read</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <article class="news-card-two">
+                            <figure class="news-banner-two imgEffect">
+                                <a href="news-details.html"><img src="assets/images/news/news-6.png"
+                                        alt="travello"></a>
+                            </figure>
+                            <div class="news-content">
+                                <div class="heading">
+                                    <span class="heading-pera">Tour Guide</span>
+                                </div>
+                                <h4 class="title">
+                                    <a href="news-details.html">The World is a Book and Those Who do not Travel Read
+                                        Only
+                                        One Page.</a>
+                                </h4>
+                                <div class="news-info">
+                                    <div class="d-flex gap-10 align-items-center">
+                                        <div class="all-user">
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-1.jpeg" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-2.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-3.png" alt="travello">
+                                            </div>
+                                            <div class="happy-user">
+                                                <img src="assets/images/hero/user-4.jpeg" alt="travello">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="time">10 min read</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="section-button d-inline-block">
+                        <a href="news.html">
+                            <div class="btn-primary-icon-sm">
+                                <p class="pera">View All News</p>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End of News -->
+
+        <!-- Pricing S t a r t -->
+        <section class="pricing-area bottom-padding section-bg-before-two">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-title text-center mx-605 mx-auto position-relative">
+                            <span class="highlights-primary">Package Pricing Plan</span>
+                            <h4 class=" title">
+                                Simply Choose The Pricing Plan That Fits You Best
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative">
+                    <div class="row g-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="price-card h-calc wow fadeInUp" data-wow-delay="0.0s">
+                                <div class="price-header">
+                                    <div class="d-flex gap-7 mb-2">
+                                        <h4 class="title">Basic</h4>
+                                        <div class="price-badge d-none">popular</div>
+                                    </div>
+                                    <p class="pera">Best for personal and basic needs</p>
+                                </div>
+                                <div class="price-tag-section">
+                                    <div class="price-tag">
+                                        <h4 class="title">$10</h4>
+                                        <p class="pera">One-time payment</p>
+                                    </div>
+                                </div>
+                                <ul class="feature-points">
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">20+ Partners</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Mass Messaging</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="feature-point disable">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li class="feature-point disable">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Online booking engine</p>
+                                    </li>
+                                    <li class="feature-point disable">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Business Card Scanner</p>
+                                    </li>
+                                </ul>
+                                <div class="button-section">
+                                    <a href="payment.html">
+                                        <div class="btn-primary-icon-outline">
+                                            <span class="pera">Try Now</span>
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="imp-note">
+                                    <p class="pera">Per month +2% per online Booking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="price-card h-calc wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="price-header">
+                                    <div class="d-flex gap-7 mb-2">
+                                        <h4 class="title">Pro</h4>
+                                        <div class="price-badge">popular</div>
+                                    </div>
+                                    <p class="pera">Best for personal and basic needs</p>
+                                </div>
+                                <div class="price-tag-section">
+                                    <div class="price-tag">
+                                        <h4 class="title">$77</h4>
+                                        <p class="pera">One-time payment</p>
+                                    </div>
+                                </div>
+                                <ul class="feature-points">
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">20+ Partners</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Mass Messaging</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Online booking engine</p>
+                                    </li>
+                                    <li class="feature-point disable">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Business Card Scanner</p>
+                                    </li>
+                                </ul>
+                                <div class="button-section">
+                                    <a href="payment.html">
+                                        <div class="btn-primary-icon-outline">
+                                            <span class="pera">Try Now</span>
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="imp-note">
+                                    <p class="pera">Per month +1.9% per online Booking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="price-card h-calc wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="price-header">
+                                    <div class="d-flex gap-7 mb-2">
+                                        <h4 class="title">Custom</h4>
+                                        <div class="price-badge d-none">popular</div>
+                                    </div>
+                                    <p class="pera">Best for personal and basic needs</p>
+                                </div>
+                                <ul class="feature-points">
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Mass Messaging</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor sit amet</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Unlimited Everything</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Online booking engine</p>
+                                    </li>
+                                    <li class="feature-point">
+                                        <div class="tick-icon">
+                                            <i class="ri-check-line"></i>
+                                        </div>
+                                        <p class="pera">Business Card Scanner</p>
+                                    </li>
+                                </ul>
+                                <div class="button-section">
+                                    <a href="payment.html">
+                                        <div class="btn-primary-icon-outline">
+                                            <span class="pera">Contact</span>
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="imp-note">
+                                    <p class="pera">Please contact anytime</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ End of Pricing -->
+    </main>
+
+    <!-- Footer S t a r t -->
+    <footer>
+        <div class="footer-wrapper footer-bg">
+            <div class="container">
+                <div class="footer-area">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4 class="title">Company</h4>
+                                    <ul class="listing">
+                                        <li class="single-lsit">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="single-lsit">
+                                            <a href="news.html">News</a>
+                                        </li>
+                                        <li class="single-lsit"><a href="faq.html">Faq</a></li>
+                                        <li class="single-lsit">
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4 class="title">Explore</h4>
+                                    <ul class="listing">
+                                        <li class="single-lsit"><a href="faq.html">Faq</a></li>
+                                        <li class="single-lsit">
+                                            <a href="tour-list.html">Tour Listings</a>
+                                        </li>
+                                        <li class="single-lsit">
+                                            <a href="destination.html">Destination</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4 class="title">Quick Links</h4>
+                                    <ul class="listing">
+                                        <li class="single-lsit"><a href="index.html">Home</a></li>
+                                        <li class="single-lsit">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="single-lsit">
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4 class="title">Contact</h4>
+                                    <ul class="listing">
+                                        <li class="single-lsit">
+                                            <a href="#" class="mb-20 d-block">70/A Floor Divo Tower Melbourne,
+                                                Australia</a>
+                                        </li>
+                                        <li class="single-lsit">
+                                            <a href="#">
+                                                <div class="d-flex gap-12">
+                                                    <i class="ri-phone-line"></i> (00) +888 123456 789
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="single-lsit">
+                                            <a href="#">
+                                                <div class="d-flex gap-12">
+                                                    <i class="ri-mail-line"></i> example@gmail.com
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-middle-area">
+                    <div class="footer-body">
+                        <div class="footer-content">
+                            <div class="d-flex flex-column gap-20">
+                                <div class="logo">
+                                    <img src="assets/images/logo/logo.png" alt="travello" class="changeLogo">
+                                </div>
+                                <p class="pera">
+                                    Travel is a transformative and enriching experience that
+                                    allows individuals to explore new destinations, cultures,
+                                    and landscapes.
+                                </p>
+                            </div>
+                            <div class="footer-right">
+                                <h4 class="title">Subscribe Our Newsletter</h4>
+                                <div class="subscribe-wraper">
+                                    <input class="footer-search" type="search" name="footer"
+                                        placeholder="Enter Your Email">
+                                    <button class="subscribe-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul class="listing">
+                            <li class="single-list">
+                                <a href="terms-condition.html" class="single">Terms of usa</a>
+                            </li>
+                            <li class="single-list">
+                                <a href="privacy-policy.html" class="single">Privacy and Cookies Statement</a>
+                            </li>
+                            <li class="single-list">
+                                <a href="contact.html" class="single">How the site works</a>
+                            </li>
                         </ul>
                     </div>
-                    <!-- /Destinations -->
                 </div>
-                <p class="fw-normal text-secondary text-md-end mb-0 pt-4 mt-5 mt-md-0">
-                    <a href="destinations" class="fw-medium">
-                        <span>View all destinations</span>
-                        <i class="hicon hicon-flights-one-ways"></i>
-                    </a>
-                </p>
             </div>
-        </section>
-        <!-- /Destintions -->
-
-        <!-- Why -->
-        <?php include ('includes/whyChoose.php'); ?>
-        <!-- /Why -->
-
-
-        <!-- Videos-->
-        <?php include ('includes/video.php'); ?>
-        <!-- /Videos -->
-
-        <!-- Categories -->
-        <section class="p-top-90 p-bottom-90 bg-gray-gradient">
-            <div class="container">
-                <!-- Title -->
-                <div class="d-xl-flex align-items-xl-center pb-4">
-                    <div class="block-title me-auto">
-                        <small class="sub-title">Tour categories</small>
-                        <h2 class="h1 title">Adventure types</h2>
-                    </div>
-                    <div class="fw-normal text-secondary mt-3">
-                        <a href="#"><abbr title="Go to contact page" class="fw-semibold">Get help</abbr></a> now!
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between gap-14 flex-wrap">
+                                <p class="pera">
+                                    © <span class="current-year">2025</span> initTheme. All rights
+                                    reserved
+                                </p>
+                                <p class="pera">Powered by @Travello</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- /Title -->
-                <!-- Category list -->
-                <div class="row g-3">
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <span class="card-icon">
-                                <i class="hicon hicon-regular-valley"></i>
-                            </span>
-                            <div class="card-content">
-                                <h3 class="h5 card-title">VISA Application</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-regular-meal"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">Scholarship Abroad</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-culture"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">Work Abroad & Tourism</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-mountain-view"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">Flight Booking</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-china-only"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">Hotel Reservation</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-regular-mountain-view"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">COVID-19 Testing</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-xxl-3 col-xl-4 col-md-6">
-                        <a class="mini-card card-hover hover-effect shadow-sm rounded">
-                            <div class="d-flex align-items-center">
-                                <span class="card-icon">
-                                    <i class="hicon hicon-regular-hiking"></i>
-                                </span>
-                                <div class="card-content">
-                                    <h3 class="h5 card-title">General Traveling Consultation</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- /Category list -->
             </div>
-        </section>
-        <!-- /Categories -->
+        </div>
+    </footer>
+    <!--/ End-of Footer -->
 
-        <!-- Booking -->
-        <?php include ('includes/booking.php'); ?>
-        <!-- /Booking -->
+    <!-- Scroll Up  -->
+    <div class="progressParent" id="back-top">
+        <svg class="backCircle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Add an search-overlay element -->
+    <!-- <div class="search-overlay"></div> -->
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.0.min.js"></script>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+    <!-- Main js-->
+    <script src="assets/js/main.js"></script>
+</body>
 
-        <!-- Testimonials -->
-        <?php include ('includes/testimonials.php') ?>
-        <!-- /testimonials -->
-
-    </main>
-    <!-- /Main -->
-
-<?php include ('./includes/footer.php'); ?>
+</html>
