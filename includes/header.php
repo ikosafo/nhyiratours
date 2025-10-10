@@ -1,421 +1,638 @@
-<!DOCTYPE html>
-<html lang="zxx" dir="ltr">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <script>
-        const setTheme = (theme) => {
-            theme ??= localStorage.theme || "light";
-            document.documentElement.dataset.theme = theme;
-            localStorage.theme = theme;
-        };
-        setTheme();
-    </script>
-    <meta logo="assets/images/logo/ntts.png">
-    <meta white-logo="assets/images/logo/logo-white.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Travello - Multipurpose travel and tour booking.These template is suitable for  travel agency , tour, travel website , tour operator , tourism , booking  trip or adventure website. ">
-    <meta name="keywords" content="travel, trip booking,tour, hotel, tour guide, tourism, blog, flight, travel agency, tourism agency, accommodation, tour website">
-    <meta name="author" content="inittheme">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Multipurpose travel and tour booking">
-    <meta property="og:site_name" content="Travello">
-    <meta property="og:url" content="https://inittheme.com">
-    <meta property="og:image" content="https://inittheme.com/images/selfie.jpg">
-    <meta property="og:description" content="Multipurpose travel and tour booking, multipurpose template">
-    <meta name="twitter:title" content="Multipurpose travel and tour booking">
-    <meta name="twitter:description" content="Multipurpose travel and tour booking, multipurpose template">
-    <meta name="twitter:image" content="https://twitter.com/inittheme/photo">
-    <meta name="twitter:card" content="summary">
-    <!-- Google site verification -->
-    <meta name="google-site-verification" content="...">
-    <meta name="facebook-domain-verification" content="...">
-    <meta name="csrf-token" content="...">
-    <meta name="currency" content="$">
-    <!-- Title -->
-    <title>Multipurpose travel and tour booking</title>
-    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/icon/favicon.png">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0.min.css">
-    <!-- Fonts & icon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts-icon.css">
-    <!-- Plugin -->
-    <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
-    <!-- RTL CSS::When Need RTL Uncomments File -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
 
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Nice Select CSS -->
+    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Title -->
+    <title>Nhyiraba Travel & Tour Services - Explore, Learn, and Work Abroad</title>
+    <link rel="icon" href="assets/images/logo/ntts.png" type="image/gif" sizes="20x20">
 
     <style>
-       /* Override styles for the header-top to make it thinner, full-width, blue background with white text, and remove bottom line */
-        .header-top {
-            background-color: #0a3e59; /* Blue background */
-            color: #ffffff; /* White text */
-            padding: 5px 0; /* Further reduced padding for thinner appearance */
-            width: 100%; /* Full width */
-            margin: 0; /* Remove margins */
-            border-bottom: none; /* Remove any bottom border */
-            box-shadow: none; /* Remove any shadow */
-        }
-
-        /* Ensure the container inside header-top is full-width */
-        .header-top .container-fluid {
-            width: 100%;
-            max-width: none;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        /* Adjust text styles for contact items */
-        .top-menu-wrapper .contact-item .info p.pera,
-        .top-menu-wrapper .contact-item .info h4.title,
-        .top-menu-wrapper .contact-item .info h4.title a {
-            color: #ffffff; /* White text for contact info */
-            font-size: 13px; /* Smaller font size for thinner appearance */
-            margin: 0; /* Remove extra margins */
-        }
-
-        /* Adjust spacing between icon and text */
-        .top-menu-wrapper .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px; /* Increased space between icon and text */
-        }
-
-        /* Adjust social icons color */
-        .top-menu-wrapper .social-icons .social-icon i {
-            color: #ffffff; /* White icons */
-        }
-
-        /* Adjust button styles */
-        .top-menu-wrapper .sign-btn a.btn-secondary-sm {
-            background-color: #ffffff; /* White background for buttons */
-            color: #007bff; /* Blue text for buttons */
-            font-size: 13px; /* Smaller font size */
-            padding: 4px 12px; /* Reduced padding for smaller buttons */
-        }
-
-        /* Adjust icon circles */
-        .top-menu-wrapper .contact-item .circle-primary-sm {
-            background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white for contrast */
-        }
-
-        .top-menu-wrapper .contact-item .circle-primary-sm i {
-            color: #ffffff; /* White icons */
-        }
-
-        /* Ensure flex layout is compact */
-        .top-menu-wrapper {
-            gap: 8px; /* Further reduced gap for compact layout */
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            .top-menu-wrapper {
-                flex-direction: column; /* Stack items vertically on mobile */
-                align-items: flex-start;
-            }
-            .top-header-left, .top-header-right {
-                width: 100%; /* Full width for mobile */
-            }
-        }
-
-        .header-area-three .top-menu-wrapper {
-            padding-top: 5px !important;
-            padding-bottom: 4px !important;
-            border-bottom: 0 !important;
-            position: relative;
+        html, body {
+            font-family: 'Poppins', sans-serif !important;
         }
     </style>
 </head>
 
-<body>
-    <header class="header-area-three">
-        <div class="main-header">
-            <!-- Top Bar -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="top-menu-wrapper d-flex align-items-center justify-content-between">
-                                <div class="top-header-left">
-                                    <div class="contact-section d-flex align-items-center gap-20">
-                                        <div class="contact-item d-flex align-items-center">
-                                            <div class="circle-primary-sm">
-                                                <i class="ri-phone-line"></i>
-                                            </div>
-                                            <div class="info">
-                                                <p class="pera">Call Anytime</p>
-                                                <h4 class="title">
-                                                    <a href="tel:+1234567890">030-3955227</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="contact-item d-flex align-items-center">
-                                            <div class="circle-primary-sm">
-                                                <i class="ri-mail-line"></i>
-                                            </div>
-                                            <div class="info">
-                                                <p class="pera">Email Us</p>
-                                                <h4 class="title">
-                                                    <a href="mailto:info@nhyirabatours.com">info@nhyirabatours.com</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="top-header-right d-flex align-items-center gap-20">
-                                    <div class="social-icons">
-                                        <a href="https://facebook.com" target="_blank" class="social-icon">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                        <a href="https://twitter.com" target="_blank" class="social-icon">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                        <a href="https://instagram.com" target="_blank" class="social-icon">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </div>
-                                    <div class="sign-btn">
-                                        <a href="login.html" class="btn-secondary-sm radius-30">Login</a>
-                                    </div>
-                                    <div class="sign-btn">
-                                        <a href="register.html" class="btn-secondary-sm radius-30">Register</a>
-                                    </div>
-                                </div>
-                            </div>
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        </svg>
+    </div>
+
+    <!-- header Section Start-->
+    <div class="topbar-area d-lg-block d-none">
+        <div class="container">
+            <div class="topbar-wrap">
+                <div class="logo-and-search-area">
+                    <a href="/" class="header-logo">
+                        <img src="assets/images/logo/ntts.png" alt="" style="width: 55px; height: 65px;">
+                    </a>
+                    <form class="search-area">
+                        <div class="form-inner">
+                            <button type="submit">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="M15.8044 14.8855L13.0544 12.198L12.99 12.1002C12.8688 11.9807 12.7055 11.9137 12.5353 11.9137C12.3651 11.9137 12.2018 11.9807 12.0806 12.1002C9.74343 14.2443 6.14312 14.3605 3.66561 12.3724C1.18811 10.3843 0.604677 6.90645 2.30061 4.24832C3.99655 1.5902 7.44655 0.573637 10.3631 1.87332C13.2797 3.17301 14.755 6.38739 13.8125 9.38239C13.7793 9.48905 13.7753 9.60268 13.8011 9.71137C13.8269 9.82007 13.8815 9.91983 13.9591 10.0002C14.0375 10.082 14.1358 10.1421 14.2443 10.1746C14.3528 10.2071 14.4679 10.211 14.5784 10.1858C14.6883 10.1616 14.79 10.109 14.8732 10.0332C14.9564 9.95744 15.0182 9.86113 15.0525 9.75395C16.1775 6.19989 14.4781 2.37489 11.0525 0.75395C7.62686 -0.866988 3.50468 0.200824 1.35124 3.26864C-0.802198 6.33645 -0.34001 10.4818 2.43905 13.0239C5.21811 15.5661 9.47968 15.7408 12.4687 13.4377L14.9037 15.8183C15.026 15.9358 15.1889 16.0014 15.3584 16.0014C15.5279 16.0014 15.6909 15.9358 15.8131 15.8183C15.8728 15.7599 15.9201 15.6902 15.9525 15.6133C15.9848 15.5363 16.0015 15.4537 16.0015 15.3702C16.0015 15.2867 15.9848 15.2041 15.9525 15.1271C15.9201 15.0502 15.8728 14.9805 15.8131 14.9221L15.8044 14.8855Z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <input type="text" placeholder="Find Your Perfect Tour Package">
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
-            <!-- Header Bottom -->
-            <div class="header-bottom header-sticky">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="menu-wrapper d-flex align-items-center justify-content-between">
-                                <!-- Logo -->
-                                <div class="logo">
-                                    <a href="/"><img src="assets/images/logo/ntts.png" alt="logo" style="width:70px;height:70px" class="changeLogo"></a>
-                                </div>
-                                <!-- Main-menu for desktop -->
-                                <div class="main-menu d-none d-lg-block">
-                                    <nav>
-                                        <div class="d-flex align-items-center">
-                                            <ul class="listing" id="navigation">
-                                                <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single link-active">Home</a>
-                                                </li>
-                                                <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single">
-                                                        African <br> Destinations <i class="ri-arrow-down-s-line"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">West Africa<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/benin/" class="single">Benin</a></li>
-                                                                <li class="single-list"><a href="/destinations/burkina-faso/" class="single">Burkina Faso</a></li>
-                                                                <li class="single-list"><a href="/destinations/cape-verde/" class="single">Cape Verde</a></li>
-                                                                <li class="single-list"><a href="/destinations/cote-divoire/" class="single">Côte d'Ivoire</a></li>
-                                                                <li class="single-list"><a href="/destinations/ghana/" class="single">Ghana</a></li>
-                                                                <li class="single-list"><a href="/destinations/guinea/" class="single">Guinea</a></li>
-                                                                <li class="single-list"><a href="/destinations/guinea-bissau/" class="single">Guinea-Bissau</a></li>
-                                                                <li class="single-list"><a href="/destinations/liberia/" class="single">Liberia</a></li>
-                                                                <li class="single-list"><a href="/destinations/mali/" class="single">Mali</a></li>
-                                                                <li class="single-list"><a href="/destinations/mauritania/" class="single">Mauritania</a></li>
-                                                                <li class="single-list"><a href="/destinations/niger/" class="single">Niger</a></li>
-                                                                <li class="single-list"><a href="/destinations/nigeria/" class="single">Nigeria</a></li>
-                                                                <li class="single-list"><a href="/destinations/senegal/" class="single">Senegal</a></li>
-                                                                <li class="single-list"><a href="/destinations/sierra-leone/" class="single">Sierra Leone</a></li>
-                                                                <li class="single-list"><a href="/destinations/gambia/" class="single">The Gambia</a></li>
-                                                                <li class="single-list"><a href="/destinations/togo/" class="single">Togo</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Central Africa<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/angola/" class="single">Angola</a></li>
-                                                                <li class="single-list"><a href="/destinations/cameroon/" class="single">Cameroon</a></li>
-                                                                <li class="single-list"><a href="/destinations/central-african-republic/" class="single">Central African Republic</a></li>
-                                                                <li class="single-list"><a href="/destinations/chad/" class="single">Chad</a></li>
-                                                                <li class="single-list"><a href="/destinations/congo-democratic-republic/" class="single">Democratic Republic of the Congo</a></li>
-                                                                <li class="single-list"><a href="/destinations/congo-republic/" class="single">Republic of the Congo</a></li>
-                                                                <li class="single-list"><a href="/destinations/equatorial-guinea/" class="single">Equatorial Guinea</a></li>
-                                                                <li class="single-list"><a href="/destinations/gabon/" class="single">Gabon</a></li>
-                                                                <li class="single-list"><a href="/destinations/sao-tome-principe/" class="single">São Tomé and Príncipe</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">East Africa<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/burundi/" class="single">Burundi</a></li>
-                                                                <li class="single-list"><a href="/destinations/comoros/" class="single">Comoros</a></li>
-                                                                <li class="single-list"><a href="/destinations/djibouti/" class="single">Djibouti</a></li>
-                                                                <li class="single-list"><a href="/destinations/eritrea/" class="single">Eritrea</a></li>
-                                                                <li class="single-list"><a href="/destinations/ethiopia/" class="single">Ethiopia</a></li>
-                                                                <li class="single-list"><a href="/destinations/kenya/" class="single">Kenya</a></li>
-                                                                <li class="single-list"><a href="/destinations/madagascar/" class="single">Madagascar</a></li>
-                                                                <li class="single-list"><a href="/destinations/malawi/" class="single">Malawi</a></li>
-                                                                <li class="single-list"><a href="/destinations/mauritius/" class="single">Mauritius</a></li>
-                                                                <li class="single-list"><a href="/destinations/mozambique/" class="single">Mozambique</a></li>
-                                                                <li class="single-list"><a href="/destinations/rwanda/" class="single">Rwanda</a></li>
-                                                                <li class="single-list"><a href="/destinations/seychelles/" class="single">Seychelles</a></li>
-                                                                <li class="single-list"><a href="/destinations/somalia/" class="single">Somalia</a></li>
-                                                                <li class="single-list"><a href="/destinations/south-sudan/" class="single">South Sudan</a></li>
-                                                                <li class="single-list"><a href="/destinations/tanzania/" class="single">Tanzania</a></li>
-                                                                <li class="single-list"><a href="/destinations/uganda/" class="single">Uganda</a></li>
-                                                                <li class="single-list"><a href="/destinations/zambia/" class="single">Zambia</a></li>
-                                                                <li class="single-list"><a href="/destinations/zimbabwe/" class="single">Zimbabwe</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Indian Ocean Islands<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/comoros/" class="single">Comoros</a></li>
-                                                                <li class="single-list"><a href="/destinations/madagascar/" class="single">Madagascar</a></li>
-                                                                <li class="single-list"><a href="/destinations/mauritius/" class="single">Mauritius</a></li>
-                                                                <li class="single-list"><a href="/destinations/reunion/" class="single">Réunion</a></li>
-                                                                <li class="single-list"><a href="/destinations/seychelles/" class="single">Seychelles</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Southern Africa<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/botswana/" class="single">Botswana</a></li>
-                                                                <li class="single-list"><a href="/destinations/eswatini/" class="single">Eswatini</a></li>
-                                                                <li class="single-list"><a href="/destinations/lesotho/" class="single">Lesotho</a></li>
-                                                                <li class="single-list"><a href="/destinations/namibia/" class="single">Namibia</a></li>
-                                                                <li class="single-list"><a href="/destinations/south-africa/" class="single">South Africa</a></li>
-                                                                <li class="single-list"><a href="/destinations/zambia/" class="single">Zambia</a></li>
-                                                                <li class="single-list"><a href="/destinations/zimbabwe/" class="single">Zimbabwe</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">North Africa<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/algeria/" class="single">Algeria</a></li>
-                                                                <li class="single-list"><a href="/destinations/egypt/" class="single">Egypt</a></li>
-                                                                <li class="single-list"><a href="/destinations/libya/" class="single">Libya</a></li>
-                                                                <li class="single-list"><a href="/destinations/mauritania/" class="single">Mauritania</a></li>
-                                                                <li class="single-list"><a href="/destinations/morocco/" class="single">Morocco</a></li>
-                                                                <li class="single-list"><a href="/destinations/sudan/" class="single">Sudan</a></li>
-                                                                <li class="single-list"><a href="/destinations/tunisia/" class="single">Tunisia</a></li>
-                                                                <li class="single-list"><a href="/destinations/western-sahara/" class="single">Western Sahara</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single">
-                                                        Tours <i class="ri-arrow-down-s-line"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Other Destinations<i class="ri-arrow-right-s-line"></i></a>
-                                                            <ul class="submenu">
-                                                                <li class="single-list"><a href="/destinations/uae/" class="single">United Arab Emirates (UAE)</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Academic Tours</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Leisure Tours</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Religious Tours</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Volunteer Mission Tours</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Corporate (MICE)</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Travel Advisor Familiarization Trip</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single">
-                                                        Travel <br> Checklist <i class="ri-arrow-down-s-line"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Plan Your Trip</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Travel Insurance</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single">
-                                                        About Us <i class="ri-arrow-down-s-line"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Testimonials</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Careers</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">FAQ</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Local Experts</a>
-                                                        </li>
-                                                        <li class="single-list">
-                                                            <a href="#" class="single">Contact</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <!-- <li class="single-list">
-                                                    <a href="javascript:void(0)" class="single">
-                                                        Contact 
-                                                    </a>
-                                                </li> -->
-                                            </ul>
-                                            <!-- Search Box -->
-                                            <div class="search-box search-bar d-none d-lg-block">
-                                                <div class="header-search">
-                                                    <span class="pera">Search...</span>
-                                                    <div class="search-icon">
-                                                        <i class="ri-search-line"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </nav>
-                                </div>
-                                <!-- Mobile Menu -->
-                                <div class="mobile_menu d-block d-lg-none">
-                                    <div class="d-flex align-items-center gap-15">
-                                        <div class="search-bar">
-                                            <a href="javascript:void(0)" class="rounded-btn">
-                                                <i class="ri-search-line"></i>
-                                            </a>
-                                        </div>
-                                        <button class="ToggleThemeButton change-theme-mode m-0 p-0 border-0">
-                                            <i class="ri-sun-line"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                <div class="topbar-right">
+                    <div class="support-and-language-area">
+                        <a href="#">Need Help?</a>
+                        <div class="language-area">
+                            <div class="language-btn">
+                                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="M7 14C5.13023 14 3.37239 13.2719 2.05023 11.9498C0.728137 10.6276 0 8.86977 0 7C0 5.13023 0.728137 3.37239 2.05023 2.05023C3.37239 0.728137 5.13023 0 7 0C8.86977 0 10.6276 0.728137 11.9498 2.05023C13.2719 3.37239 14 5.13023 14 7C14 8.86977 13.2719 10.6276 11.9498 11.9498C10.6276 13.2719 8.86977 14 7 14ZM7 0.583324C3.46183 0.583324 0.583324 3.46183 0.583324 7C0.583324 10.5382 3.46183 13.4166 7 13.4166C10.5382 13.4166 13.4166 10.5382 13.4166 7C13.4166 3.46183 10.5382 0.583324 7 0.583324Z"/>
+                                        <path
+                                            d="M7 14C5.90297 14 4.8854 13.2486 4.13468 11.8841C3.41431 10.5747 3.01758 8.84018 3.01758 7C3.01758 5.15982 3.41431 3.42527 4.13468 2.11589C4.8854 0.751433 5.90297 0 7 0C8.09704 0 9.11461 0.751433 9.8653 2.11589C10.5857 3.42527 10.9824 5.15982 10.9824 7C10.9824 8.84018 10.5857 10.5747 9.8653 11.8841C9.11461 13.2486 8.09704 14 7 14ZM7 0.583324C6.12536 0.583324 5.2893 1.22746 4.64579 2.39709C3.97198 3.62179 3.6009 5.25645 3.6009 7C3.6009 8.74355 3.97198 10.3782 4.64576 11.6029C5.28927 12.7725 6.12533 13.4166 6.99998 13.4166C7.87462 13.4166 8.71068 12.7725 9.35419 11.6029C10.028 10.3782 10.3991 8.74355 10.3991 7C10.3991 5.25645 10.028 3.62179 9.35419 2.39709C8.71071 1.22746 7.87462 0.583324 7 0.583324Z"/>
+                                        <path
+                                            d="M6.99968 13.9573C6.8386 13.9573 6.70801 13.8267 6.70801 13.6657V0.334156C6.70801 0.173074 6.83857 0.0424805 6.99968 0.0424805C7.16077 0.0424805 7.29136 0.173074 7.29136 0.334156V13.6657C7.29136 13.8267 7.16077 13.9573 6.99968 13.9573Z"/>
+                                        <path
+                                            d="M13.6661 7.29147H0.334644C0.173562 7.29147 0.0429688 7.16088 0.0429688 6.99979C0.0429688 6.83871 0.173562 6.70812 0.334644 6.70812H13.6661C13.8272 6.70812 13.9578 6.83868 13.9578 6.99979C13.9578 7.16088 13.8272 7.29147 13.6661 7.29147ZM12.7022 3.81187H1.29862C1.13754 3.81187 1.00695 3.6813 1.00695 3.52019C1.00695 3.35908 1.13751 3.22852 1.29862 3.22852H12.7022C12.8633 3.22852 12.9939 3.35908 12.9939 3.52019C12.9939 3.6813 12.8632 3.81187 12.7022 3.81187ZM12.7022 10.771H1.29862C1.13754 10.771 1.00695 10.6404 1.00695 10.4794C1.00695 10.3183 1.13751 10.1877 1.29862 10.1877H12.7022C12.8633 10.1877 12.9939 10.3183 12.9939 10.4794C12.9939 10.6404 12.8632 10.771 12.7022 10.771Z"/>
+                                    </g>
+                                </svg>
+                                <span>EN</span>
+                                <i class="bi bi-caret-down-fill"></i>
                             </div>
+                            <ul class="language-list">
+                                <li><a href="#"><img src="assets/img/home1/england-flag.png" alt="">English</a></li>
+                                <li><a href="#"><img src="assets/img/home1/netherlands-flag.png" alt="">Dutch</a></li>
+                                <li><a href="#"><img src="assets/img/home1/japan-flag.png" alt="">Japanese</a></li>
+                                <li><a href="#"><img src="assets/img/home1/korea-flag.png" alt="">Korean</a></li>
+                                <li><a href="#"><img src="assets/img/home1/china-flag.png" alt="">Chinese</a></li>
+                            </ul>
                         </div>
                     </div>
+                    <a href="#" class="primary-btn1 black-bg">
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
+                                </g>
+                            </svg>
+                            Login
+                        </span>
+                        <span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
+                                </g>
+                            </svg>
+                            Login
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
-       
+    </div>
+    <header class="style-1">
+        <div class="container d-flex flex-nowrap align-items-center justify-content-between">
+            <a href="index.html" class="header-logo d-lg-none d-block">
+                <img src="assets/img/header-logo.svg" alt="">
+            </a>
+            <div class="main-menu">
+                <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="mobile-logo-wrap">
+                        <img src="assets/img/header-logo.svg" alt="">
+                    </a>
+                    <div class="menu-close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item-has-children active">
+                        <a href="/">Home</a>      
+                    </li>
+                    <li class="menu-item-has-children position-inherit">
+                        <a href="destination-01.html" class="drop-down">
+                            African Destination
+                            <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <div class="mega-menu">
+                            <div class="container">
+                                <div class="menu-row">
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>North Africa</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/egypt-flag.png" alt="">
+                                                    Egypt
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/morocco-flag.png" alt="">
+                                                    Morocco
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/algeria-flag.png" alt="">
+                                                    Algeria
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/tunisia-flag.png" alt="">
+                                                    Tunisia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/libya-flag.png" alt="">
+                                                    Libya
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/sudan-flag.png" alt="">
+                                                    Sudan
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>West Africa</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/nigeria-flag.png" alt="">
+                                                    Nigeria
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/ghana-flag.png" alt="">
+                                                    Ghana
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/senegal-flag.png" alt="">
+                                                    Senegal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/ivory-coast-flag.png" alt="">
+                                                    Ivory Coast
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/mali-flag.png" alt="">
+                                                    Mali
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/niger-flag.png" alt="">
+                                                    Niger
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>Central Africa</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/cameroon-flag.png" alt="">
+                                                    Cameroon
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/congo-flag.png" alt="">
+                                                    Democratic Republic of the Congo
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/gabon-flag.png" alt="">
+                                                    Gabon
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/central-african-republic-flag.png" alt="">
+                                                    Central African Republic
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/chad-flag.png" alt="">
+                                                    Chad
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/equatorial-guinea-flag.png" alt="">
+                                                    Equatorial Guinea
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>East Africa</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/kenya-flag.png" alt="">
+                                                    Kenya
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/tanzania-flag.png" alt="">
+                                                    Tanzania
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/uganda-flag.png" alt="">
+                                                    Uganda
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/ethiopia-flag.png" alt="">
+                                                    Ethiopia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/rwanda-flag.png" alt="">
+                                                    Rwanda
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/somalia-flag.png" alt="">
+                                                    Somalia
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>Southern Africa</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/south-africa-flag.png" alt="">
+                                                    South Africa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/zimbabwe-flag.png" alt="">
+                                                    Zimbabwe
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/botswana-flag.png" alt="">
+                                                    Botswana
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/namibia-flag.png" alt="">
+                                                    Namibia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/zambia-flag.png" alt="">
+                                                    Zambia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/mozambique-flag.png" alt="">
+                                                    Mozambique
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-single-item">
+                                        <div class="menu-title">
+                                            <h5>Indian Ocean Islands</h5>
+                                        </div>
+                                        <i class="bi bi-plus dropdown-icon"></i>
+                                        <ul>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/mauritius-flag.png" alt="">
+                                                    Mauritius
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/seychelles-flag.png" alt="">
+                                                    Seychelles
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/madagascar-flag.png" alt="">
+                                                    Madagascar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/comoros-flag.png" alt="">
+                                                    Comoros
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/reunion-flag.png" alt="">
+                                                    Réunion
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="destination-details.html">
+                                                    <img src="assets/img/home1/maldives-flag.png" alt="">
+                                                    Maldives
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/home1/mega-menu-vector1.svg" alt="" class="vector1">
+                            <img src="assets/img/home1/mega-menu-vector2.svg" alt="" class="vector2">
+                        </div>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="travel-package-01.html" class="drop-down">
+                            Tours
+                            <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="destination-01.html">Other Destination</a>
+                                <i class="d-lg-flex d-none bi-caret-right-fill dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="destination-01.html">United Arab Emirates</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="travel-package-02.html">Academic Tours</a></li>
+                            <li><a href="travel-package-details.html">Leisure Tours</a></li>
+                            <li><a href="travel-package-details.html">Religious Tours</a></li>
+                            <li><a href="travel-package-details.html">Volunteer Mission Tours</a></li>
+                            <li><a href="travel-package-details.html">Corporate (MICE)</a></li>
+                            <li><a href="travel-package-details.html">Travel Advisors Familiarization Trip</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="visa.html" class="drop-down">
+                            Travel Checklist
+                            <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li><a href="visa.html">Plan your trip</a></li>
+                            <li><a href="visa-details.html">Travel Insurance</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="drop-down">
+                            About Us
+                            <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li><a href="about.html">Testimonials</a></li>
+                            <li><a href="about.html">Careers</a></li>
+                            <li><a href="about.html">FAQs</a></li>
+                            <li><a href="about.html">Local Experts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="contact-area d-lg-none d-flex">
+                    <div class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/whatsapp-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>WhatsApp</span>
+                            <a href="https://wa.me/233546192565">+233 54 619 2565</a>
+                        </div>
+                    </div>  
+                    <i class="bi bi-caret-down-fill contact-dropdown-btn"></i>
+                    <ul class="contact-list">
+                        <li class="single-contact">
+                            <div class="icon">
+                                <img src="assets/img/home1/icon/mail-icon.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>Mail Support</span>
+                                <a href="https://demo.egenslab.com/cdn-cgi/l/email-protection#b0d9ded6dff0d5c8d1ddc0dcd59ed3dfdd"><span class="__cf_email__" data-cfemail="94fdfaf2fbd4f1ecf5f9e4f8f1baf7fbf9">[email&#160;protected]</span></a>
+                            </div>
+                        </li>
+                        <li class="single-contact">
+                            <div class="icon">
+                                <img src="assets/img/home1/icon/live-chat.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>More Inquery</span>
+                                <a href="https://wa.me/91345533865">+91 345 533 865</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="primary-btn1 black-bg d-lg-none d-flex">
+                    <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
+                            </g>
+                        </svg>
+                        Login
+                    </span>
+                    <span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
+                            </g>
+                        </svg>
+                        Login
+                    </span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="contact-area d-lg-flex d-none">
+                    <div class="single-contact">
+                        <div class="icon">
+                            <img src="assets/img/home1/icon/whatsapp-icon.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <span>WhatsApp</span>
+                            <a href="https://wa.me/233546192565">+233 54 619 2565</a>
+                        </div>
+                    </div>  
+                    <i class="bi bi-caret-down-fill contact-dropdown-btn"></i>
+                    <ul class="contact-list">
+                        <li class="single-contact">
+                            <div class="icon">
+                                <img src="assets/img/home1/icon/mail-icon.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>Mail Support</span>
+                                <a href="https://demo.egenslab.com/cdn-cgi/l/email-protection#e980878f86a98c91888499858cc78a8684"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7c2dfc6cad7cbc289c4c8ca">[email&#160;protected]</span></a>
+                            </div>
+                        </li>
+                        <li class="single-contact">
+                            <div class="icon">
+                                <img src="assets/img/home1/icon/live-chat.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <span>More Inquery</span>
+                                <a href="https://wa.me/91345533865">+91 345 533 865</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="language-area d-lg-none d-block">
+                    <div class="language-btn">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M7 14C5.13023 14 3.37239 13.2719 2.05023 11.9498C0.728137 10.6276 0 8.86977 0 7C0 5.13023 0.728137 3.37239 2.05023 2.05023C3.37239 0.728137 5.13023 0 7 0C8.86977 0 10.6276 0.728137 11.9498 2.05023C13.2719 3.37239 14 5.13023 14 7C14 8.86977 13.2719 10.6276 11.9498 11.9498C10.6276 13.2719 8.86977 14 7 14ZM7 0.583324C3.46183 0.583324 0.583324 3.46183 0.583324 7C0.583324 10.5382 3.46183 13.4166 7 13.4166C10.5382 13.4166 13.4166 10.5382 13.4166 7C13.4166 3.46183 10.5382 0.583324 7 0.583324Z"/>
+                                <path
+                                    d="M7 14C5.90297 14 4.8854 13.2486 4.13468 11.8841C3.41431 10.5747 3.01758 8.84018 3.01758 7C3.01758 5.15982 3.41431 3.42527 4.13468 2.11589C4.8854 0.751433 5.90297 0 7 0C8.09704 0 9.11461 0.751433 9.8653 2.11589C10.5857 3.42527 10.9824 5.15982 10.9824 7C10.9824 8.84018 10.5857 10.5747 9.8653 11.8841C9.11461 13.2486 8.09704 14 7 14ZM7 0.583324C6.12536 0.583324 5.2893 1.22746 4.64579 2.39709C3.97198 3.62179 3.6009 5.25645 3.6009 7C3.6009 8.74355 3.97198 10.3782 4.64576 11.6029C5.28927 12.7725 6.12533 13.4166 6.99998 13.4166C7.87462 13.4166 8.71068 12.7725 9.35419 11.6029C10.028 10.3782 10.3991 8.74355 10.3991 7C10.3991 5.25645 10.028 3.62179 9.35419 2.39709C8.71071 1.22746 7.87462 0.583324 7 0.583324Z"/>
+                                <path
+                                    d="M6.99968 13.9573C6.8386 13.9573 6.70801 13.8267 6.70801 13.6657V0.334156C6.70801 0.173074 6.83857 0.0424805 6.99968 0.0424805C7.16077 0.0424805 7.29136 0.173074 7.29136 0.334156V13.6657C7.29136 13.8267 7.16077 13.9573 6.99968 13.9573Z"/>
+                                <path
+                                    d="M13.6661 7.29147H0.334644C0.173562 7.29147 0.0429688 7.16088 0.0429688 6.99979C0.0429688 6.83871 0.173562 6.70812 0.334644 6.70812H13.6661C13.8272 6.70812 13.9578 6.83868 13.9578 6.99979C13.9578 7.16088 13.8272 7.29147 13.6661 7.29147ZM12.7022 3.81187H1.29862C1.13754 3.81187 1.00695 3.6813 1.00695 3.52019C1.00695 3.35908 1.13751 3.22852 1.29862 3.22852H12.7022C12.8633 3.22852 12.9939 3.35908 12.9939 3.52019C12.9939 3.6813 12.8632 3.81187 12.7022 3.81187ZM12.7022 10.771H1.29862C1.13754 10.771 1.00695 10.6404 1.00695 10.4794C1.00695 10.3183 1.13751 10.1877 1.29862 10.1877H12.7022C12.8633 10.1877 12.9939 10.3183 12.9939 10.4794C12.9939 10.6404 12.8632 10.771 12.7022 10.771Z"/>
+                            </g>
+                        </svg>
+                        <span>EN</span>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                    <ul class="language-list">
+                        <li><a href="#"><img src="assets/img/home1/england-flag.png" alt="">English</a></li>
+                        <li><a href="#"><img src="assets/img/home1/netherlands-flag.png" alt="">Dutch</a></li>
+                        <li><a href="#"><img src="assets/img/home1/japan-flag.png" alt="">Japanese</a></li>
+                        <li><a href="#"><img src="assets/img/home1/korea-flag.png" alt="">Korean</a></li>
+                        <li><a href="#"><img src="assets/img/home1/china-flag.png" alt="">Chinese</a></li>
+                    </ul>
+                </div>
+                <div class="search-bar d-lg-none d-block">
+                    <div class="search-btn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M15.7417 14.6098L13.486 12.3621C14.7088 10.8514 15.3054 8.9291 15.1526 6.99153C14.9998 5.05396 14.1093 3.24888 12.6648 1.94851C11.2203 0.648146 9.33193 -0.0483622 7.38901 0.00261294C5.44609 0.0535881 3.59681 0.84816 2.22248 2.22248C0.84816 3.59681 0.0535881 5.44609 0.00261294 7.38901C-0.0483622 9.33193 0.648146 11.2203 1.94851 12.6648C3.24888 14.1093 5.05396 14.9998 6.99153 15.1526C8.9291 15.3054 10.8514 14.7088 12.3621 13.486L14.6098 15.7417C14.6839 15.8164 14.7721 15.8757 14.8692 15.9161C14.9664 15.9566 15.0705 15.9774 15.1758 15.9774C15.281 15.9774 15.3852 15.9566 15.4823 15.9161C15.5794 15.8757 15.6676 15.8164 15.7417 15.7417C15.8164 15.6676 15.8757 15.5794 15.9161 15.4823C15.9566 15.3852 15.9774 15.281 15.9774 15.1758C15.9774 15.0705 15.9566 14.9664 15.9161 14.8692C15.8757 14.7721 15.8164 14.6839 15.7417 14.6098ZM1.62572 7.60368C1.62572 6.42135 1.97632 5.26557 2.63319 4.2825C3.29005 3.29943 4.22368 2.53322 5.31601 2.08076C6.40834 1.62831 7.61031 1.50992 8.76992 1.74058C9.92953 1.97124 10.9947 2.54059 11.8307 3.37662C12.6668 4.21266 13.2361 5.27783 13.4668 6.43744C13.6974 7.59705 13.579 8.79902 13.1266 9.89134C12.6741 10.9837 11.9079 11.9173 10.9249 12.5742C9.94178 13.231 8.78601 13.5816 7.60368 13.5816C6.01822 13.5816 4.49771 12.9518 3.37662 11.8307C2.25554 10.7096 1.62572 9.18913 1.62572 7.60368Z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="search-input">
+                        <div class="search-close"></div>
+                        <form>
+                            <div class="search-group">
+                                <div class="form-inner2">
+                                    <input type="text" placeholder="Find Your Perfect Tour Package">
+                                    <button type="submit"><i class="bi bi-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="quick-search">
+                                <ul>
+                                    <li>Quick Search :</li>
+                                    <li><a href="travel-package-01.html">Thailand Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Philippines Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Bali Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Hawaii, USA Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Switzerland Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Maldives Tour,</a></li>
+                                    <li><a href="travel-package-01.html">Paris Tour,</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z"></path>
+                        <path d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z"></path>
+                        <path d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </header>
-</body>
-
-</html>
+    <!-- header Section End-->
