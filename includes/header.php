@@ -39,6 +39,20 @@
         html, body {
             font-family: 'Poppins', sans-serif !important;
         }
+
+        * {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        /* Optional: Ensure form elements also use Poppins */
+        input, textarea, select, button {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        /* Optional: Fix SVG text if any */
+        text {
+            font-family: 'Poppins', sans-serif !important;
+        }
     </style>
 </head>
 
@@ -137,13 +151,13 @@
     </div>
     <header class="style-1">
         <div class="container d-flex flex-nowrap align-items-center justify-content-between">
-            <a href="index.html" class="header-logo d-lg-none d-block">
-                <img src="assets/img/header-logo.svg" alt="">
+            <a href="/" class="header-logo d-lg-none d-block">
+                <img src="assets/images/logo/ntts.png" alt="">
             </a>
             <div class="main-menu">
                 <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
-                    <a href="index.html" class="mobile-logo-wrap">
-                        <img src="assets/img/header-logo.svg" alt="">
+                    <a href="/" class="mobile-logo-wrap">
+                        <img src="assets/images/logo/ntts.png" alt="">
                     </a>
                     <div class="menu-close-btn">
                         <i class="bi bi-x"></i>
@@ -154,7 +168,7 @@
                         <a href="/">Home</a>      
                     </li>
                     <li class="menu-item-has-children position-inherit">
-                        <a href="destination-01.html" class="drop-down">
+                        <a href="destination" class="drop-down">
                             African Destination
                             <i class="bi bi-caret-down-fill"></i>
                         </a>
@@ -169,37 +183,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/egypt-flag.png" alt="">
                                                     Egypt
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/morocco-flag.png" alt="">
                                                     Morocco
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/algeria-flag.png" alt="">
                                                     Algeria
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/tunisia-flag.png" alt="">
                                                     Tunisia
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/libya-flag.png" alt="">
                                                     Libya
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/sudan-flag.png" alt="">
                                                     Sudan
                                                 </a>
@@ -213,37 +227,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/nigeria-flag.png" alt="">
                                                     Nigeria
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/ghana-flag.png" alt="">
                                                     Ghana
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/senegal-flag.png" alt="">
                                                     Senegal
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/ivory-coast-flag.png" alt="">
                                                     Ivory Coast
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/mali-flag.png" alt="">
                                                     Mali
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/niger-flag.png" alt="">
                                                     Niger
                                                 </a>
@@ -257,37 +271,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/cameroon-flag.png" alt="">
                                                     Cameroon
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/congo-flag.png" alt="">
                                                     Democratic Republic of the Congo
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/gabon-flag.png" alt="">
                                                     Gabon
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/central-african-republic-flag.png" alt="">
                                                     Central African Republic
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/chad-flag.png" alt="">
                                                     Chad
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/equatorial-guinea-flag.png" alt="">
                                                     Equatorial Guinea
                                                 </a>
@@ -301,37 +315,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/kenya-flag.png" alt="">
                                                     Kenya
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/tanzania-flag.png" alt="">
                                                     Tanzania
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/uganda-flag.png" alt="">
                                                     Uganda
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/ethiopia-flag.png" alt="">
                                                     Ethiopia
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/rwanda-flag.png" alt="">
                                                     Rwanda
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/somalia-flag.png" alt="">
                                                     Somalia
                                                 </a>
@@ -345,37 +359,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/south-africa-flag.png" alt="">
                                                     South Africa
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/zimbabwe-flag.png" alt="">
                                                     Zimbabwe
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/botswana-flag.png" alt="">
                                                     Botswana
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/namibia-flag.png" alt="">
                                                     Namibia
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/zambia-flag.png" alt="">
                                                     Zambia
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/mozambique-flag.png" alt="">
                                                     Mozambique
                                                 </a>
@@ -389,37 +403,37 @@
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/mauritius-flag.png" alt="">
                                                     Mauritius
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/seychelles-flag.png" alt="">
                                                     Seychelles
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/madagascar-flag.png" alt="">
                                                     Madagascar
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/comoros-flag.png" alt="">
                                                     Comoros
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/reunion-flag.png" alt="">
                                                     Réunion
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="destination-details.html">
+                                                <a href="destinationDetails">
                                                     <img src="assets/img/home1/maldives-flag.png" alt="">
                                                     Maldives
                                                 </a>
@@ -433,37 +447,37 @@
                         </div>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="travel-package-01.html" class="drop-down">
+                        <a href="travelPackage" class="drop-down">
                             Tours
                             <i class="bi bi-caret-down-fill"></i>
                         </a>
                         <i class="bi bi-plus dropdown-icon"></i>
                         <ul class="sub-menu">
                             <li>
-                                <a href="destination-01.html">Other Destination</a>
+                                <a href="destination">Other Destination</a>
                                 <i class="d-lg-flex d-none bi-caret-right-fill dropdown-icon"></i>
                                 <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
                                 <ul class="sub-menu">
-                                    <li><a href="destination-01.html">United Arab Emirates</a></li>
+                                    <li><a href="destination">United Arab Emirates</a></li>
                                 </ul>
                             </li>
-                            <li><a href="travel-package-02.html">Academic Tours</a></li>
-                            <li><a href="travel-package-details.html">Leisure Tours</a></li>
-                            <li><a href="travel-package-details.html">Religious Tours</a></li>
-                            <li><a href="travel-package-details.html">Volunteer Mission Tours</a></li>
-                            <li><a href="travel-package-details.html">Corporate (MICE)</a></li>
-                            <li><a href="travel-package-details.html">Travel Advisors Familiarization Trip</a></li>
+                            <li><a href="travelPackage">Academic Tours</a></li>
+                            <li><a href="travelPackageDetail">Leisure Tours</a></li>
+                            <li><a href="travelPackageDetail">Religious Tours</a></li>
+                            <li><a href="travelPackageDetail">Volunteer Mission Tours</a></li>
+                            <li><a href="travelPackageDetail">Corporate (MICE)</a></li>
+                            <li><a href="travelPackageDetail">Travel Advisors Familiarization Trip</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="visa.html" class="drop-down">
+                        <a href="visa" class="drop-down">
                             Travel Checklist
                             <i class="bi bi-caret-down-fill"></i>
                         </a>
                         <i class="bi bi-plus dropdown-icon"></i>
                         <ul class="sub-menu">
-                            <li><a href="visa.html">Plan your trip</a></li>
-                            <li><a href="visa-details.html">Travel Insurance</a></li>
+                            <li><a href="visa">Plan your trip</a></li>
+                            <li><a href="visaDetails">Travel Insurance</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
@@ -473,13 +487,13 @@
                         </a>
                         <i class="bi bi-plus dropdown-icon"></i>
                         <ul class="sub-menu">
-                            <li><a href="about.html">Testimonials</a></li>
-                            <li><a href="about.html">Careers</a></li>
-                            <li><a href="about.html">FAQs</a></li>
-                            <li><a href="about.html">Local Experts</a></li>
+                            <li><a href="about">Testimonials</a></li>
+                            <li><a href="about">Careers</a></li>
+                            <li><a href="about">FAQs</a></li>
+                            <li><a href="about">Local Experts</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
                 <div class="contact-area d-lg-none d-flex">
                     <div class="single-contact">
@@ -613,13 +627,13 @@
                             <div class="quick-search">
                                 <ul>
                                     <li>Quick Search :</li>
-                                    <li><a href="travel-package-01.html">Thailand Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Philippines Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Bali Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Hawaii, USA Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Switzerland Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Maldives Tour,</a></li>
-                                    <li><a href="travel-package-01.html">Paris Tour,</a></li>
+                                    <li><a href="travelPackage">Thailand Tour,</a></li>
+                                    <li><a href="travelPackage">Philippines Tour,</a></li>
+                                    <li><a href="travelPackage">Bali Tour,</a></li>
+                                    <li><a href="travelPackage">Hawaii, USA Tour,</a></li>
+                                    <li><a href="travelPackage">Switzerland Tour,</a></li>
+                                    <li><a href="travelPackage">Maldives Tour,</a></li>
+                                    <li><a href="travelPackage">Paris Tour,</a></li>
                                 </ul>
                             </div>
                         </form>
