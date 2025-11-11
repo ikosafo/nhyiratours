@@ -2273,7 +2273,7 @@ include 'includes/header.php';
         }
         @media (max-width: 576px) {
             .service-list {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
             }
         }
     </style>
