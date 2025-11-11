@@ -512,8 +512,8 @@
                                 <img src="assets/img/home1/icon/mail-icon.svg" alt="">
                             </div>
                             <div class="content">
-                                <span>Mail Support</span>
-                                <a href="#"><span class="__cf_email__" data-cfemail="94fdfaf2fbd4f1ecf5f9e4f8f1baf7fbf9">[email&#160;protected]</span></a>
+                                <span>info@nhyirabatours.com</span>
+                                <a href="#"><span class="__cf_email__" data-cfemail="94fdfaf2fbd4f1ecf5f9e4f8f1baf7fbf9">info@nhyirabatours.com</span></a>
                             </div>
                         </li>
                         <li class="single-contact">
@@ -566,8 +566,8 @@
                                 <img src="assets/img/home1/icon/mail-icon.svg" alt="">
                             </div>
                             <div class="content">
-                                <span>Mail Support</span>
-                                <a href="https://demo.egenslab.com/cdn-cgi/l/email-protection#e980878f86a98c91888499858cc78a8684"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7c2dfc6cad7cbc289c4c8ca">[email&#160;protected]</span></a>
+                                <span>info@nhyirabatours.com</span>
+                                <a href="#"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7c2dfc6cad7cbc289c4c8ca">info@nhyirabatours.com</span></a>
                             </div>
                         </li>
                         <li class="single-contact">
@@ -576,7 +576,7 @@
                             </div>
                             <div class="content">
                                 <span>More Inquery</span>
-                                <a href="https://wa.me/91345533865">+91 345 533 865</a>
+                                <a href="https://wa.me/233546192565">+233 54 619 2565</a>
                             </div>
                         </li>
                     </ul>
