@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <blockquote class="testimonial-review">
-                                            Nhyiraba Travel & Tour Services was instrumental in helping me secure a work placement in London. They guided me through the 
+                                            Pier One Travel & Tour Services was instrumental in helping me secure a work placement in London. They guided me through the 
                                             application process and ensured I had all the necessary resources. Their support made my transition seamless and enjoyable!
                                         </blockquote>
                                     </div>
@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <blockquote class="testimonial-review">
-                                            I am grateful to Nhyiraba Travel & Tour Services for facilitating my educational journey to Canada. They helped me navigate the 
+                                            I am grateful to Pier One Travel & Tour Services for facilitating my educational journey to Canada. They helped me navigate the 
                                             visa process and find the right program for furthering my studies. Their expertise and attention to detail made a significant difference!
                                         </blockquote>
                                     </div>
@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <blockquote class="testimonial-review">
-                                            Thanks to Nhyiraba Travel & Tour Services, my relocation to Amsterdam for work was smooth and hassle-free. They provided invaluable assistance with my work 
+                                            Thanks to Pier One Travel & Tour Services, my relocation to Amsterdam for work was smooth and hassle-free. They provided invaluable assistance with my work 
                                             visa and helped me settle in. I couldn't have asked for a better experience!
                                         </blockquote>
                                     </div>
@@ -92,7 +92,7 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <blockquote class="testimonial-review">
-                                            My experience with Nhyiraba Travel & Tour Services in Paris was outstanding! They assisted me in finding internship 
+                                            My experience with Pier One Travel & Tour Services in Paris was outstanding! They assisted me in finding internship 
                                             opportunities while also allowing time to explore the city's culture and history. I highly recommend their services for anyone looking to work or study abroad!
                                         </blockquote>
                                     </div>

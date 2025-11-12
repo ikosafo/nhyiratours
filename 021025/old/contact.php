@@ -86,7 +86,7 @@
                                 <div class="col-12">
                                     <div class="fw-medium mb-3">
                                         <i class="hicon hicon-email-envelope text-primary me-2"></i>
-                                        <span>info@nhyirabatours.com</span>
+                                        <span>info@pieronetours.com</span>
                                     </div>
                                 </div>
                             </div>

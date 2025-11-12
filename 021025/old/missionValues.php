@@ -39,7 +39,7 @@
                                 <h3 class="h5">Mission</h3>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, our mission is to provide reliable and seamless travel, education, 
+                                At Pier One Travel & Tour Services, our mission is to provide reliable and seamless travel, education, 
                                 and work opportunities for individuals looking to explore new horizons. We are committed to connecting 
                                 people with opportunities that enrich their lives, whether through academic advancement, professional
                                 development, or memorable travel experiences. We aim to be a trusted partner, delivering personalized 

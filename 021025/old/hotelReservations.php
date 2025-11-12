@@ -51,7 +51,7 @@
                                 <h4>Find the Perfect Stay for Your Journey</h4>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, we understand that a comfortable stay is essential for a memorable travel experience. Whether you're visiting for business,
+                                At Pier One Travel & Tour Services, we understand that a comfortable stay is essential for a memorable travel experience. Whether you're visiting for business,
                                 leisure, or adventure, we offer a wide selection of hotels to meet your needs. From luxury resorts to budget-friendly accommodations, we ensure you have a place
                                 to call home, no matter where your journey takes you.
                             </p>

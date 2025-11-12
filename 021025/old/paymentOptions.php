@@ -50,7 +50,7 @@
                                 <h2 class="h1 title">Payment Options</h2>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, we strive to make the payment process simple and secure. We offer
+                                At Pier One Travel & Tour Services, we strive to make the payment process simple and secure. We offer
                                  a variety of payment options to ensure our clients have the flexibility and convenience they 
                                  need when booking their travels or services. Below are the available payment methods:
                             </p>

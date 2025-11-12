@@ -162,7 +162,7 @@
                                             <div class="info">
                                                 <p class="pera">Email Us</p>
                                                 <h4 class="title">
-                                                    <a href="mailto:info@nhyirabatours.com">info@nhyirabatours.com</a>
+                                                    <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
                                                 </h4>
                                             </div>
                                         </div>

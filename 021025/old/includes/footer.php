@@ -32,7 +32,7 @@
                             <span>030-3963290</span> 
                         </p>
                         <p>
-                            <a href="mailto:info@nhyirabatours.com">info@nhyirabatours.com</a>
+                            <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
                         </p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             <div class="col-12 col-xl-4 col-md-6">
                 <!-- Quick Links -->
                 <div class="footer-widget">
-                    <h2 class="h4 pb-3">Nhyiraba Travel and Tour</h2>
+                    <h2 class="h4 pb-3">Pier One Travel and Tour</h2>
                     <div class="row">
                         <div class="col-6">
                             <ul class="footer-link">
@@ -84,7 +84,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <p class="mb-lg-0">&copy; <?= date('Y') ?> Nhyiraba Travel and Tours Services</p>
+                <p class="mb-lg-0">&copy; <?= date('Y') ?> Pier One Travel and Tours Services</p>
             </div>
         </div>
     </div>

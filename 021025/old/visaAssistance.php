@@ -51,7 +51,7 @@
                                 <h2 class="h1 title">Visa Assistance</h2>
                             </div>
                             <p>
-                                Navigating the visa application process can be complex and time-consuming, but with Nhyiraba Travel & Tour Services, we make it simple and stress-free. Whether you're
+                                Navigating the visa application process can be complex and time-consuming, but with Pier One Travel & Tour Services, we make it simple and stress-free. Whether you're
                                 traveling for business, education, work, or leisure, our dedicated visa assistance services are here to guide you through every step of the process.
                             </p>
                             <div class="mnw-200">

@@ -39,13 +39,13 @@
                                     <h2 class="h1 title">Refund Policy</h2>
                                 </div>
                                 <p>
-                                At Nhyiraba Travel & Tour Services, we strive to ensure that our customers are satisfied with their travel experiences. However, we understand that circumstances may change. 
+                                At Pier One Travel & Tour Services, we strive to ensure that our customers are satisfied with their travel experiences. However, we understand that circumstances may change. 
                                 This Refund Policy outlines the terms and conditions under which refunds may be granted.
                                 </p>
                                 
                                 <div class="mnw-200">
                                     <h3 class="h5">1. General Refund Policy</h3>
-                                    <p>All requests for refunds must be submitted in writing via email to our customer service team at info@nhyirabatours.com. Refund requests will be processed within 7-10 business days of receipt. Refunds will be issued using the same payment method used for the original transaction unless otherwise agreed upon.</p>
+                                    <p>All requests for refunds must be submitted in writing via email to our customer service team at info@pieronetours.com. Refund requests will be processed within 7-10 business days of receipt. Refunds will be issued using the same payment method used for the original transaction unless otherwise agreed upon.</p>
                                 </div>
 
                                 <div class="mnw-200">
@@ -65,7 +65,7 @@
                                 </div>
 
                                 <div class="mnw-200">
-                                    <h4 class="h6">Cancellations by Nhyiraba Travel & Tour Services:</h4>
+                                    <h4 class="h6">Cancellations by Pier One Travel & Tour Services:</h4>
                                     <p>If we cancel a trip due to unforeseen circumstances (e.g., natural disasters, government restrictions, or insufficient bookings), customers will receive a full refund or an option to transfer their booking to an alternative date or destination.</p>
                                 </div>
 

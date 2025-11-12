@@ -5,7 +5,7 @@
     <div class="bg-content container">
         <div class="p-top-150 p-bottom-150">
             <div class="block-title text-center me-auto">
-                <small class="sub-title text-light">Journey with Nhyiraba Travel & Tour</small>
+                <small class="sub-title text-light">Journey with Pier One Travel & Tour</small>
                 <h2 class="h1 title text-white">Tailored trips, expert guidance, and great deals await!</h2>
             </div>
             <div class="text-center">

@@ -35,10 +35,10 @@
                         <div class="pt-xl-4 mb-xl-0 mb-5">
                             <div class="block-title">
                                 <small class="sub-title">About us</small>
-                                <h2 class="h1 title">Nhyiraba Travel & Tour Services</h2>
+                                <h2 class="h1 title">Pier One Travel & Tour Services</h2>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, we don't just plan trips—we create unforgettable journeys that ignite curiosity, foster inspiration, 
+                                At Pier One Travel & Tour Services, we don't just plan trips—we create unforgettable journeys that ignite curiosity, foster inspiration, 
                                 and create lasting connections. With over a decade of expertise, we've curated more than 350 exceptional 
                                 tours, thoughtfully designed for adventurers, explorers, culture seekers, and those pursuing educational 
                                 and employment opportunities abroad. Our passionate team of experienced guides ensures each journey is more
@@ -49,13 +49,13 @@
                             <p>Whether you're looking to immerse yourself in the rich cultures of foreign lands, hike through breathtaking landscapes, or 
                                 embark on an educational pursuit that opens new doors, we have a wide array of options to suit your needs. 
                                 We also offer personalized assistance for visa applications, accommodation arrangements, and even post-arrival 
-                                support for those relocating for work or study. Nhyiraba Travel & Tour Services is committed to not only getting
+                                support for those relocating for work or study. Pier One Travel & Tour Services is committed to not only getting
                                  you to your destination but also enriching your journey every step of the way.
                             </p>
 
                             <p>Our dedication to sustainability and responsible tourism ensures that your travel experiences have a positive impact, 
                                 both for you and the communities you visit. Whether you're in search of adventure, cultural discovery, or new horizons, 
-                                Nhyiraba Travel & Tour Services invites you to explore the world with us and make every trip a lasting memory. Let us handle the details, 
+                                Pier One Travel & Tour Services invites you to explore the world with us and make every trip a lasting memory. Let us handle the details, 
                                 so you can focus on embracing the journey and making memories that will stay with you for a lifetime. Join us as we turn your travel 
                                 dreams into reality, one incredible journey at a time.
                             </p>

@@ -2415,7 +2415,7 @@ include 'includes/header.php';
                 <span>Discover Africa. Live the Journey.</span>
                 <h2>Your Passport to Unforgettable African Adventures Begins Here!</h2>
                 <div class="author-area">
-                    <h5>Nhyiraba Travel & Tour Services</h5>
+                    <h5>Pier One Travel & Tour Services</h5>
                     <span>Explore • Learn • Work Abroad</span>
                 </div>
                 <a href="travelPackage" class="primary-btn1 two">

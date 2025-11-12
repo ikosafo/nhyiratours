@@ -49,7 +49,7 @@
                                 <h2 class="h1 title">Flight Bookings</h2>
                             </div>
                             <p>
-                                Your journey begins with us! At Nhyiraba Travel & Tour Services, we make flight bookings easy, 
+                                Your journey begins with us! At Pier One Travel & Tour Services, we make flight bookings easy, 
                                 convenient, and tailored to your travel needs. Whether you're traveling for leisure, business, 
                                 or education, we offer seamless booking solutions to get you where you need to go.
                             </p>

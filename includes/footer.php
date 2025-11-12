@@ -30,7 +30,7 @@
                         </div>
                         <div class="content">
                             <span>Mail Us</span>
-                            <a href="mailto:info@nhyirabatravels.com">info@nhyirabatravels.com</a>
+                            <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
                         </div>
                     </li>
                     <li class="single-contact">
@@ -55,10 +55,10 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="footer-logo-and-addition-info">
                             <a href="/" class="footer-logo">
-                                <img src="assets/images/logo/ntts.png" alt="Nhyiraba Travel & Tour Services" style="width: 60px; height: 70px;">
+                                <img src="assets/images/logo/ntts.png" alt="Pier One Travel & Tour Services" style="width: 60px; height: 70px;">
                             </a>
                             <div class="address-area">
-                                <span>Nhyiraba Travel & Tour Services</span>
+                                <span>Pier One Travel & Tour Services</span>
                                 <a href="#">Accra, Greater Accra, Ghana</a>
                             </div>
                             <ul class="social-list">
@@ -130,7 +130,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="copyright-and-payment-method-area">
-                    <p>&copy; <?= date('Y'); ?> <a href="/">Nhyiraba Travel & Tour Services</a> | All Rights Reserved.</p>
+                    <p>&copy; <?= date('Y'); ?> <a href="/">Pier One Travel & Tour Services</a> | All Rights Reserved.</p>
                 </div>
             </div>
         </div>

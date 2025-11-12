@@ -5,7 +5,7 @@
 
         <!-- Hero -->
         <section class="hero">
-            <h1 class="d-none">Nhyiraba Travel and Tours Services</h1>
+            <h1 class="d-none">Pier One Travel and Tours Services</h1>
             <!-- Carousel -->
             <div id="heroCarousel" class="hero-carousel carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -223,7 +223,7 @@
                                             <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" class="w-100" alt="">
                                         </div>
                                         <div class="award-footer">
-                                            <small>Nhyiraba Tours</small>
+                                            <small>Pier One Tours</small>
                                         </div>
                                     </div>
                                 </div>
@@ -236,16 +236,16 @@
                         <div class="mb-5 mb-xl-0">
                             <div class="block-title">
                                 <small class="sub-title">About us</small>
-                                <h2 class="h1 title">Nhyiraba Travel & Tour Services</h2>
+                                <h2 class="h1 title">Pier One Travel & Tour Services</h2>
                             </div>
                             <p>
-                                At Nhyiraba Travel & Tour Services, we don't just plan trips—we create unforgettable journeys 
+                                At Pier One Travel & Tour Services, we don't just plan trips—we create unforgettable journeys 
                                 that ignite curiosity, foster inspiration, and create lasting connections. With over a decade 
                                 of expertise, we've curated more than 350 exceptional tours, thoughtfully designed for adventurers, 
                                 explorers, culture seekers, and those pursuing educational and employment opportunities abroad. 
                                 <!-- Our passionate team of experienced guides ensures each journey is more than a destination—it's a 
                                 meaningful experience. Whether you're in search of adventure, cultural discovery, or new horizons, 
-                                Nhyiraba Travel & Tour Services invites you to explore the world with us and make every trip a 
+                                Pier One Travel & Tour Services invites you to explore the world with us and make every trip a 
                                 lasting memory. -->
                             </p>
                             <ul class="strength-list row g-0 pt-2">

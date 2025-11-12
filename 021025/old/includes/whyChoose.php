@@ -16,11 +16,11 @@
                         <!-- Content -->
                         <div class="mb-5">
                             <div class="block-title">
-                                <small class="sub-title">Unforgettable Journeys with Nhyiraba Travel & Tour Services</small>
+                                <small class="sub-title">Unforgettable Journeys with Pier One Travel & Tour Services</small>
                                 <h2 class="h1 title">Why Choose Us?</h2>
                             </div>
                             <p>
-                            At Nhyiraba Travel & Tour Services, we are committed to delivering exceptional travel experiences. As a top-rated agency, 
+                            At Pier One Travel & Tour Services, we are committed to delivering exceptional travel experiences. As a top-rated agency, 
                             we've earned the trust of our clients through personalized service and seamless travel planning.
                             </p>
                             <div class="accordion accordion-flush accordion-why mb-4" id="acdWhy">
@@ -75,7 +75,7 @@
                                     </h2>
                                     <div id="acdContent4" class="accordion-collapse collapse" data-bs-parent="#acdWhy">
                                         <div class="accordion-body">
-                                        At Nhyiraba Travel & Tour, we pride ourselves on offering top-tier service at competitive prices, 
+                                        At Pier One Travel & Tour, we pride ourselves on offering top-tier service at competitive prices, 
                                         giving you access to exclusive perks and savings on your travels.
                                         </div>
                                     </div>
