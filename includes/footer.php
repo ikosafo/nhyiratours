@@ -55,7 +55,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="footer-logo-and-addition-info">
                             <a href="/" class="footer-logo">
-                                <img src="assets/images/logo/ntts.png" alt="Pier One Travel & Tour Services" style="width: 60px; height: 70px;">
+                                <img src="assets/images/logo/pieronefooter.png" alt="Pier One Travel & Tour Services" style="width: 100px; height: 95px;">
                             </a>
                             <div class="address-area">
                                 <span>Pier One Travel & Tour Services</span>

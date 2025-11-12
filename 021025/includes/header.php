@@ -10,7 +10,7 @@
         };
         setTheme();
     </script>
-    <meta logo="assets/images/logo/ntts.png">
+    <meta logo="assets/images/logo/pierone.png">
     <meta white-logo="assets/images/logo/logo-white.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
     <meta name="currency" content="$">
     <!-- Title -->
     <title>Multipurpose travel and tour booking</title>
-    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/logo/ntts.png">
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/logo/pierone.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-5.3.0.min.css">
     <!-- Fonts & icon -->
@@ -200,7 +200,7 @@
                             <div class="menu-wrapper d-flex align-items-center justify-content-between">
                                 <!-- Logo -->
                                 <div class="logo">
-                                    <a href="/"><img src="assets/images/logo/ntts.png" alt="logo" style="width:70px;height:70px" class="changeLogo"></a>
+                                    <a href="/"><img src="assets/images/logo/pierone.png" alt="logo" style="width:100px;height:100px" class="changeLogo"></a>
                                 </div>
                                 <!-- Main-menu for desktop -->
                                 <div class="main-menu d-none d-lg-block">

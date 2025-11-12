@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- Title -->
     <title>Pier One Travel & Tour Services - Explore, Learn, and Work Abroad</title>
-    <link rel="icon" href="assets/images/logo/ntts.png" type="image/gif" sizes="20x20">
+    <link rel="icon" href="assets/images/logo/pierone.png" type="image/gif" sizes="20x20">
 
     <style>
         html, body {
@@ -80,7 +80,7 @@
             <div class="topbar-wrap">
                 <div class="logo-and-search-area">
                     <a href="/" class="header-logo">
-                        <img src="assets/images/logo/ntts.png" alt="" style="width: 55px; height: 65px;">
+                        <img src="assets/images/logo/pierone.png" alt="" style="width: 80px; height: 75px;">
                     </a>
                     <form class="search-area">
                         <div class="form-inner">
@@ -154,13 +154,13 @@
     <header class="style-1">
         <div class="container d-flex flex-nowrap align-items-center justify-content-between">
             <a href="/" class="header-logo d-lg-none d-block">
-                <img src="assets/images/logo/ntts.png" alt="">
+                <img src="assets/images/logo/pierone.png" alt="">
             </a>
 
             <div class="main-menu">
                 <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
                     <a href="/" class="mobile-logo-wrap">
-                        <img src="assets/images/logo/ntts.png" alt="">
+                        <img src="assets/images/logo/pierone.png" alt="">
                     </a>
                     <div class="menu-close-btn">
                         <i class="bi bi-x"></i>

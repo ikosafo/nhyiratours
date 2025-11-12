@@ -9,7 +9,7 @@
                 <!-- Brand -->
                 <div class="footer-widget">
                     <a href="/" class="brand-img">
-                        <img class="me-4" src="<?php echo URLROOT ?>assets/img/logos/ntts.png" alt="" style="width: 95px;">
+                        <img class="me-4" src="<?php echo URLROOT ?>assets/img/logos/pierone.png" alt="" style="width: 95px;">
                     </a>
                     <p>
                     <span>

@@ -20,15 +20,15 @@
     <meta property="og:description" content="Experience seamless travel and work opportunities abroad with Pier One Travel & Tour Services. Let us help you achieve your international goals.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo $currentUrl; ?>">
-    <meta property="og:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
+    <meta property="og:image" content="<?php echo URLROOT ?>assets/img/logos/pierone.png">
     <meta property="og:site_name" content="Pier One Travel & Tour Services">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pier One Travel & Tour Services - Your Gateway to Global Opportunities">
     <meta name="twitter:description" content="Travel, work, and study abroad with expert guidance from Pier One Travel & Tour Services.">
-    <meta name="twitter:image" content="<?php echo URLROOT ?>assets/img/logos/ntts.png">
+    <meta name="twitter:image" content="<?php echo URLROOT ?>assets/img/logos/pierone.png">
     
-    <link href="<?php echo URLROOT ?>assets/img/logos/ntts.png" rel="shortcut icon" type="image/png">
+    <link href="<?php echo URLROOT ?>assets/img/logos/pierone.png" rel="shortcut icon" type="image/png">
     <link href="<?php echo URLROOT ?>assets/css/theme-1.min.css" rel="stylesheet">
     <link href="<?php echo URLROOT ?>assets/css/theme-2.min.css" rel="stylesheet">
     <link href="<?php echo URLROOT ?>assets/css/theme-3.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 <body>
 
     <div class="preloader" id="preloader">
-        <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" alt="NTTS">
+        <img src="<?php echo URLROOT ?>assets/img/logos/pierone.png" alt="pierone">
     </div>
 
     <!-- Preloader -->
@@ -106,13 +106,13 @@
                     <i class="hicon hicon-bold hicon-hamburger-menu"></i>
                 </button>
                 <a class="navbar-brand" href="/">
-                    <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;"
-                    srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
+                    <img src="<?php echo URLROOT ?>assets/img/logos/pierone.png" style="width: 75px;"
+                    srcset="<?php echo URLROOT ?>assets/img/logos/pierone.png 2x" alt="">
                 </a>
                 <div class="offcanvas offcanvas-navbar offcanvas-start border-end-0" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header border-bottom p-4 p-xl-0">
                         <a href="/" class="d-inline-block">
-                            <img  src="<?php echo URLROOT ?>assets/img/logos/ntts.png" style="width: 75px;" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" alt="">
+                            <img  src="<?php echo URLROOT ?>assets/img/logos/pierone.png" style="width: 75px;" srcset="<?php echo URLROOT ?>assets/img/logos/pierone.png 2x" alt="">
                         </a>
                         <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>

@@ -220,7 +220,7 @@
                                 <div class="info-top-right">
                                     <div class="vertical-award rounded shadow-sm">
                                         <div class="award-content">
-                                            <img src="<?php echo URLROOT ?>assets/img/logos/ntts.png" srcset="<?php echo URLROOT ?>assets/img/logos/ntts.png 2x" class="w-100" alt="">
+                                            <img src="<?php echo URLROOT ?>assets/img/logos/pierone.png" srcset="<?php echo URLROOT ?>assets/img/logos/pierone.png 2x" class="w-100" alt="">
                                         </div>
                                         <div class="award-footer">
                                             <small>Pier One Tours</small>
