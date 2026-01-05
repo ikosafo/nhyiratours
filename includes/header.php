@@ -175,7 +175,7 @@
 
                     <!-- AFRICAN DESTINATIONS (Mega Menu) -->
                     <li class="menu-item-has-children position-inherit">
-                        <a href="/destinations/africa" class="drop-down">
+                        <a href="destinations-africa" class="drop-down">
                             African Destination
                             <i class="bi bi-caret-down-fill"></i>
                         </a>
@@ -188,12 +188,12 @@
                                         <div class="menu-title"><h5>North Africa</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/egypt"><img src="assets/img/home1/egypt-flag.png" alt="">Egypt</a></li>
-                                            <li><a href="/destinations/morocco"><img src="assets/img/home1/morocco-flag.png" alt="">Morocco</a></li>
-                                            <li><a href="/destinations/algeria"><img src="assets/img/home1/algeria-flag.png" alt="">Algeria</a></li>
-                                            <li><a href="/destinations/tunisia"><img src="assets/img/home1/tunisia-flag.png" alt="">Tunisia</a></li>
-                                            <li><a href="/destinations/libya"><img src="assets/img/home1/libya-flag.png" alt="">Libya</a></li>
-                                            <li><a href="/destinations/sudan"><img src="assets/img/home1/sudan-flag.png" alt="">Sudan</a></li>
+                                            <li><a href="destinations-egypt"><img src="assets/img/home1/egypt-flag.png" alt="">Egypt</a></li>
+                                            <li><a href="destinations-morocco"><img src="assets/img/home1/morocco-flag.png" alt="">Morocco</a></li>
+                                            <li><a href="destinations-algeria"><img src="assets/img/home1/algeria-flag.png" alt="">Algeria</a></li>
+                                            <li><a href="destinations-tunisia"><img src="assets/img/home1/tunisia-flag.png" alt="">Tunisia</a></li>
+                                            <li><a href="destinations-libya"><img src="assets/img/home1/libya-flag.png" alt="">Libya</a></li>
+                                            <li><a href="destinations-sudan"><img src="assets/img/home1/sudan-flag.png" alt="">Sudan</a></li>
                                         </ul>
                                     </div>
 
@@ -202,12 +202,12 @@
                                         <div class="menu-title"><h5>West Africa</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/nigeria"><img src="assets/img/home1/nigeria-flag.png" alt="">Nigeria</a></li>
-                                            <li><a href="/destinations/ghana"><img src="assets/img/home1/ghana-flag.png" alt="">Ghana</a></li>
-                                            <li><a href="/destinations/senegal"><img src="assets/img/home1/senegal-flag.png" alt="">Senegal</a></li>
-                                            <li><a href="/destinations/ivory-coast"><img src="assets/img/home1/ivory-coast-flag.png" alt="">Ivory Coast</a></li>
-                                            <li><a href="/destinations/mali"><img src="assets/img/home1/mali-flag.png" alt="">Mali</a></li>
-                                            <li><a href="/destinations/niger"><img src="assets/img/home1/niger-flag.png" alt="">Niger</a></li>
+                                            <li><a href="destinations-nigeria"><img src="assets/img/home1/nigeria-flag.png" alt="">Nigeria</a></li>
+                                            <li><a href="destinations-ghana"><img src="assets/img/home1/ghana-flag.png" alt="">Ghana</a></li>
+                                            <li><a href="destinations-senegal"><img src="assets/img/home1/senegal-flag.png" alt="">Senegal</a></li>
+                                            <li><a href="destinations-ivory-coast"><img src="assets/img/home1/ivory-coast-flag.png" alt="">Ivory Coast</a></li>
+                                            <li><a href="destinations-mali"><img src="assets/img/home1/mali-flag.png" alt="">Mali</a></li>
+                                            <li><a href="destinations-niger"><img src="assets/img/home1/niger-flag.png" alt="">Niger</a></li>
                                         </ul>
                                     </div>
 
@@ -216,12 +216,12 @@
                                         <div class="menu-title"><h5>Central Africa</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/cameroon"><img src="assets/img/home1/cameroon-flag.png" alt="">Cameroon</a></li>
-                                            <li><a href="/destinations/drc"><img src="assets/img/home1/congo-flag.png" alt="">Democratic Republic of the Congo</a></li>
-                                            <li><a href="/destinations/gabon"><img src="assets/img/home1/gabon-flag.png" alt="">Gabon</a></li>
-                                            <li><a href="/destinations/central-african-republic"><img src="assets/img/home1/central-african-republic-flag.png" alt="">Central African Republic</a></li>
-                                            <li><a href="/destinations/chad"><img src="assets/img/home1/chad-flag.png" alt="">Chad</a></li>
-                                            <li><a href="/destinations/equatorial-guinea"><img src="assets/img/home1/equatorial-guinea-flag.png" alt="">Equatorial Guinea</a></li>
+                                            <li><a href="destinations-cameroon"><img src="assets/img/home1/cameroon-flag.png" alt="">Cameroon</a></li>
+                                            <li><a href="destinations-drc"><img src="assets/img/home1/congo-flag.png" alt="">Democratic Republic of the Congo</a></li>
+                                            <li><a href="destinations-gabon"><img src="assets/img/home1/gabon-flag.png" alt="">Gabon</a></li>
+                                            <li><a href="destinations-central-african-republic"><img src="assets/img/home1/central-african-republic-flag.png" alt="">Central African Republic</a></li>
+                                            <li><a href="destinations-chad"><img src="assets/img/home1/chad-flag.png" alt="">Chad</a></li>
+                                            <li><a href="destinations-equatorial-guinea"><img src="assets/img/home1/equatorial-guinea-flag.png" alt="">Equatorial Guinea</a></li>
                                         </ul>
                                     </div>
 
@@ -230,12 +230,12 @@
                                         <div class="menu-title"><h5>East Africa</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/kenya"><img src="assets/img/home1/kenya-flag.png" alt="">Kenya</a></li>
-                                            <li><a href="/destinations/tanzania"><img src="assets/img/home1/tanzania-flag.png" alt="">Tanzania</a></li>
-                                            <li><a href="/destinations/uganda"><img src="assets/img/home1/uganda-flag.png" alt="">Uganda</a></li>
-                                            <li><a href="/destinations/ethiopia"><img src="assets/img/home1/ethiopia-flag.png" alt="">Ethiopia</a></li>
-                                            <li><a href="/destinations/rwanda"><img src="assets/img/home1/rwanda-flag.png" alt="">Rwanda</a></li>
-                                            <li><a href="/destinations/somalia"><img src="assets/img/home1/somalia-flag.png" alt="">Somalia</a></li>
+                                            <li><a href="destinations-kenya"><img src="assets/img/home1/kenya-flag.png" alt="">Kenya</a></li>
+                                            <li><a href="destinations-tanzania"><img src="assets/img/home1/tanzania-flag.png" alt="">Tanzania</a></li>
+                                            <li><a href="destinations-uganda"><img src="assets/img/home1/uganda-flag.png" alt="">Uganda</a></li>
+                                            <li><a href="destinations-ethiopia"><img src="assets/img/home1/ethiopia-flag.png" alt="">Ethiopia</a></li>
+                                            <li><a href="destinations-rwanda"><img src="assets/img/home1/rwanda-flag.png" alt="">Rwanda</a></li>
+                                            <li><a href="destinations-somalia"><img src="assets/img/home1/somalia-flag.png" alt="">Somalia</a></li>
                                         </ul>
                                     </div>
 
@@ -244,12 +244,12 @@
                                         <div class="menu-title"><h5>Southern Africa</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/south-africa"><img src="assets/img/home1/south-africa-flag.png" alt="">South Africa</a></li>
-                                            <li><a href="/destinations/zimbabwe"><img src="assets/img/home1/zimbabwe-flag.png" alt="">Zimbabwe</a></li>
-                                            <li><a href="/destinations/botswana"><img src="assets/img/home1/botswana-flag.png" alt="">Botswana</a></li>
-                                            <li><a href="/destinations/namibia"><img src="assets/img/home1/namibia-flag.png" alt="">Namibia</a></li>
-                                            <li><a href="/destinations/zambia"><img src="assets/img/home1/zambia-flag.png" alt="">Zambia</a></li>
-                                            <li><a href="/destinations/mozambique"><img src="assets/img/home1/mozambique-flag.png" alt="">Mozambique</a></li>
+                                            <li><a href="destinations-south-africa"><img src="assets/img/home1/south-africa-flag.png" alt="">South Africa</a></li>
+                                            <li><a href="destinations-zimbabwe"><img src="assets/img/home1/zimbabwe-flag.png" alt="">Zimbabwe</a></li>
+                                            <li><a href="destinations-botswana"><img src="assets/img/home1/botswana-flag.png" alt="">Botswana</a></li>
+                                            <li><a href="destinations-namibia"><img src="assets/img/home1/namibia-flag.png" alt="">Namibia</a></li>
+                                            <li><a href="destinations-zambia"><img src="assets/img/home1/zambia-flag.png" alt="">Zambia</a></li>
+                                            <li><a href="destinations-mozambique"><img src="assets/img/home1/mozambique-flag.png" alt="">Mozambique</a></li>
                                         </ul>
                                     </div>
 
@@ -258,12 +258,12 @@
                                         <div class="menu-title"><h5>Indian Ocean Islands</h5></div>
                                         <i class="bi bi-plus dropdown-icon"></i>
                                         <ul>
-                                            <li><a href="/destinations/mauritius"><img src="assets/img/home1/mauritius-flag.png" alt="">Mauritius</a></li>
-                                            <li><a href="/destinations/seychelles"><img src="assets/img/home1/seychelles-flag.png" alt="">Seychelles</a></li>
-                                            <li><a href="/destinations/madagascar"><img src="assets/img/home1/madagascar-flag.png" alt="">Madagascar</a></li>
-                                            <li><a href="/destinations/comoros"><img src="assets/img/home1/comoros-flag.png" alt="">Comoros</a></li>
-                                            <li><a href="/destinations/reunion"><img src="assets/img/home1/reunion-flag.png" alt="">Réunion</a></li>
-                                            <li><a href="/destinations/maldives"><img src="assets/img/home1/maldives-flag.png" alt="">Maldives</a></li>
+                                            <li><a href="destinations-mauritius"><img src="assets/img/home1/mauritius-flag.png" alt="">Mauritius</a></li>
+                                            <li><a href="destinations-seychelles"><img src="assets/img/home1/seychelles-flag.png" alt="">Seychelles</a></li>
+                                            <li><a href="destinations-madagascar"><img src="assets/img/home1/madagascar-flag.png" alt="">Madagascar</a></li>
+                                            <li><a href="destinations-comoros"><img src="assets/img/home1/comoros-flag.png" alt="">Comoros</a></li>
+                                            <li><a href="destinations-reunion"><img src="assets/img/home1/reunion-flag.png" alt="">Réunion</a></li>
+                                            <li><a href="destinations-maldives"><img src="assets/img/home1/maldives-flag.png" alt="">Maldives</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -282,19 +282,19 @@
                         <i class="bi bi-plus dropdown-icon"></i>
                         <ul class="sub-menu">
                             <li>
-                                <a href="/destinations/other">Other Destination</a>
+                                <a href="destinations-other">Other Destination</a>
                                 <i class="d-lg-flex d-none bi-caret-right-fill dropdown-icon"></i>
                                 <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
                                 <ul class="sub-menu">
-                                    <li><a href="/destinations/uae">United Arab Emirates</a></li>
+                                    <li><a href="destinations-uae">United Arab Emirates</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/tours/academic">Academic Tours</a></li>
-                            <li><a href="/tours/leisure">Leisure Tours</a></li>
-                            <li><a href="/tours/religious">Religious Tours</a></li>
-                            <li><a href="/tours/volunteer">Volunteer Mission Tours</a></li>
-                            <li><a href="/tours/corporate">Corporate (MICE)</a></li>
-                            <li><a href="/tours/fam-trip">Travel Advisors Familiarization Trip</a></li>
+                            <li><a href="tours-academic">Academic Tours</a></li>
+                            <li><a href="tours-leisure">Leisure Tours</a></li>
+                            <li><a href="tours-religious">Religious Tours</a></li>
+                            <li><a href="tours-volunteer">Volunteer Mission Tours</a></li>
+                            <li><a href="tours-corporate">Corporate (MICE)</a></li>
+                            <li><a href="tours-fam-trip">Travel Advisors Familiarization Trip</a></li>
                         </ul>
                     </li>
 
