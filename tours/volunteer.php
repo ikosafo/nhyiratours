@@ -462,7 +462,7 @@
       <!-- 5 -->
       <div class="mission-card reveal reveal-delay-1" data-sector="education">
         <div class="mission-card__img">
-          <img src="https://images.unsplash.com/photo-1594708767771-a5f8e654b3f4?w=700&q=80" alt="Vocational Training Tanzania" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80" alt="Vocational Training Tanzania" loading="lazy" />
           <div class="mission-card__sector">📚 Education</div>
         </div>
         <div class="mission-card__body">
