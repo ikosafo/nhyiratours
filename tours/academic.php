@@ -77,7 +77,7 @@
   line-height: 1.08;
   letter-spacing: -.015em;
   margin-bottom: 1.25rem;
-  max-width: 16ch;
+  max-width: 21ch;
 }
 .tour-hero__title em { font-style: italic; color: var(--gold-light); }
 .tour-hero__subtitle {
@@ -522,6 +522,10 @@
   transition: border-color var(--trans-fast);
   width: 100%;
 }
+.enquiry-box__select option {
+  color: #1C1008 !important; /* or var(--earth) — dark brown/black */
+  background: #fff; /* white background for contrast */
+}
 .enquiry-box__input::placeholder,
 .enquiry-box__textarea::placeholder { color: rgba(242,232,213,.35); }
 .enquiry-box__input:focus,
@@ -679,7 +683,7 @@
       <span class="breadcrumb__current">Academic Tours</span>
     </nav>
     <div class="tour-hero__badge">🎓 Academic Tours</div>
-    <h1 class="tour-hero__title">Where Knowledge<br>Meets the <em>Living</em><br>Classroom</h1>
+    <h1 class="tour-hero__title">Where Knowledge Meets the <em>Living</em> Classroom</h1>
     <p class="tour-hero__subtitle">Pier One designs transformative educational expeditions across Africa — connecting students, researchers, and institutions to the continent's history, ecology, culture, and living communities.</p>
     <div class="tour-hero__meta">
       <span class="tour-hero__meta-item">
@@ -1077,77 +1081,6 @@
         <div class="discipline-card__name">Journalism &amp; Media</div>
         <div class="discipline-card__desc">African press freedom, media landscape analysis, documentary field reporting, and digital journalism.</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════════════════════ -->
-<section class="section section--sand">
-  <div class="container">
-    <div style="text-align:center;max-width:520px;margin:0 auto 3rem;">
-      <span class="section-eyebrow reveal">From Our Travellers</span>
-      <h2 class="section-title reveal reveal-delay-1">Words from Scholars<br>&amp; <em>Institutions</em></h2>
-    </div>
-    <div class="acad-testimonials">
-      <div class="acad-quote reveal">
-        <div class="acad-quote__stars">★★★★★</div>
-        <div class="acad-quote__mark">"</div>
-        <p class="acad-quote__text">Pier One transformed our university group's trip to Ghana into a life-changing academic experience. The local guides were exceptional — knowledgeable, passionate, and deeply warm. Our students returned writing their best work of the year.</p>
-        <div class="acad-quote__author">
-          <div class="acad-quote__avatar">👩🏾‍🏫</div>
-          <div>
-            <div class="acad-quote__name">Prof. Adwoa Mensah</div>
-            <div class="acad-quote__role">University of Ghana · African Studies</div>
-          </div>
-        </div>
-      </div>
-      <div class="acad-quote reveal reveal-delay-1">
-        <div class="acad-quote__stars">★★★★★</div>
-        <div class="acad-quote__mark">"</div>
-        <p class="acad-quote__text">The Ethiopia ecology programme exceeded every academic expectation. The pre-departure materials, in-country facilitators, and post-tour reflection framework were all world-class. Pier One genuinely understands what field learning means.</p>
-        <div class="acad-quote__author">
-          <div class="acad-quote__avatar">🧑🏿‍🔬</div>
-          <div>
-            <div class="acad-quote__name">Dr. Kwame Osei-Bonsu</div>
-            <div class="acad-quote__role">KNUST · Environmental Science Dept.</div>
-          </div>
-        </div>
-      </div>
-      <div class="acad-quote reveal reveal-delay-2">
-        <div class="acad-quote__stars">★★★★★</div>
-        <div class="acad-quote__mark">"</div>
-        <p class="acad-quote__text">We brought 45 law students to Rwanda for a transitional justice programme. Pier One's logistics were impeccable and the access they secured — to justice officials, survivors, and community programmes — was simply unmatched by any operator we'd worked with before.</p>
-        <div class="acad-quote__author">
-          <div class="acad-quote__avatar">👨🏾‍⚖️</div>
-          <div>
-            <div class="acad-quote__name">Dr. Nana Asante</div>
-            <div class="acad-quote__role">Legon Law School · International Relations</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════
-     INSTITUTIONS WE'VE WORKED WITH
-═══════════════════════════════════════════════════ -->
-<section class="section section--cream">
-  <div class="container" style="text-align:center;">
-    <span class="section-eyebrow reveal" style="justify-content:center;">Our Partners</span>
-    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:.75rem;justify-content:center;">Trusted by Leading<br><em>African &amp; Global Institutions</em></h2>
-    <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto 3rem;text-align:center;">We are proud to have served schools, universities, research bodies, and NGOs across the continent and the diaspora.</p>
-    <div class="partners-row reveal reveal-delay-2">
-      <div class="partner-pill"><span class="flag">🇬🇭</span> University of Ghana</div>
-      <div class="partner-pill"><span class="flag">🇬🇭</span> KNUST</div>
-      <div class="partner-pill"><span class="flag">🇳🇬</span> University of Lagos</div>
-      <div class="partner-pill"><span class="flag">🇰🇪</span> University of Nairobi</div>
-      <div class="partner-pill"><span class="flag">🇿🇦</span> UCT</div>
-      <div class="partner-pill"><span class="flag">🇷🇼</span> University of Rwanda</div>
-      <div class="partner-pill"><span class="flag">🇺🇸</span> Howard University</div>
-      <div class="partner-pill"><span class="flag">🇬🇧</span> SOAS London</div>
     </div>
   </div>
 </section>

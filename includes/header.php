@@ -331,11 +331,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <div class="topbar">
   <div class="topbar__inner">
     <div class="topbar__contacts">
-      <a href="tel:+233302000000" class="topbar__item">
+      <a href="tel:+017670812809" class="topbar__item">
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
         </svg>
-        +233 (0) 302 000 000
+        <!-- +233 (0) 302 000 000 --> 017670812809
       </a>
       <a href="mailto:info@pieronetours.com" class="topbar__item">
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -505,16 +505,16 @@ $current_page = basename($_SERVER['PHP_SELF']);
   </div>
   <div class="nav__mobile-section">
     <div class="nav__mobile-section-title">Tours</div>
-    <a href="<?= URLROOT ?>/tours-academic" class="nav__mobile-link">🎓 Academic Tours</a>
-    <a href="<?= URLROOT ?>/tours-leisure" class="nav__mobile-link">🌅 Leisure Tours</a>
-    <a href="<?= URLROOT ?>/tours-religious" class="nav__mobile-link">🕊️ Religious Tours</a>
-    <a href="<?= URLROOT ?>/tours-volunteer" class="nav__mobile-link">🤝 Volunteer Mission Tours</a>
-    <a href="<?= URLROOT ?>/tours-corporate" class="nav__mobile-link">💼 Corporate (MICE)</a>
+    <a href="<?= URLROOT ?>/tours/academic" class="nav__mobile-link">🎓 Academic Tours</a>
+    <a href="<?= URLROOT ?>/tours/leisure" class="nav__mobile-link">🌅 Leisure Tours</a>
+    <a href="<?= URLROOT ?>/tours/religious" class="nav__mobile-link">🕊️ Religious Tours</a>
+    <a href="<?= URLROOT ?>/tours/volunteer" class="nav__mobile-link">🤝 Volunteer Mission Tours</a>
+    <a href="<?= URLROOT ?>/tours/corporate" class="nav__mobile-link">💼 Corporate (MICE)</a>
   </div>
   <div class="nav__mobile-section">
     <div class="nav__mobile-section-title">Travel Checklist</div>
-    <a href="<?= URLROOT ?>/checklist-plan" class="nav__mobile-link">📋 Plan Your Trip</a>
-    <a href="<?= URLROOT ?>/checklist-insurance" class="nav__mobile-link">🛡️ Travel Insurance</a>
+    <a href="<?= URLROOT ?>/checklist/plan" class="nav__mobile-link">📋 Plan Your Trip</a>
+    <a href="<?= URLROOT ?>/checklist/insurance" class="nav__mobile-link">🛡️ Travel Insurance</a>
   </div>
   <div class="nav__mobile-section">
     <div class="nav__mobile-section-title">More</div>

@@ -763,6 +763,10 @@
   width: 100%;
   transition: border-color var(--trans-fast);
 }
+.booking-select option {
+  color: #1C1008 !important; /* or var(--earth) — dark brown/black */
+  background: #fff; /* white background for contrast */
+}
 .booking-input::placeholder,
 .booking-textarea::placeholder { color: rgba(242,232,213,.3); }
 .booking-input:focus, .booking-select:focus, .booking-textarea:focus { border-color: var(--gold); }

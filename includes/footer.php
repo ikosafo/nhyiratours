@@ -49,12 +49,12 @@
     <div class="footer__col">
       <div class="footer__col-title">Destinations</div>
       <div class="footer__links">
-        <a href="<?= URLROOT ?>/destinations/westafrica.php" class="footer__link">🌍 West Africa</a>
-        <a href="<?= URLROOT ?>/destinations/centralafrica.php" class="footer__link">🌿 Central Africa</a>
-        <a href="<?= URLROOT ?>/destinations/eastafrica.php" class="footer__link">🦁 East Africa</a>
-        <a href="<?= URLROOT ?>/destinations/indianocean.php" class="footer__link">🏝️ Indian Ocean Islands</a>
-        <a href="<?= URLROOT ?>/destinations/southernafrica.php" class="footer__link">🐘 Southern Africa</a>
-        <a href="<?= URLROOT ?>/destinations/northafrica.php" class="footer__link">🏛️ North Africa</a>
+        <a href="<?= URLROOT ?>/destinations/westafrica" class="footer__link">🌍 West Africa</a>
+        <a href="<?= URLROOT ?>/destinations/centralafrica" class="footer__link">🌿 Central Africa</a>
+        <a href="<?= URLROOT ?>/destinations/eastafrica" class="footer__link">🦁 East Africa</a>
+        <a href="<?= URLROOT ?>/destinations/indianocean" class="footer__link">🏝️ Indian Ocean Islands</a>
+        <a href="<?= URLROOT ?>/destinations/southernafrica" class="footer__link">🐘 Southern Africa</a>
+        <a href="<?= URLROOT ?>/destinations/northafrica" class="footer__link">🏛️ North Africa</a>
       </div>
     </div>
 
@@ -62,13 +62,13 @@
     <div class="footer__col">
       <div class="footer__col-title">Tours &amp; Services</div>
       <div class="footer__links">
-        <a href="<?= URLROOT ?>/tours-academic.php" class="footer__link">🎓 Academic Tours</a>
-        <a href="<?= URLROOT ?>/tours-leisure.php" class="footer__link">🌅 Leisure Tours</a>
-        <a href="<?= URLROOT ?>/tours-religious.php" class="footer__link">🕊️ Religious Tours</a>
-        <a href="<?= URLROOT ?>/tours-volunteer.php" class="footer__link">🤝 Volunteer Mission Tours</a>
-        <a href="<?= URLROOT ?>/tours-corporate.php" class="footer__link">💼 Corporate (MICE)</a>
-        <a href="<?= URLROOT ?>/checklist-plan.php" class="footer__link">📋 Plan Your Trip</a>
-        <a href="<?= URLROOT ?>/checklist-insurance.php" class="footer__link">🛡️ Travel Insurance</a>
+        <a href="<?= URLROOT ?>/tours/academic" class="footer__link">🎓 Academic Tours</a>
+        <a href="<?= URLROOT ?>/tours/leisure" class="footer__link">🌅 Leisure Tours</a>
+        <a href="<?= URLROOT ?>/tours/religious" class="footer__link">🕊️ Religious Tours</a>
+        <a href="<?= URLROOT ?>/tours/volunteer" class="footer__link">🤝 Volunteer Mission Tours</a>
+        <a href="<?= URLROOT ?>/tours/corporate" class="footer__link">💼 Corporate (MICE)</a>
+        <a href="<?= URLROOT ?>/checklist/plan" class="footer__link">📋 Plan Your Trip</a>
+        <a href="<?= URLROOT ?>/checklist/insurance" class="footer__link">🛡️ Travel Insurance</a>
       </div>
     </div>
 
@@ -76,11 +76,11 @@
     <div class="footer__col">
       <!-- <div class="footer__col-title">Company</div>
       <div class="footer__links" style="margin-bottom:1.5rem;">
-        <a href="<?= URLROOT ?>/about.php" class="footer__link">🌐 About Us</a>
-        <a href="<?= URLROOT ?>/local-experts.php" class="footer__link">🧭 Local Experts</a>
-        <a href="<?= URLROOT ?>/testimonials.php" class="footer__link">⭐ Testimonials</a>
-        <a href="<?= URLROOT ?>/faqs.php" class="footer__link">❓ FAQs</a>
-        <a href="<?= URLROOT ?>/careers.php" class="footer__link">💼 Careers</a>
+        <a href="<?= URLROOT ?>/about" class="footer__link">🌐 About Us</a>
+        <a href="<?= URLROOT ?>/local-experts" class="footer__link">🧭 Local Experts</a>
+        <a href="<?= URLROOT ?>/testimonials" class="footer__link">⭐ Testimonials</a>
+        <a href="<?= URLROOT ?>/faqs" class="footer__link">❓ FAQs</a>
+        <a href="<?= URLROOT ?>/careers" class="footer__link">💼 Careers</a>
       </div> -->
 
       <div class="footer__col-title">Contact Us</div>
