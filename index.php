@@ -1,8 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- ════════════════════════════════════════════════
-     HERO — African tour video background, no search bar
-═══════════════════════════════════════════════════ -->
+
 <section class="hero">
   <div class="hero__video-wrap">
     <video class="hero__video" autoplay muted loop playsinline
