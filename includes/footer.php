@@ -1,171 +1,198 @@
-    <!-- home1 Footer Section Start-->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-contact-wrap">
-                <div class="inquiry-area">
-                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <path d="M35.8703 28.2548L33.7795 22.1697C34.7873 20.1094 35.3199 17.8181 35.3235 15.5126C35.3297 11.5039 33.7788 7.71355 30.9563 4.83988C28.1332 1.96565 24.3714 0.347686 20.3636 0.284193C16.2077 0.218522 12.3015 1.79929 9.36472 4.73596C6.53295 7.56766 4.96231 11.3008 4.9126 15.29C2.12162 17.3914 0.474267 20.6676 0.479681 24.167C0.482282 25.8045 0.850861 27.4323 1.54927 28.9043L0.109064 33.0955C-0.138507 33.816 0.0423371 34.5983 0.581071 35.1371C0.960196 35.5162 1.46005 35.7181 1.9741 35.7181C2.19038 35.7181 2.4092 35.6824 2.62259 35.6091L6.81385 34.1688C8.28584 34.8673 9.91365 35.2358 11.5512 35.2384H11.5687C15.1201 35.2383 18.4213 33.5485 20.515 30.6891C22.6938 30.6317 24.8495 30.1043 26.7983 29.1509L32.8835 31.2419C33.1314 31.3274 33.3918 31.3712 33.654 31.3715C34.2649 31.3715 34.8589 31.1316 35.3095 30.6809C35.9497 30.0407 36.1645 29.1111 35.8703 28.2548ZM11.5685 33.0956H11.5545C10.1051 33.0934 8.66574 32.7361 7.39231 32.0624C7.2628 31.9939 7.12062 31.9526 6.97456 31.9412C6.82849 31.9299 6.68164 31.9485 6.54308 31.9961L2.24537 33.4729L3.72214 29.1753C3.76974 29.0367 3.78843 28.8898 3.77703 28.7438C3.76564 28.5977 3.72442 28.4555 3.65591 28.326C2.98217 27.0525 2.62484 25.6132 2.62259 24.1637C2.61901 21.8322 3.52597 19.6224 5.11201 17.9676C5.63007 21.1258 7.13525 24.036 9.46836 26.3277C11.7842 28.6023 14.6953 30.0506 17.8363 30.5241C16.1778 32.1588 13.9421 33.0956 11.5685 33.0956ZM33.7942 29.1656C33.7332 29.2266 33.6609 29.2432 33.5796 29.2152L27.0653 26.9767C26.9268 26.9291 26.7799 26.9104 26.6339 26.9218C26.4878 26.9332 26.3456 26.9744 26.2162 27.043C24.3562 28.0269 22.2544 28.5488 20.1379 28.552H20.1176C13.0257 28.552 7.16774 22.791 7.05538 15.7008C6.99877 12.13 8.35707 8.77401 10.88 6.25112C13.4028 3.72824 16.7593 2.37044 20.3297 2.42669C27.4267 2.53926 33.1917 8.40803 33.1807 15.5092C33.1774 17.6258 32.6556 19.7276 31.6717 21.5875C31.6032 21.717 31.562 21.8592 31.5506 22.0052C31.5392 22.1513 31.5579 22.2981 31.6055 22.4367L33.8439 28.951C33.8718 29.0326 33.8551 29.1048 33.7942 29.1656Z"/>
-                            <path d="M26.5002 9.80957H13.7343C13.1426 9.80957 12.6629 10.2893 12.6629 10.881C12.6629 11.4727 13.1426 11.9524 13.7343 11.9524H26.5002C27.092 11.9524 27.5717 11.4727 27.5717 10.881C27.5717 10.2893 27.092 9.80957 26.5002 9.80957ZM26.5002 14.2161H13.7343C13.1426 14.2161 12.6629 14.6959 12.6629 15.2875C12.6629 15.8792 13.1426 16.359 13.7343 16.359H26.5002C27.092 16.359 27.5717 15.8792 27.5717 15.2875C27.5717 14.6959 27.092 14.2161 26.5002 14.2161ZM21.5862 18.6225H13.7342C13.1425 18.6225 12.6628 19.1023 12.6628 19.694C12.6628 20.2857 13.1426 20.7654 13.7342 20.7654H21.5862C22.1779 20.7654 22.6576 20.2856 22.6576 19.694C22.6576 19.1023 22.178 18.6225 21.5862 18.6225Z"/>
-                        </g>
-                    </svg>
-                    <div class="content">
-                        <h6>To More Inquiry</h6>
-                        <span>Don’t hesitate Call</span>
-                    </div>
-                </div>
-                <ul class="contact-area">
-                    <li class="single-contact">
-                        <div class="icon">
-                            <img src="assets/img/home1/icon/whatsapp-icon2.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <span>WhatsApp</span>
-                            <a href="https://wa.me/233546192565">+233546192565</a>
-                        </div>
-                    </li>
-                    <li class="single-contact">
-                        <div class="icon">
-                            <img src="assets/img/home1/icon/mail-icon2.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Mail Us</span>
-                            <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
-                        </div>
-                    </li>
-                    <li class="single-contact">
-                        <div class="icon">
-                            <img src="assets/img/home1/icon/call-icon.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Call Us</span>
-                            <a href="tel:+233546192565">+233546192565</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+<!-- ════════════════════════════════════════════════
+     FOOTER — properly structured menus
+═══════════════════════════════════════════════════ -->
+<footer class="footer" id="footer">
+  <div class="kente-bar" style="margin-bottom:3rem;"></div>
+  <div class="footer__grid">
 
-            <svg class="divider" width="1320" height="6" viewBox="0 0 1320 6" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM1315 3.5L1320 5.88675V0.113249L1315 2.5V3.5ZM4.5 3.5H1315.5V2.5H4.5V3.5Z"/>
-            </svg>
-
-            <div class="footer-menu-wrap">
-                <div class="row gy-md-4 gy-5">
-                    <!-- Logo & Company Info -->
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="footer-logo-and-addition-info">
-                            <a href="/" class="footer-logo">
-                                <img src="assets/images/logo/pieronefooter.png" alt="Pier One Travel & Tour Services" style="width: 100px; height: 95px;">
-                            </a>
-                            <div class="address-area">
-                                <span>Pier One Travel & Tour Services</span>
-                                <a href="#">Accra, Greater Accra, Ghana</a>
-                            </div>
-                            <ul class="social-list">
-                                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- African Destinations -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h5>African Destinations</h5>
-                            </div>
-                            <ul class="widget-list">
-                                <li><a href="destinationDetails">Egypt</a></li>
-                                <li><a href="destinationDetails">Morocco</a></li>
-                                <li><a href="destinationDetails">Nigeria</a></li>
-                                <li><a href="destinationDetails">Ghana</a></li>
-                                <li><a href="destinationDetails">Kenya</a></li>
-                                <li><a href="destinationDetails">Tanzania</a></li>
-                                <li><a href="destinationDetails">South Africa</a></li>
-                                <li><a href="destinationDetails">Mauritius</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Tours -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-md-end">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h5>Tours</h5>
-                            </div>
-                            <ul class="widget-list">
-                                <li><a href="travelPackage">Academic Tours</a></li>
-                                <li><a href="travelPackageDetails">Leisure Tours</a></li>
-                                <li><a href="travelPackageDetails">Religious Tours</a></li>
-                                <li><a href="travelPackageDetails">Volunteer Mission Tours</a></li>
-                                <li><a href="travelPackageDetails">Corporate (MICE)</a></li>
-                                <li><a href="travelPackageDetails">Familiarization Trips</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Resources -->
-                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-end">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h5>Resources</h5>
-                            </div>
-                            <ul class="widget-list">
-                                <li><a href="about">Testimonials</a></li>
-                                <li><a href="about">Careers</a></li>
-                                <li><a href="about">FAQs</a></li>
-                                <li><a href="about">Local Experts</a></li>
-                                <li><a href="visa">Travel Checklist</a></li>
-                                <li><a href="contact">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Brand column -->
+    <div class="footer__col footer__col--brand">
+      <div class="footer__logo">
+        <div class="footer__logo-mark">P</div>
+        <div>
+          <div class="footer__brand-name">Pier One Travel &amp; Tour Services</div>
+          <div class="footer__brand-tagline">Africa's Premier Tour Operator</div>
         </div>
+      </div>
+      <p class="footer__brand-desc">
+        Africa's premier tour operator, connecting travellers to the continent's most extraordinary destinations since 2006. We craft journeys that inspire, educate, and transform.
+      </p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Facebook">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Instagram">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="X">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="YouTube">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+            <polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="WhatsApp">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright-and-payment-method-area">
-                    <p>&copy; <?= date('Y'); ?> <a href="/">Pier One Travel & Tour Services</a> | All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- home1 Footer Section End-->
+    <!-- Destinations column -->
+    <div class="footer__col">
+      <div class="footer__col-title">Destinations</div>
+      <div class="footer__links">
+        <a href="<?= URLROOT ?>/destinations/westafrica.php" class="footer__link">🌍 West Africa</a>
+        <a href="<?= URLROOT ?>/destinations/centralafrica.php" class="footer__link">🌿 Central Africa</a>
+        <a href="<?= URLROOT ?>/destinations/eastafrica.php" class="footer__link">🦁 East Africa</a>
+        <a href="<?= URLROOT ?>/destinations/indianocean.php" class="footer__link">🏝️ Indian Ocean Islands</a>
+        <a href="<?= URLROOT ?>/destinations/southernafrica.php" class="footer__link">🐘 Southern Africa</a>
+        <a href="<?= URLROOT ?>/destinations/northafrica.php" class="footer__link">🏛️ North Africa</a>
+      </div>
+    </div>
 
+    <!-- Tours & Services column -->
+    <div class="footer__col">
+      <div class="footer__col-title">Tours &amp; Services</div>
+      <div class="footer__links">
+        <a href="<?= URLROOT ?>/tours-academic.php" class="footer__link">🎓 Academic Tours</a>
+        <a href="<?= URLROOT ?>/tours-leisure.php" class="footer__link">🌅 Leisure Tours</a>
+        <a href="<?= URLROOT ?>/tours-religious.php" class="footer__link">🕊️ Religious Tours</a>
+        <a href="<?= URLROOT ?>/tours-volunteer.php" class="footer__link">🤝 Volunteer Mission Tours</a>
+        <a href="<?= URLROOT ?>/tours-corporate.php" class="footer__link">💼 Corporate (MICE)</a>
+        <a href="<?= URLROOT ?>/checklist-plan.php" class="footer__link">📋 Plan Your Trip</a>
+        <a href="<?= URLROOT ?>/checklist-insurance.php" class="footer__link">🛡️ Travel Insurance</a>
+      </div>
+    </div>
 
-    <!--  Main jQuery  -->
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/daterangepicker.min.js"></script>
-    
-    <!-- Popper and Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <!-- Swiper slider JS -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <!-- Waypoints JS -->
-    <script src="assets/js/waypoints.min.js"></script>
-    <!-- Counterup JS -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Nice Select JS -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- Wow JS -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- Gsap  JS -->
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/select-dropdown.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- Company column -->
+    <div class="footer__col">
+      <!-- <div class="footer__col-title">Company</div>
+      <div class="footer__links" style="margin-bottom:1.5rem;">
+        <a href="<?= URLROOT ?>/about.php" class="footer__link">🌐 About Us</a>
+        <a href="<?= URLROOT ?>/local-experts.php" class="footer__link">🧭 Local Experts</a>
+        <a href="<?= URLROOT ?>/testimonials.php" class="footer__link">⭐ Testimonials</a>
+        <a href="<?= URLROOT ?>/faqs.php" class="footer__link">❓ FAQs</a>
+        <a href="<?= URLROOT ?>/careers.php" class="footer__link">💼 Careers</a>
+      </div> -->
+
+      <div class="footer__col-title">Contact Us</div>
+      <div class="footer__contact-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+        <span>+233 (0) 302 000 000<br/>+234 (0) 800 000 000</span>
+      </div>
+      <div class="footer__contact-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        <span>info@pieronetours.com<br/>bookings@pieronetours.com</span>
+      </div>
+      <div class="footer__contact-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <span>Independence Ave, Accra, Ghana<br/>Broad Street, Lagos, Nigeria</span>
+      </div>
+    </div>
+
+  </div><!-- /.footer__grid -->
+
+  <div class="footer__bottom">
+    <span class="footer__copy">© <?= date('Y') ?> Pier One Travel &amp; Tour Services. All rights reserved.</span>
+    <div class="footer__bottom-links">
+      <a href="#" class="footer__bottom-link">Privacy Policy</a>
+      <a href="#" class="footer__bottom-link">Terms of Service</a>
+      <a href="#" class="footer__bottom-link">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="<?= URLROOT ?>/js/main.js"></script>
+
+<!-- Testimonials carousel script -->
+<script>
+  (function() {
+    const track  = document.getElementById('tTrack');
+    const prevBtn = document.getElementById('tPrev');
+    const nextBtn = document.getElementById('tNext');
+    const dotsEl  = document.getElementById('tDots');
+    if (!track) return;
+
+    const cards = track.querySelectorAll('.testimonial-card');
+    let current = 0;
+    let autoTimer;
+
+    function visibleCount() {
+      if (window.innerWidth >= 900) return 3;
+      if (window.innerWidth >= 600) return 2;
+      return 1;
+    }
+
+    function totalPages() {
+      return Math.ceil(cards.length / visibleCount());
+    }
+
+    function buildDots() {
+      if (!dotsEl) return;
+      dotsEl.innerHTML = '';
+      for (let i = 0; i < totalPages(); i++) {
+        const dot = document.createElement('button');
+        dot.className = 'testimonials-dot' + (i === current ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to page ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsEl.appendChild(dot);
+      }
+    }
+
+    function goTo(index) {
+      const pages = totalPages();
+      current = ((index % pages) + pages) % pages;
+      const cardW = cards[0]?.offsetWidth + 24 || 304;
+      track.style.transform = `translateX(-${current * visibleCount() * cardW}px)`;
+      if (dotsEl) {
+        dotsEl.querySelectorAll('.testimonials-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => { 
+        clearInterval(autoTimer); 
+        prev(); 
+        startAuto(); 
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => { 
+        clearInterval(autoTimer); 
+        next(); 
+        startAuto(); 
+      });
+    }
+
+    function startAuto() {
+      autoTimer = setInterval(next, 5000);
+    }
+
+    buildDots();
+    startAuto();
+    window.addEventListener('resize', () => { buildDots(); goTo(0); });
+  })();
+</script>
+
 </body>
-
-
 </html>

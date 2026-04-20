@@ -1,481 +1,530 @@
-<!doctype html>
+<?php
+// Detect environment for URL paths
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+
+if ($host === 'nhyiratours.local' || $host === 'localhost') {
+    define('URLROOT', 'http://' . $host);
+} else {
+    define('URLROOT', 'https://pieronetours.com');
+}
+
+// Determine active page for navigation highlighting
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
-    <!-- Bootstrap Icon CSS -->
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-    <!-- CSS -->
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <!-- FancyBox CSS -->
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-    <!-- Nice Select CSS -->
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-    <!-- Swiper slider CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!-- Slick slider CSS -->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
-    <!-- BoxIcon  CSS -->
-    <link href="assets/css/boxicons.min.css" rel="stylesheet">
-    <!--  Style CSS  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Title -->
-    <title>Pier One Travel & Tour Services - Explore, Learn, and Work Abroad</title>
-    <link rel="icon" href="assets/images/logo/pierone.png" type="image/gif" sizes="20x20">
-
-    <style>
-        html, body {
-            font-family: 'Poppins', sans-serif !important;
-        }
-
-        * {
-            font-family: 'Poppins', sans-serif !important;
-        }
-
-        /* Optional: Ensure form elements also use Poppins */
-        input, textarea, select, button {
-            font-family: 'Poppins', sans-serif !important;
-        }
-
-        /* Optional: Fix SVG text if any */
-        text {
-            font-family: 'Poppins', sans-serif !important;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pier One Travel & Tour Services — Africa's premier tour operator. Discover authentic African experiences across West Africa, East Africa, and beyond." />
+  <title>Pier One Travel & Tour Services | Africa's Premier Tour Operator</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="<?= URLROOT ?>/css/styles.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="<?= URLROOT ?>/images/logo.webp" />
+  
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <style>
+    /* Critical above-the-fold styles */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero__video-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero__video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero__overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, rgba(28,16,8,0.88) 0%, rgba(28,16,8,0.45) 55%, rgba(28,16,8,0.15) 100%),
+        linear-gradient(to top, rgba(28,16,8,0.75) 0%, transparent 50%);
+      z-index: 1;
+    }
+    .hero__kente {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: repeating-linear-gradient(
+        90deg,
+        #C8913A 0px, #C8913A 40px,
+        #3D2B1F 40px, #3D2B1F 80px,
+        #C4784A 80px, #C4784A 120px,
+        #2D4A3E 120px, #2D4A3E 160px,
+        #8B6020 160px, #8B6020 200px
+      );
+      z-index: 3;
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 4vw, 3rem);
+    }
+    .hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--gold-light, #E8B96A);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.3s ease forwards;
+    }
+    .hero__eyebrow-line {
+      display: block;
+      width: 36px;
+      height: 1.5px;
+      background: var(--gold, #C8913A);
+    }
+    .hero__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: 600;
+      color: var(--white, #FFFFFF);
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
+      max-width: 14ch;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.5s ease forwards;
+    }
+    .hero__title em {
+      font-style: italic;
+      color: var(--gold-light, #E8B96A);
+    }
+    .hero__subtitle {
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      color: rgba(255,255,255,0.75);
+      line-height: 1.75;
+      max-width: 42ch;
+      margin-bottom: 2.25rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.7s ease forwards;
+    }
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.9s ease forwards;
+    }
+    .hero__scroll {
+      position: absolute;
+      bottom: 3rem;
+      right: clamp(1rem, 4vw, 3rem);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      opacity: 0;
+      animation: fadeIn 1s 1.5s ease forwards;
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0));
+      animation: scrollPulse 2s infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50% { opacity: 0.4; transform: scaleY(0.6); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .dest-card {
+      aspect-ratio: 3/4;
+    }
+    .feature-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .feature-split__img {
+      position: relative;
+      border-radius: var(--radius-xl, 32px);
+      overflow: hidden;
+    }
+    .feature-split__img img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+    .feature-split__badge {
+      position: absolute;
+      bottom: 2rem;
+      right: -1.5rem;
+      background: var(--white, #FFFFFF);
+      border-radius: var(--radius-lg, 20px);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-lg, 0 20px 60px rgba(61,43,31,0.22));
+      min-width: 180px;
+    }
+    .feature-split__badge-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--gold, #C8913A);
+      line-height: 1;
+    }
+    .feature-split__badge-label {
+      font-size: 0.78rem;
+      color: var(--text-soft, #8A6858);
+      margin-top: 0.25rem;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+    .tours-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .tours-grid .card:first-child {
+      grid-row: 1 / 3;
+    }
+    .tours-grid .card:first-child .card__img-wrap {
+      aspect-ratio: 3/4;
+    }
+    .testimonials-outer {
+      position: relative;
+    }
+    .testimonials-wrap {
+      overflow: hidden;
+    }
+    .testimonials-track {
+      display: flex;
+      gap: 1.5rem;
+      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .testimonials-track .testimonial-card {
+      flex: 0 0 calc(33.333% - 1rem);
+      min-width: 280px;
+    }
+    .testimonials-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--white, #FFFFFF);
+      border: 1.5px solid var(--border, rgba(200,145,58,0.25));
+      box-shadow: var(--shadow-md, 0 8px 32px rgba(61,43,31,0.14));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--earth, #3D2B1F);
+      cursor: pointer;
+      z-index: 10;
+      transition: background var(--trans-fast, 0.18s), border-color var(--trans-fast, 0.18s), color var(--trans-fast, 0.18s), transform var(--trans-fast, 0.18s), box-shadow var(--trans-fast, 0.18s);
+    }
+    .testimonials-btn:hover {
+      background: var(--gold, #C8913A);
+      border-color: var(--gold, #C8913A);
+      color: var(--white, #FFFFFF);
+      box-shadow: 0 6px 24px rgba(200,145,58,0.4);
+      transform: translateY(-50%) scale(1.08);
+    }
+    .testimonials-btn svg { width: 20px; height: 20px; }
+    .testimonials-btn--prev { left: -24px; }
+    .testimonials-btn--next { right: -24px; }
+    .testimonials-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .testimonials-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border, rgba(200,145,58,0.25));
+      cursor: pointer;
+      transition: background var(--trans-fast, 0.18s), transform var(--trans-fast, 0.18s);
+    }
+    .testimonials-dot.active {
+      background: var(--gold, #C8913A);
+      transform: scale(1.3);
+    }
+    @media (max-width: 900px) {
+      .dest-grid { grid-template-columns: 1fr 1fr; }
+      .feature-split { grid-template-columns: 1fr; gap: 2rem; }
+      .feature-split__badge { right: 1rem; }
+      .tours-grid { grid-template-columns: 1fr 1fr; }
+      .tours-grid .card:first-child { grid-row: auto; }
+      .tours-grid .card:first-child .card__img-wrap { aspect-ratio: 4/3; }
+      .testimonials-track .testimonial-card { flex: 0 0 90%; }
+      .testimonials-btn--prev { left: -12px; }
+      .testimonials-btn--next { right: -12px; }
+    }
+    @media (max-width: 600px) {
+      .dest-grid { grid-template-columns: 1fr; }
+      .tours-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+<body>
 
-<body class="tt-magic-cursor">
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader__logo">Pier One Travel & Tour Services</div>
+  <div class="preloader__bar"><div class="preloader__fill"></div></div>
+</div>
 
-    <div id="magic-cursor">
-        <div id="ball"></div>
-    </div>
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
 
-    <!-- Back To Top -->
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+<!-- Scroll to Top -->
+<button class="scroll-top" aria-label="Back to top">
+  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+  </svg>
+</button>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<div class="topbar">
+  <div class="topbar__inner">
+    <div class="topbar__contacts">
+      <a href="tel:+233302000000" class="topbar__item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
         </svg>
-        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z"/>
-            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z"/>
+        +233 (0) 302 000 000
+      </a>
+      <a href="mailto:info@pieronetours.com" class="topbar__item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
         </svg>
+        info@pieronetours.com
+      </a>
+      <span class="topbar__item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        Accra, Ghana · Munich, Germany
+      </span>
+    </div>
+    <div class="topbar__socials">
+      <a href="#" class="topbar__social" aria-label="Facebook">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="#" class="topbar__social" aria-label="Instagram">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+      <a href="#" class="topbar__social" aria-label="X / Twitter">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="#" class="topbar__social" aria-label="YouTube">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+          <polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+        </svg>
+      </a>
+      <a href="#" class="topbar__social" aria-label="WhatsApp">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── NAVIGATION ──────────────────────────────────────────── -->
+<nav class="nav" role="navigation">
+  <div class="nav__inner">
+    <!-- Logo -->
+    <a href="<?= URLROOT ?>" class="nav__logo">
+      <div class="nav__logo-mark">
+        <img src="<?= URLROOT ?>/images/logo.webp" alt="Pier One Logo" />
+      </div>
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Pier One</span>
+        <span class="nav__logo-tagline">Travel &amp; Tour Services</span>
+      </div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav__menu" role="list">
+      <li class="nav__item">
+        <a href="<?= URLROOT ?>" class="nav__link <?= $current_page == 'index.php' ? 'active' : '' ?>">Home</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Destinations
+          <svg class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <div class="nav__dropdown">
+          <div class="nav__drop-label">Explore by Region</div>
+          <a href="<?= URLROOT ?>/destinations/westafrica" class="nav__drop-item"><span class="flag">🌍</span> West Africa</a>
+          <a href="<?= URLROOT ?>/destinations/centralafrica" class="nav__drop-item"><span class="flag">🌿</span> Central Africa</a>
+          <a href="<?= URLROOT ?>/destinations/eastafrica" class="nav__drop-item"><span class="flag">🦁</span> East Africa</a>
+          <a href="<?= URLROOT ?>/destinations/indianocean" class="nav__drop-item"><span class="flag">🏝️</span> Indian Ocean Islands</a>
+          <a href="<?= URLROOT ?>/destinations/southernafrica" class="nav__drop-item"><span class="flag">🐘</span> Southern Africa</a>
+          <a href="<?= URLROOT ?>/destinations/northafrica" class="nav__drop-item"><span class="flag">🏛️</span> North Africa</a>
+        </div>
+      </li>
+
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Tours
+          <svg class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <div class="nav__dropdown">
+          <div class="nav__drop-label">Tour Types</div>
+          <a href="<?= URLROOT ?>/tours/academic" class="nav__drop-item">🎓 Academic Tours</a>
+          <a href="<?= URLROOT ?>/tours/leisure" class="nav__drop-item">🌅 Leisure Tours</a>
+          <a href="<?= URLROOT ?>/tours/religious" class="nav__drop-item">🕊️ Religious Tours</a>
+          <a href="<?= URLROOT ?>/tours/volunteer" class="nav__drop-item">🤝 Volunteer Mission Tours</a>
+          <a href="<?= URLROOT ?>/tours/corporate" class="nav__drop-item">💼 Corporate (MICE)</a>
+        </div>
+      </li>
+
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Travel Checklist
+          <svg class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <div class="nav__dropdown">
+          <div class="nav__drop-label">Plan &amp; Protect</div>
+          <a href="<?= URLROOT ?>/checklist/plan" class="nav__drop-item">📋 Plan Your Trip</a>
+          <a href="<?= URLROOT ?>/checklist/insurance" class="nav__drop-item">🛡️ Travel Insurance</a>
+        </div>
+      </li>
+
+      <li class="nav__item">
+        <a href="<?= URLROOT ?>/about" class="nav__link <?= $current_page == 'about.php' ? 'active' : '' ?>">About Us</a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          More
+          <svg class="chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <div class="nav__dropdown">
+          <div class="nav__drop-label">More from Pier One</div>
+          <a href="<?= URLROOT ?>/local-experts" class="nav__drop-item">🧭 Local Experts</a>
+          <a href="<?= URLROOT ?>/testimonials" class="nav__drop-item">⭐ Testimonials</a>
+          <a href="<?= URLROOT ?>/faqs" class="nav__drop-item">❓ FAQs</a>
+          <a href="<?= URLROOT ?>/careers" class="nav__drop-item">💼 Careers</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="nav__cta">
+      <a href="<?= URLROOT ?>/login" class="btn-login">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+        </svg>
+        Login
+      </a>
+      <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
     </div>
 
-    <!-- header Section Start-->
-    <div class="topbar-area d-lg-block d-none">
-        <div class="container">
-            <div class="topbar-wrap">
-                <div class="logo-and-search-area">
-                    <a href="/" class="header-logo">
-                        <img src="assets/images/logo/pierone.png" alt="" style="width: 80px; height: 75px;">
-                    </a>
-                    <form class="search-area">
-                        <div class="form-inner">
-                            <button type="submit">
-                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path
-                                            d="M15.8044 14.8855L13.0544 12.198L12.99 12.1002C12.8688 11.9807 12.7055 11.9137 12.5353 11.9137C12.3651 11.9137 12.2018 11.9807 12.0806 12.1002C9.74343 14.2443 6.14312 14.3605 3.66561 12.3724C1.18811 10.3843 0.604677 6.90645 2.30061 4.24832C3.99655 1.5902 7.44655 0.573637 10.3631 1.87332C13.2797 3.17301 14.755 6.38739 13.8125 9.38239C13.7793 9.48905 13.7753 9.60268 13.8011 9.71137C13.8269 9.82007 13.8815 9.91983 13.9591 10.0002C14.0375 10.082 14.1358 10.1421 14.2443 10.1746C14.3528 10.2071 14.4679 10.211 14.5784 10.1858C14.6883 10.1616 14.79 10.109 14.8732 10.0332C14.9564 9.95744 15.0182 9.86113 15.0525 9.75395C16.1775 6.19989 14.4781 2.37489 11.0525 0.75395C7.62686 -0.866988 3.50468 0.200824 1.35124 3.26864C-0.802198 6.33645 -0.34001 10.4818 2.43905 13.0239C5.21811 15.5661 9.47968 15.7408 12.4687 13.4377L14.9037 15.8183C15.026 15.9358 15.1889 16.0014 15.3584 16.0014C15.5279 16.0014 15.6909 15.9358 15.8131 15.8183C15.8728 15.7599 15.9201 15.6902 15.9525 15.6133C15.9848 15.5363 16.0015 15.4537 16.0015 15.3702C16.0015 15.2867 15.9848 15.2041 15.9525 15.1271C15.9201 15.0502 15.8728 14.9805 15.8131 14.9221L15.8044 14.8855Z"/>
-                                    </g>
-                                </svg>
-                            </button>
-                            <input type="text" placeholder="Find Your Perfect Tour Package">
-                        </div>
-                    </form>
-                </div>
-                <div class="topbar-right">
-                    <div class="support-and-language-area">
-                        <a href="#">Need Help?</a>
-                        <div class="language-area">
-                            <div class="language-btn">
-                                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path
-                                            d="M7 14C5.13023 14 3.37239 13.2719 2.05023 11.9498C0.728137 10.6276 0 8.86977 0 7C0 5.13023 0.728137 3.37239 2.05023 2.05023C3.37239 0.728137 5.13023 0 7 0C8.86977 0 10.6276 0.728137 11.9498 2.05023C13.2719 3.37239 14 5.13023 14 7C14 8.86977 13.2719 10.6276 11.9498 11.9498C10.6276 13.2719 8.86977 14 7 14ZM7 0.583324C3.46183 0.583324 0.583324 3.46183 0.583324 7C0.583324 10.5382 3.46183 13.4166 7 13.4166C10.5382 13.4166 13.4166 10.5382 13.4166 7C13.4166 3.46183 10.5382 0.583324 7 0.583324Z"/>
-                                        <path
-                                            d="M7 14C5.90297 14 4.8854 13.2486 4.13468 11.8841C3.41431 10.5747 3.01758 8.84018 3.01758 7C3.01758 5.15982 3.41431 3.42527 4.13468 2.11589C4.8854 0.751433 5.90297 0 7 0C8.09704 0 9.11461 0.751433 9.8653 2.11589C10.5857 3.42527 10.9824 5.15982 10.9824 7C10.9824 8.84018 10.5857 10.5747 9.8653 11.8841C9.11461 13.2486 8.09704 14 7 14ZM7 0.583324C6.12536 0.583324 5.2893 1.22746 4.64579 2.39709C3.97198 3.62179 3.6009 5.25645 3.6009 7C3.6009 8.74355 3.97198 10.3782 4.64576 11.6029C5.28927 12.7725 6.12533 13.4166 6.99998 13.4166C7.87462 13.4166 8.71068 12.7725 9.35419 11.6029C10.028 10.3782 10.3991 8.74355 10.3991 7C10.3991 5.25645 10.028 3.62179 9.35419 2.39709C8.71071 1.22746 7.87462 0.583324 7 0.583324Z"/>
-                                        <path
-                                            d="M6.99968 13.9573C6.8386 13.9573 6.70801 13.8267 6.70801 13.6657V0.334156C6.70801 0.173074 6.83857 0.0424805 6.99968 0.0424805C7.16077 0.0424805 7.29136 0.173074 7.29136 0.334156V13.6657C7.29136 13.8267 7.16077 13.9573 6.99968 13.9573Z"/>
-                                        <path
-                                            d="M13.6661 7.29147H0.334644C0.173562 7.29147 0.0429688 7.16088 0.0429688 6.99979C0.0429688 6.83871 0.173562 6.70812 0.334644 6.70812H13.6661C13.8272 6.70812 13.9578 6.83868 13.9578 6.99979C13.9578 7.16088 13.8272 7.29147 13.6661 7.29147ZM12.7022 3.81187H1.29862C1.13754 3.81187 1.00695 3.6813 1.00695 3.52019C1.00695 3.35908 1.13751 3.22852 1.29862 3.22852H12.7022C12.8633 3.22852 12.9939 3.35908 12.9939 3.52019C12.9939 3.6813 12.8632 3.81187 12.7022 3.81187ZM12.7022 10.771H1.29862C1.13754 10.771 1.00695 10.6404 1.00695 10.4794C1.00695 10.3183 1.13751 10.1877 1.29862 10.1877H12.7022C12.8633 10.1877 12.9939 10.3183 12.9939 10.4794C12.9939 10.6404 12.8632 10.771 12.7022 10.771Z"/>
-                                    </g>
-                                </svg>
-                                <span>EN</span>
-                                <i class="bi bi-caret-down-fill"></i>
-                            </div>
-                            <ul class="language-list">
-                                <li><a href="#"><img src="assets/img/home1/england-flag.png" alt="">English</a></li>
-                                <li><a href="#"><img src="assets/img/home1/netherlands-flag.png" alt="">Dutch</a></li>
-                                <li><a href="#"><img src="assets/img/home1/japan-flag.png" alt="">Japanese</a></li>
-                                <li><a href="#"><img src="assets/img/home1/korea-flag.png" alt="">Korean</a></li>
-                                <li><a href="#"><img src="assets/img/home1/china-flag.png" alt="">Chinese</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="/login" class="primary-btn1 black-bg">
-                        <span>
-                            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
-                                </g>
-                            </svg>
-                            Login
-                        </span>
-                        <span>
-                            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
-                                </g>
-                            </svg>
-                            Login
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Mobile Burger -->
+    <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- UPDATED HEADER WITH CORRECT LINKS -->
-    <header class="style-1">
-        <div class="container d-flex flex-nowrap align-items-center justify-content-between">
-            <a href="/" class="header-logo d-lg-none d-block">
-                <img src="assets/images/logo/pierone.png" alt="">
-            </a>
-
-            <div class="main-menu">
-                <div class="mobile-logo-area d-lg-none d-flex align-items-center justify-content-between">
-                    <a href="/" class="mobile-logo-wrap">
-                        <img src="assets/images/logo/pierone.png" alt="">
-                    </a>
-                    <div class="menu-close-btn">
-                        <i class="bi bi-x"></i>
-                    </div>
-                </div>
-
-                <ul class="menu-list">
-                    <!-- HOME -->
-                    <li class="menu-item-has-children active">
-                        <a href="/">Home</a>
-                    </li>
-
-                    <!-- AFRICAN DESTINATIONS (Mega Menu) -->
-                    <li class="menu-item-has-children position-inherit">
-                        <a href="destinations-africa" class="drop-down">
-                            African Destination
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <i class="bi bi-plus dropdown-icon"></i>
-                        <div class="mega-menu">
-                            <div class="container">
-                                <div class="menu-row">
-                                    <!-- NORTH AFRICA -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>North Africa</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-egypt"><img src="assets/img/home1/egypt-flag.png" alt="">Egypt</a></li>
-                                            <li><a href="destinations-morocco"><img src="assets/img/home1/morocco-flag.png" alt="">Morocco</a></li>
-                                            <li><a href="destinations-algeria"><img src="assets/img/home1/algeria-flag.png" alt="">Algeria</a></li>
-                                            <li><a href="destinations-tunisia"><img src="assets/img/home1/tunisia-flag.png" alt="">Tunisia</a></li>
-                                            <li><a href="destinations-libya"><img src="assets/img/home1/libya-flag.png" alt="">Libya</a></li>
-                                            <li><a href="destinations-sudan"><img src="assets/img/home1/sudan-flag.png" alt="">Sudan</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- WEST AFRICA -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>West Africa</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-nigeria"><img src="assets/img/home1/nigeria-flag.png" alt="">Nigeria</a></li>
-                                            <li><a href="destinations-ghana"><img src="assets/img/home1/ghana-flag.png" alt="">Ghana</a></li>
-                                            <li><a href="destinations-senegal"><img src="assets/img/home1/senegal-flag.png" alt="">Senegal</a></li>
-                                            <li><a href="destinations-ivory-coast"><img src="assets/img/home1/ivory-coast-flag.png" alt="">Ivory Coast</a></li>
-                                            <li><a href="destinations-mali"><img src="assets/img/home1/mali-flag.png" alt="">Mali</a></li>
-                                            <li><a href="destinations-niger"><img src="assets/img/home1/niger-flag.png" alt="">Niger</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- CENTRAL AFRICA -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>Central Africa</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-cameroon"><img src="assets/img/home1/cameroon-flag.png" alt="">Cameroon</a></li>
-                                            <li><a href="destinations-drc"><img src="assets/img/home1/congo-flag.png" alt="">Democratic Republic of the Congo</a></li>
-                                            <li><a href="destinations-gabon"><img src="assets/img/home1/gabon-flag.png" alt="">Gabon</a></li>
-                                            <li><a href="destinations-central-african-republic"><img src="assets/img/home1/central-african-republic-flag.png" alt="">Central African Republic</a></li>
-                                            <li><a href="destinations-chad"><img src="assets/img/home1/chad-flag.png" alt="">Chad</a></li>
-                                            <li><a href="destinations-equatorial-guinea"><img src="assets/img/home1/equatorial-guinea-flag.png" alt="">Equatorial Guinea</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- EAST AFRICA -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>East Africa</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-kenya"><img src="assets/img/home1/kenya-flag.png" alt="">Kenya</a></li>
-                                            <li><a href="destinations-tanzania"><img src="assets/img/home1/tanzania-flag.png" alt="">Tanzania</a></li>
-                                            <li><a href="destinations-uganda"><img src="assets/img/home1/uganda-flag.png" alt="">Uganda</a></li>
-                                            <li><a href="destinations-ethiopia"><img src="assets/img/home1/ethiopia-flag.png" alt="">Ethiopia</a></li>
-                                            <li><a href="destinations-rwanda"><img src="assets/img/home1/rwanda-flag.png" alt="">Rwanda</a></li>
-                                            <li><a href="destinations-somalia"><img src="assets/img/home1/somalia-flag.png" alt="">Somalia</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- SOUTHERN AFRICA -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>Southern Africa</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-south-africa"><img src="assets/img/home1/south-africa-flag.png" alt="">South Africa</a></li>
-                                            <li><a href="destinations-zimbabwe"><img src="assets/img/home1/zimbabwe-flag.png" alt="">Zimbabwe</a></li>
-                                            <li><a href="destinations-botswana"><img src="assets/img/home1/botswana-flag.png" alt="">Botswana</a></li>
-                                            <li><a href="destinations-namibia"><img src="assets/img/home1/namibia-flag.png" alt="">Namibia</a></li>
-                                            <li><a href="destinations-zambia"><img src="assets/img/home1/zambia-flag.png" alt="">Zambia</a></li>
-                                            <li><a href="destinations-mozambique"><img src="assets/img/home1/mozambique-flag.png" alt="">Mozambique</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- INDIAN OCEAN ISLANDS -->
-                                    <div class="menu-single-item">
-                                        <div class="menu-title"><h5>Indian Ocean Islands</h5></div>
-                                        <i class="bi bi-plus dropdown-icon"></i>
-                                        <ul>
-                                            <li><a href="destinations-mauritius"><img src="assets/img/home1/mauritius-flag.png" alt="">Mauritius</a></li>
-                                            <li><a href="destinations-seychelles"><img src="assets/img/home1/seychelles-flag.png" alt="">Seychelles</a></li>
-                                            <li><a href="destinations-madagascar"><img src="assets/img/home1/madagascar-flag.png" alt="">Madagascar</a></li>
-                                            <li><a href="destinations-comoros"><img src="assets/img/home1/comoros-flag.png" alt="">Comoros</a></li>
-                                            <li><a href="destinations-reunion"><img src="assets/img/home1/reunion-flag.png" alt="">Réunion</a></li>
-                                            <li><a href="destinations-maldives"><img src="assets/img/home1/maldives-flag.png" alt="">Maldives</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="assets/img/home1/mega-menu-vector1.svg" alt="" class="vector1">
-                            <img src="assets/img/home1/mega-menu-vector2.svg" alt="" class="vector2">
-                        </div>
-                    </li>
-
-                    <!-- TOURS -->
-                    <li class="menu-item-has-children">
-                        <a href="/tours" class="drop-down">
-                            Tours
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <i class="bi bi-plus dropdown-icon"></i>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="destinations-other">Other Destination</a>
-                                <i class="d-lg-flex d-none bi-caret-right-fill dropdown-icon"></i>
-                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="destinations-uae">United Arab Emirates</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="tours-academic">Academic Tours</a></li>
-                            <li><a href="tours-leisure">Leisure Tours</a></li>
-                            <li><a href="tours-religious">Religious Tours</a></li>
-                            <li><a href="tours-volunteer">Volunteer Mission Tours</a></li>
-                            <li><a href="tours-corporate">Corporate (MICE)</a></li>
-                            <li><a href="tours-fam-trip">Travel Advisors Familiarization Trip</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- TRAVEL CHECKLIST -->
-                    <li class="menu-item-has-children">
-                        <a href="/checklist" class="drop-down">
-                            Travel Checklist
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <i class="bi bi-plus dropdown-icon"></i>
-                        <ul class="sub-menu">
-                            <li><a href="/checklist/plan">Plan your trip</a></li>
-                            <li><a href="/checklist/insurance">Travel Insurance</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- ABOUT US -->
-                    <li class="menu-item-has-children">
-                        <a href="/about" class="drop-down">
-                            About Us
-                            <i class="bi bi-caret-down-fill"></i>
-                        </a>
-                        <i class="bi bi-plus dropdown-icon"></i>
-                        <ul class="sub-menu">
-                            <li><a href="/about/testimonials">Testimonials</a></li>
-                            <li><a href="/about/careers">Careers</a></li>
-                            <li><a href="/about/faqs">FAQs</a></li>
-                            <li><a href="/about/experts">Local Experts</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- CONTACT -->
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-
-                <!-- MOBILE CONTACT -->
-                <div class="contact-area d-lg-none d-flex">
-                    <div class="single-contact">
-                        <div class="icon">
-                            <img src="assets/img/home1/icon/whatsapp-icon.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <span>WhatsApp</span>
-                            <a href="https://wa.me/233546192565">+233 54 619 2565</a>
-                        </div>
-                    </div>
-                    <i class="bi bi-caret-down-fill contact-dropdown-btn"></i>
-                    <ul class="contact-list">
-                        <li class="single-contact">
-                            <div class="icon">
-                                <img src="assets/img/home1/icon/mail-icon.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <span>Email Us</span>
-                                <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
-                            </div>
-                        </li>
-                        <li class="single-contact">
-                            <div class="icon">
-                                <img src="assets/img/home1/icon/live-chat.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <span>More Inquiry</span>
-                                <a href="https://wa.me/233546192565">+233 54 619 2565</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- MOBILE LOGIN -->
-                <a href="/login" class="primary-btn1 black-bg d-lg-none d-flex">
-                    <span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
-                            </g>
-                        </svg>
-                        Login
-                    </span>
-                    <span>
-                        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path d="M7.50105 7.78913C9.64392 7.78913 11.3956 6.03744 11.3956 3.89456C11.3956 1.75169 9.64392 0 7.50105 0C5.35818 0 3.60652 1.75169 3.60652 3.89456C3.60652 6.03744 5.35821 7.78913 7.50105 7.78913ZM14.1847 10.9014C14.0827 10.6463 13.9467 10.4082 13.7936 10.1871C13.0113 9.0306 11.8038 8.2653 10.4433 8.07822C10.2732 8.06123 10.0861 8.09522 9.95007 8.19727C9.23578 8.72448 8.38546 8.99658 7.50108 8.99658C6.61671 8.99658 5.76638 8.72448 5.05209 8.19727C4.91603 8.09522 4.72895 8.04421 4.5589 8.07822C3.19835 8.2653 1.97387 9.0306 1.20857 10.1871C1.05551 10.4082 0.919443 10.6633 0.817424 10.9014C0.766415 11.0034 0.783407 11.1225 0.834416 11.2245C0.970484 11.4626 1.14054 11.7007 1.2936 11.9048C1.53168 12.2279 1.78679 12.517 2.07592 12.7891C2.31401 13.0272 2.58611 13.2483 2.85824 13.4694C4.20177 14.4728 5.81742 15 7.48409 15C9.15076 15 10.7664 14.4728 12.1099 13.4694C12.382 13.2653 12.6541 13.0272 12.8923 12.7891C13.1644 12.517 13.4365 12.2279 13.6746 11.9048C13.8446 11.6837 13.9977 11.4626 14.1338 11.2245C14.2188 11.1225 14.2358 11.0034 14.1847 10.9014Z"/>
-                            </g>
-                        </svg>
-                        Login
-                    </span>
-                </a>
-            </div>
-
-            <!-- DESKTOP RIGHT NAV -->
-            <div class="nav-right">
-                <div class="contact-area d-lg-flex d-none">
-                    <div class="single-contact">
-                        <div class="icon">
-                            <img src="assets/img/home1/icon/whatsapp-icon.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <span>WhatsApp</span>
-                            <a href="https://wa.me/233546192565">+233 54 619 2565</a>
-                        </div>
-                    </div>
-                    <i class="bi bi-caret-down-fill contact-dropdown-btn"></i>
-                    <ul class="contact-list">
-                        <li class="single-contact">
-                            <div class="icon">
-                                <img src="assets/img/home1/icon/mail-icon.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <span>Email Us</span>
-                                <a href="mailto:info@pieronetours.com">info@pieronetours.com</a>
-                            </div>
-                        </li>
-                        <li class="single-contact">
-                            <div class="icon">
-                                <img src="assets/img/home1/icon/live-chat.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <span>More Inquiry</span>
-                                <a href="https://wa.me/233546192565">+233 54 619 2565</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="language-area d-lg-none d-block">
-                    <div class="language-btn">
-                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g><path d="M7 14C5.13023 14 3.37239 13.2719 2.05023 11.9498C0.728137 10.6276 0 8.86977 0 7C0 5.13023 0.728137 3.37239 2.05023 2.05023C3.37239 0.728137 5.13023 0 7 0C8.86977 0 10.6276 0.728137 11.9498 2.05023C13.2719 3.37239 14 5.13023 14 7C14 8.86977 13.2719 10.6276 11.9498 11.9498C10.6276 13.2719 8.86977 14 7 14ZM7 0.583324C3.46183 0.583324 0.583324 3.46183 0.583324 7C0.583324 10.5382 3.46183 13.4166 7 13.4166C10.5382 13.4166 13.4166 10.5382 13.4166 7C13.4166 3.46183 10.5382 0.583324 7 0.583324Z"/><path d="M7 14C5.90297 14 4.8854 13.2486 4.13468 11.8841C3.41431 10.5747 3.01758 8.84018 3.01758 7C3.01758 5.15982 3.41431 3.42527 4.13468 2.11589C4.8854 0.751433 5.90297 0 7 0C8.09704 0 9.11461 0.751433 9.8653 2.11589C10.5857 3.42527 10.9824 5.15982 10.9824 7C10.9824 8.84018 10.5857 10.5747 9.8653 11.8841C9.11461 13.2486 8.09704 14 7 14ZM7 0.583324C6.12536 0.583324 5.2893 1.22746 4.64579 2.39709C3.97198 3.62179 3.6009 5.25645 3.6009 7C3.6009 8.74355 3.97198 10.3782 4.64576 11.6029C5.28927 12.7725 6.12533 13.4166 6.99998 13.4166C7.87462 13.4166 8.71068 12.7725 9.35419 11.6029C10.028 10.3782 10.3991 8.74355 10.3991 7C10.3991 5.25645 10.028 3.62179 9.35419 2.39709C8.71071 1.22746 7.87462 0.583324 7 0.583324Z"/><path d="M6.99968 13.9573C6.8386 13.9573 6.70801 13.8267 6.70801 13.6657V0.334156C6.70801 0.173074 6.83857 0.0424805 6.99968 0.0424805C7.16077 0.0424805 7.29136 0.173074 7.29136 0.334156V13.6657C7.29136 13.8267 7.16077 13.9573 6.99968 13.9573Z"/><path d="M13.6661 7.29147H0.334644C0.173562 7.29147 0.0429688 7.16088 0.0429688 6.99979C0.0429688 6.83871 0.173562 6.70812 0.334644 6.70812H13.6661C13.8272 6.70812 13.9578 6.83868 13.9578 6.99979C13.9578 7.16088 13.8272 7.29147 13.6661 7.29147ZM12.7022 3.81187H1.29862C1.13754 3.81187 1.00695 3.6813 1.00695 3.52019C1.00695 3.35908 1.13751 3.22852 1.29862 3.22852H12.7022C12.8633 3.22852 12.9939 3.35908 12.9939 3.52019C12.9939 3.6813 12.8632 3.81187 12.7022 3.81187ZM12.7022 10.771H1.29862C1.13754 10.771 1.00695 10.6404 1.00695 10.4794C1.00695 10.3183 1.13751 10.1877 1.29862 10.1877H12.7022C12.8633 10.1877 12.9939 10.3183 12.9939 10.4794C12.9939 10.6404 12.8632 10.771 12.7022 10.771Z"/></g></svg>
-                        <span>EN</span>
-                        <i class="bi bi-caret-down-fill"></i>
-                    </div>
-                    <ul class="language-list">
-                        <li><a href="#"><img src="assets/img/home1/england-flag.png" alt="">English</a></li>
-                        <li><a href="#"><img src="assets/img/home1/netherlands-flag.png" alt="">Dutch</a></li>
-                        <li><a href="#"><img src="assets/img/home1/japan-flag.png" alt="">Japanese</a></li>
-                        <li><a href="#"><img src="assets/img/home1/korea-flag.png" alt="">Korean</a></li>
-                        <li><a href="#"><img src="assets/img/home1/china-flag.png" alt="">Chinese</a></li>
-                    </ul>
-                </div>
-
-                <div class="search-bar d-lg-none d-block">
-                    <div class="search-btn">
-                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path d="M15.7417 14.6098L13.486 12.3621C14.7088 10.8514 15.3054 8.9291 15.1526 6.99153C14.9998 5.05396 14.1093 3.24888 12.6648 1.94851C11.2203 0.648146 9.33193 -0.0483622 7.38901 0.00261294C5.44609 0.0535881 3.59681 0.84816 2.22248 2.22248C0.84816 3.59681 0.0535881 5.44609 0.00261294 7.38901C-0.0483622 9.33193 0.648146 11.2203 1.94851 12.6648C3.24888 14.1093 5.05396 14.9998 6.99153 15.1526C8.9291 15.3054 10.8514 14.7088 12.3621 13.486L14.6098 15.7417C14.6839 15.8164 14.7721 15.8757 14.8692 15.9161C14.9664 15.9566 15.0705 15.9774 15.1758 15.9774C15.281 15.9774 15.3852 15.9566 15.4823 15.9161C15.5794 15.8757 15.6676 15.8164 15.7417 15.7417C15.8164 15.6676 15.8757 15.5794 15.9161 15.4823C15.9566 15.3852 15.9774 15.281 15.9774 15.1758C15.9774 15.0705 15.9566 14.9664 15.9161 14.8692C15.8757 14.7721 15.8164 14.6839 15.7417 14.6098ZM1.62572 7.60368C1.62572 6.42135 1.97632 5.26557 2.63319 4.2825C3.29005 3.29943 4.22368 2.53322 5.31601 2.08076C6.40834 1.62831 7.61031 1.50992 8.76992 1.74058C9.92953 1.97124 10.9947 2.54059 11.8307 3.37662C12.6668 4.21266 13.2361 5.27783 13.4668 6.43744C13.6974 7.59705 13.579 8.79902 13.1266 9.89134C12.6741 10.9837 11.9079 11.9173 10.9249 12.5742C9.94178 13.231 8.78601 13.5816 7.60368 13.5816C6.01822 13.5816 4.49771 12.9518 3.37662 11.8307C2.25554 10.7096 1.62572 9.18913 1.62572 7.60368Z"/>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="search-input">
-                        <div class="search-close"></div>
-                        <form>
-                            <div class="search-group">
-                                <div class="form-inner2">
-                                    <input type="text" placeholder="Find Your Perfect Tour Package">
-                                    <button type="submit"><i class="bi bi-search"></i></button>
-                                </div>
-                            </div>
-                            <div class="quick-search">
-                                <ul>
-                                    <li>Quick Search :</li>
-                                    <li><a href="/tours">Thailand Tour,</a></li>
-                                    <li><a href="/tours">Philippines Tour,</a></li>
-                                    <li><a href="/tours">Bali Tour,</a></li>
-                                    <li><a href="/tours">Hawaii, USA Tour,</a></li>
-                                    <li><a href="/tours">Switzerland Tour,</a></li>
-                                    <li><a href="/tours">Maldives Tour,</a></li>
-                                    <li><a href="/tours">Paris Tour,</a></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="sidebar-button mobile-menu-btn">
-                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z"></path>
-                        <path d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z"></path>
-                        <path d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header Section End-->
+<!-- Mobile Menu -->
+<div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+  <div class="nav__mobile-section">
+    <div class="nav__mobile-section-title">Main</div>
+    <a href="<?= URLROOT ?>" class="nav__mobile-link">🏠 Home</a>
+    <a href="<?= URLROOT ?>/about" class="nav__mobile-link">🌐 About Us</a>
+  </div>
+  <div class="nav__mobile-section">
+    <div class="nav__mobile-section-title">Destinations</div>
+    <a href="<?= URLROOT ?>/destinations/westafrica" class="nav__mobile-link">🌍 West Africa</a>
+    <a href="<?= URLROOT ?>/destinations/centralafrica" class="nav__mobile-link">🌿 Central Africa</a>
+    <a href="<?= URLROOT ?>/destinations/eastafrica" class="nav__mobile-link">🦁 East Africa</a>
+    <a href="<?= URLROOT ?>/destinations/indianocean" class="nav__mobile-link">🏝️ Indian Ocean Islands</a>
+    <a href="<?= URLROOT ?>/destinations/southernafrica" class="nav__mobile-link">🐘 Southern Africa</a>
+    <a href="<?= URLROOT ?>/destinations/northafrica" class="nav__mobile-link">🏛️ North Africa</a>
+  </div>
+  <div class="nav__mobile-section">
+    <div class="nav__mobile-section-title">Tours</div>
+    <a href="<?= URLROOT ?>/tours-academic" class="nav__mobile-link">🎓 Academic Tours</a>
+    <a href="<?= URLROOT ?>/tours-leisure" class="nav__mobile-link">🌅 Leisure Tours</a>
+    <a href="<?= URLROOT ?>/tours-religious" class="nav__mobile-link">🕊️ Religious Tours</a>
+    <a href="<?= URLROOT ?>/tours-volunteer" class="nav__mobile-link">🤝 Volunteer Mission Tours</a>
+    <a href="<?= URLROOT ?>/tours-corporate" class="nav__mobile-link">💼 Corporate (MICE)</a>
+  </div>
+  <div class="nav__mobile-section">
+    <div class="nav__mobile-section-title">Travel Checklist</div>
+    <a href="<?= URLROOT ?>/checklist-plan" class="nav__mobile-link">📋 Plan Your Trip</a>
+    <a href="<?= URLROOT ?>/checklist-insurance" class="nav__mobile-link">🛡️ Travel Insurance</a>
+  </div>
+  <div class="nav__mobile-section">
+    <div class="nav__mobile-section-title">More</div>
+    <a href="<?= URLROOT ?>/local-experts" class="nav__mobile-link">🧭 Local Experts</a>
+    <a href="<?= URLROOT ?>/testimonials" class="nav__mobile-link">⭐ Testimonials</a>
+    <a href="<?= URLROOT ?>/faqs" class="nav__mobile-link">❓ FAQs</a>
+    <a href="<?= URLROOT ?>/careers" class="nav__mobile-link">💼 Careers</a>
+  </div>
+  <div style="padding:1rem 0.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+    <a href="<?= URLROOT ?>/login" class="btn btn-outline btn-sm">Login</a>
+    <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
+  </div>
+</div>
