@@ -463,8 +463,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <div class="nav__dropdown">
           <div class="nav__drop-label">More from Pier One</div>
           <a href="<?= URLROOT ?>/local-experts" class="nav__drop-item">🧭 Local Experts</a>
-          <a href="<?= URLROOT ?>/testimonials" class="nav__drop-item">⭐ Testimonials</a>
-          <a href="<?= URLROOT ?>/faqs" class="nav__drop-item">❓ FAQs</a>
+          <!-- <a href="<?= URLROOT ?>/testimonials" class="nav__drop-item">⭐ Testimonials</a>
+          <a href="<?= URLROOT ?>/faqs" class="nav__drop-item">❓ FAQs</a> -->
           <a href="<?= URLROOT ?>/careers" class="nav__drop-item">💼 Careers</a>
         </div>
       </li>
@@ -519,8 +519,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <div class="nav__mobile-section">
     <div class="nav__mobile-section-title">More</div>
     <a href="<?= URLROOT ?>/local-experts" class="nav__mobile-link">🧭 Local Experts</a>
-    <a href="<?= URLROOT ?>/testimonials" class="nav__mobile-link">⭐ Testimonials</a>
-    <a href="<?= URLROOT ?>/faqs" class="nav__mobile-link">❓ FAQs</a>
+    <!-- <a href="<?= URLROOT ?>/testimonials" class="nav__mobile-link">⭐ Testimonials</a>
+    <a href="<?= URLROOT ?>/faqs" class="nav__mobile-link">❓ FAQs</a> -->
     <a href="<?= URLROOT ?>/careers" class="nav__mobile-link">💼 Careers</a>
   </div>
   <div style="padding:1rem 0.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
